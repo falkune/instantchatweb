@@ -5,11 +5,11 @@ import Button from 'react-bootstrap/Button';
 class Registerform extends React.Component{
 
   state = {
-    name    : "",
-    email   : "",
-    passwd  : "",
-    passwd1 : "",
-    isLoading: false 
+    name : "",
+    Email : "",
+    passwd : "",
+    PasswordRepeat : "",
+    isLoading : false 
   }
 
   handleNameChange = event => {
