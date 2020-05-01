@@ -26,12 +26,14 @@ class Loginform extends React.Component{
     const URL = 'http://instantchat.com/login/'+this.state.email+'/'+this.state.password;
   }
 
-  handleEmail = () => {
-
+  handleEmail = event => {
+    this.setState({
+      email : event.currentTarget.value
+    });
   }
 
-  handlePassword = () => {
-    
+  handlePassword = event => {
+
   }
 
   render(){
