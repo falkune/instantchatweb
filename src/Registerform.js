@@ -94,7 +94,7 @@ class Registerform extends React.Component{
           />
         </Form.Group>
 
-        <div>
+        <div className="passwordError">
           
         </div>
   
