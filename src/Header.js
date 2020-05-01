@@ -11,7 +11,8 @@ class Header extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      connectedUser : 'noOne'
+      connectedUser : undefined,
+      token : undefined
     }
   }
 
