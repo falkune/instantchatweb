@@ -8,8 +8,7 @@ class Registerform extends React.Component{
     name : "",
     Email : "",
     password : "",
-    PasswordRepeat : "",
-    isLoading : false 
+    PasswordRepeat : ""
   }
 
   handleNameChange = event => {
