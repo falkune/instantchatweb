@@ -66,7 +66,7 @@ class Registerform extends React.Component{
       const data = await response.json();
       // console.log(data.status);
       if(data.status !== 'ok'){
-        this.getUserRegistred();
+        this.getUserConnected();
       }
       else{
         const TEXT = document.createElement("span");
