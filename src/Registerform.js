@@ -47,7 +47,7 @@ class Registerform extends React.Component{
     .then(data => {
       if(data.status === 'ok'){
         // ici je vais charger le compoant principale que j'apeelerais home
-        this.action;
+        
       }
     });
   }
