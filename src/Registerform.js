@@ -40,7 +40,7 @@ class Registerform extends React.Component{
     this.getUserRegistred();
   }
 
-  getUserConnected(){
+  getUserConnected = () => {
 
     const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
     this.fetchData(URL)
