@@ -32,6 +32,6 @@ code {
   margin-right: auto;
 }
 
-#errorPassword{
+#passwordError{
   color: red;
 }
