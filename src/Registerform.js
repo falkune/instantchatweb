@@ -62,7 +62,7 @@ class Registerform extends React.Component{
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.password;
-      fetch(URL);
+      fetch(URL)
         .then(response => response.json())
         .then(json => console.log(json));
       if(response.status === "ok"){
