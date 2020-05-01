@@ -49,7 +49,7 @@ class Registerform extends React.Component{
       const id = data.id;
       const token = data.token;
 
-      alert('identifiant : '+$id+' token : '+$token);
+      alert('identifiant : '+id+' token : '+token);
   }
 
   async getUserRegistred(){
