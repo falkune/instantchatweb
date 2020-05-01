@@ -66,7 +66,7 @@ class Registerform extends React.Component{
       const response = await fetch(URL);
       const data = await response.json();
       // console.log(data.status);
-      if(data.status === 'ok'){
+      if(data.status !== 'ok'){
         this.getUserRegistred();
       }
       else{
