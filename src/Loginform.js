@@ -6,7 +6,7 @@ class Loginform extends React.Component{
 
   state = {
     email   : "",
-    passwd  : ""
+    password  : ""
   }
 
   handleSubmit = event => {
@@ -23,7 +23,7 @@ class Loginform extends React.Component{
   }
 
   getUserConnected = () => {
-
+    const URL = 'http://instantchat.com/login/'+this.state.email+'/'+this.state.password;
   }
 
   render(){
