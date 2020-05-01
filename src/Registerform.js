@@ -30,7 +30,7 @@ class Registerform extends React.Component{
     });
   }
 
-  handlePassword1Change = event => {
+  handlePasswordRepeatChange = event => {
     this.setState({
       passwd1 : event.currentTarget.value
     });
@@ -115,7 +115,7 @@ class Registerform extends React.Component{
           <Form.Control  
             placeholder="Password" 
             type="password"
-            onChange={this.handlePassword1Change}
+            onChange={this.handlePasswordRepeatChange}
           />
         </Form.Group>
 
