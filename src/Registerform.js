@@ -45,12 +45,12 @@ class Registerform extends React.Component{
   getUserConnected(){
 
     const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.passwd;
-      const response = fetch(URL);
-      const data = response.json();    
-      const id = data.id;
-      const token = data.token;
+    const response = fetch(URL);
+    const data = response.json();    
+    const id = data.id;
+    const token = data.token;
 
-      alert('identifiant : '+id+' token : '+token);
+    alert('identifiant : '+id+' token : '+token);
   }
 
   getUserRegistred(){
