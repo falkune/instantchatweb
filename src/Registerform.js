@@ -41,6 +41,12 @@ class Registerform extends React.Component{
     this.props.action(2);
   }
 
+  async getUserConnected(){
+
+    
+    
+  }
+
   async getUserRegistred(){
 
     if(this.state.passwd !== this.state.passwd1){
@@ -57,10 +63,10 @@ class Registerform extends React.Component{
 
       }
       else{
-        
+
       }
     }
-    
+
   }
 
   render(){
