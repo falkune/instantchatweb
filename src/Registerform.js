@@ -47,7 +47,7 @@ class Registerform extends React.Component{
       const TEXT = document.createElement("h1");
       var content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
-      document.getElementsByClassName('passwordError').appendChild(TEXT);
+      document.getElementById('passwordError').appendChild(TEXT);
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
