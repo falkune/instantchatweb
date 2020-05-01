@@ -66,7 +66,7 @@ class Registerform extends React.Component{
         .then((response) => {
           return response.json();
         })
-      if(data.status === 'failed'){
+      if(response.status === 'failed'){
         this.getUserConnected();
       }
       else{
