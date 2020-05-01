@@ -7,7 +7,7 @@ class Registerform extends React.Component{
   state = {
     name : "",
     Email : "",
-    passwd : "",
+    password : "",
     PasswordRepeat : "",
     isLoading : false 
   }
@@ -26,13 +26,13 @@ class Registerform extends React.Component{
 
   handlePasswordChange = event => {
     this.setState({
-      passwd : event.currentTarget.value
+      password : event.currentTarget.value
     });
   }
 
   handlePasswordRepeatChange = event => {
     this.setState({
-      passwd1 : event.currentTarget.value
+      password1 : event.currentTarget.value
     });
   }
 
@@ -44,7 +44,7 @@ class Registerform extends React.Component{
 
   getUserConnected(){
 
-    const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.passwd;
+    const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
     const response = fetch(URL);
     const data = response.json();    
     const id = data.id;
@@ -55,14 +55,14 @@ class Registerform extends React.Component{
 
   getUserRegistred(){
 
-    if(this.state.passwd !== this.state.passwd1){
+    if(this.state.password !== this.state.password1){
       const TEXT = document.createElement("span");
       var content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
       document.getElementById('passwordError').appendChild(TEXT);
     }
     else{
-      const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
+      const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.password;
       const response = fetch(URL);
       const data = response.json();
       // console.log(data.status);
