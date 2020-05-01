@@ -35,7 +35,7 @@ class Loginform extends React.Component{
   handlePassword = event => {
     this.setState({
       password : event.currentTarget.value
-    })
+    });
   }
 
   render(){
