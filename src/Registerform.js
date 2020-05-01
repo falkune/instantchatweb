@@ -52,7 +52,7 @@ class Registerform extends React.Component{
     alert('identifiant : '+id+' token : '+token);
   }
 
-  fetchData(URL){
+  fetchData(url){
     return fetch(url)
       .then((response) => response.json())
       .catch((error) => console.error(error))
@@ -68,7 +68,7 @@ class Registerform extends React.Component{
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.password;
-      fetchData(URL)
+      this.fetchData(URL)
       .then(data => {
         if(data.status === 'ok'){
           this.getUserConnected();
