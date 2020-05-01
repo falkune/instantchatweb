@@ -37,7 +37,7 @@ class Header extends React.Component{
   }
 
   addLink(statut){
-    if(statut === "noOne"){
+    if(statut === undefined){
       return(
         <Nav id="link">
           <Navlink value="Login" onClick={this.login} />
