@@ -12,7 +12,6 @@ class Loginform extends React.Component{
   handleSubmit = event => {
     event.preventDefault();
     this.getUserConnected();
-    this.props.action(2);
   }
 
 
@@ -22,8 +21,22 @@ class Loginform extends React.Component{
       .catch((error) => console.error(error))
   }
 
+  handleSubmit = event => {
+    event.preventDefault();
+    this.getUserConnected();
+  }
+
   getUserConnected = () => {
-    const URL = 'http://instantchat.com/login/'+this.state.email+'/'+this.state.password;
+    const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
+    this.fetchData(URL)
+    .then(data => {
+      if(data.status === 'ok' || data.status === 'active'){
+        this.props.action(data.id, data.token);
+        // ReactDOM.Render(
+        //   <Accueil>
+        // );
+      }
+    })
   }
 
   handleEmail = event => {
@@ -41,7 +54,7 @@ class Loginform extends React.Component{
   render(){
 
     return(
-      <Form className="alert" id="loginform">
+      <Form className="alert" id="loginform" onSubmit={this.handleSubmit}>
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
           <Form.Control 
