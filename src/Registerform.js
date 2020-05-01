@@ -64,16 +64,16 @@ class Registerform extends React.Component{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
       const response = await fetch(URL);
       const data = await response.json();
-      console.log(data.status);
-      // if(data.status === "ok"){
-      //   this.getUserRegistred();
-      // }
-      // else{
-      //   const TEXT = document.createElement("span");
-      //   var content = document.createTextNode('This email is allready exist get connected...');
-      //   TEXT.appendChild(content);
-      //   document.getElementById('passwordError').appendChild(TEXT);
-      // }
+      // console.log(data.status);
+      if(data.status === "ok"){
+        this.getUserRegistred();
+      }
+      else{
+        const TEXT = document.createElement("span");
+        var content = document.createTextNode('This email is allready exist get connected...');
+        TEXT.appendChild(content);
+        document.getElementById('passwordError').appendChild(TEXT);
+      }
     }
 
   }
