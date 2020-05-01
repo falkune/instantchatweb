@@ -49,7 +49,7 @@ class Registerform extends React.Component{
         // ici je vais charger le compoant principale que j'apeelerais home
         this.props.action(data.id, data.token);
         ReactDOM.Render(
-          
+          <Accueil>
         );
       }
     });
