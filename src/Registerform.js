@@ -32,7 +32,7 @@ class Registerform extends React.Component{
 
   handlePasswordRepeatChange = event => {
     this.setState({
-      password1 : event.currentTarget.value
+      PasswordRepeat : event.currentTarget.value
     });
   }
 
@@ -55,7 +55,7 @@ class Registerform extends React.Component{
 
   getUserRegistred(){
 
-    if(this.state.password !== this.state.password1){
+    if(this.state.password !== this.state.PasswordRepeat){
       const TEXT = document.createElement("span");
       var content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
