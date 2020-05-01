@@ -40,15 +40,15 @@ class Registerform extends React.Component{
     this.getUserRegistred();
   }
 
-  async getUserConnected(){
+  getUserConnected(){
 
     const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
-    const response = await fetch(URL);
-    const data = await response.json();    
-    const id = data.id;
-    const token = data.token;
-
-    alert('identifiant : '+id+' token : '+token);
+    this.fetchData(URL)
+    .then(data => {
+      if(data.status === 'ok'){
+        // ici je vais charger le compoant principale que j'apeelerais home
+      }
+    });
   }
 
   fetchData(url){
