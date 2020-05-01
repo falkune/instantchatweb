@@ -15,6 +15,10 @@ class Loginform extends React.Component{
     this.props.action(2);
   }
 
+  fetchData = () => {
+    
+  }
+
   getUserConnected = () => {
 
   }
