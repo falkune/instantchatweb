@@ -42,18 +42,18 @@ class Registerform extends React.Component{
     this.props.action(2);
   }
 
-  async getUserConnected(){
+  getUserConnected(){
 
     const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.passwd;
-      const response = await fetch(URL);
-      const data = await response.json();    
+      const response = fetch(URL);
+      const data = response.json();    
       const id = data.id;
       const token = data.token;
 
       alert('identifiant : '+id+' token : '+token);
   }
 
-  async getUserRegistred(){
+  getUserRegistred(){
 
     if(this.state.passwd !== this.state.passwd1){
       const TEXT = document.createElement("span");
@@ -63,8 +63,8 @@ class Registerform extends React.Component{
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
-      const response = await fetch(URL);
-      const data = await response.json();
+      const response = fetch(URL);
+      const data = response.json();
       // console.log(data.status);
       if(data.status !== 'ok'){
         this.getUserRegistred();
