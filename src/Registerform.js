@@ -44,8 +44,8 @@ class Registerform extends React.Component{
   async getUserRegistred(){
 
     if(this.state.passwd != this.state.passwd1){
-      const ERRORBOX = document.getElementByClassname('passwordError');
-      
+      const ERRORBOX = document.getElementsByClassName('passwordError');
+
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
