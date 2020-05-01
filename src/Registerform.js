@@ -48,6 +48,8 @@ class Registerform extends React.Component{
       const data = await response.json();    
       const id = data.id;
       const token = data.token;
+
+      alert('identifiant : '+$id+' token : '+$token);
   }
 
   async getUserRegistred(){
