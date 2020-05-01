@@ -43,7 +43,7 @@ class Registerform extends React.Component{
 
   async getUserRegistred(){
 
-    if(this.state.email != this.state.passwd){
+    if(this.state.passwd != this.state.passwd1){
 
     }
     else{
