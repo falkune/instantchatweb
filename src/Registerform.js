@@ -58,7 +58,7 @@ class Registerform extends React.Component{
       .catch((error) => console.error(error))
   }
 
-  getUserRegistred(){
+  getUserRegistred = () => {
 
     if(this.state.password !== this.state.PasswordRepeat){
       const TEXT = document.createElement("span");
