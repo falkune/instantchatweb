@@ -32,7 +32,7 @@ class Header extends React.Component{
 
   logout = () =>{
     this.setState({
-      connectedUser : "noOne"
+      connectedUser : undefined
     });
   }
 
