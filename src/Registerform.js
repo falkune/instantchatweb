@@ -39,7 +39,6 @@ class Registerform extends React.Component{
   handleSubmit = event => {
     event.preventDefault();
     this.getUserRegistred();
-    this.props.action(2);
   }
 
   async getUserConnected(){
