@@ -44,7 +44,7 @@ class Registerform extends React.Component{
   async getUserRegistred(){
 
     if(this.state.passwd != this.state.passwd1){
-      
+
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
@@ -93,6 +93,10 @@ class Registerform extends React.Component{
             onChange={this.handlePassword1Change}
           />
         </Form.Group>
+
+        <div>
+          
+        </div>
   
         <Button variant="primary" type="submit">
           Submit
