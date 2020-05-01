@@ -44,7 +44,7 @@ class Registerform extends React.Component{
   async getUserRegistred(){
 
     if(this.state.passwd !== this.state.passwd1){
-      const TEXT = document.createElement("span", "color:red");
+      const TEXT = document.createElement("span");
       var content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
       document.getElementById('passwordError').appendChild(TEXT);
