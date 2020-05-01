@@ -44,11 +44,10 @@ class Registerform extends React.Component{
   async getUserRegistred(){
 
     if(this.state.passwd !== this.state.passwd1){
-      const ERRORBOX = document.getElementsByClassName('passwordError');
       const TEXT = document.createElement("h1");
       var content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
-      ERRORBOX.appendChild(TEXT);
+      document.getElementsByClassName('passwordError').appendChild(TEXT);
     }
     else{
       const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.passwd;
@@ -98,7 +97,7 @@ class Registerform extends React.Component{
           />
         </Form.Group>
 
-        <div className="passwordError">
+        <div id="passwordError">
           
         </div>
   
