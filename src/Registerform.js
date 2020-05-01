@@ -56,7 +56,7 @@ class Registerform extends React.Component{
 
     if(this.state.password !== this.state.PasswordRepeat){
       const TEXT = document.createElement("span");
-      var content = document.createTextNode('The two password are not correspond !');
+      let content = document.createTextNode('The two password are not correspond !');
       TEXT.appendChild(content);
       document.getElementById('passwordError').appendChild(TEXT);
     }
@@ -70,7 +70,7 @@ class Registerform extends React.Component{
       }
       else{
         const TEXT = document.createElement("span");
-        var content = document.createTextNode('This email is allready exist get connected...');
+        let content = document.createTextNode('This email is allready exist get connected...');
         TEXT.appendChild(content);
         document.getElementById('passwordError').appendChild(TEXT);
       }
