@@ -44,6 +44,7 @@ class Registerform extends React.Component{
   async getUserRegistred(){
 
     if(this.state.passwd != this.state.passwd1){
+      const ERRORBOX = document.getElementByClassname('passwordError');
       
     }
     else{
