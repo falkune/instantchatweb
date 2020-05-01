@@ -26,22 +26,38 @@ class Loginform extends React.Component{
     const URL = 'http://instantchat.com/login/'+this.state.email+'/'+this.state.password;
   }
 
+  handleEmail = () => {
+
+  }
+
+  handlePassword = () => {
+    
+  }
+
   render(){
 
     return(
       <Form className="alert" id="loginform">
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control 
+            type="email" 
+            placeholder="Enter email"
+            onChange={this.handleEmail}
+          />
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
           <Form.Label className="btn-toolbar alert-link">Password :</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
+          <Form.Control 
+            type="password" 
+            placeholder="Password"
+            onChange={this.handlePassword}
+          />
         </Form.Group>
 
         <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Se souvenir de moi" />
+          <Form.Check type="checkbox" label="Se souvenir de moi"/>
         </Form.Group>
 
         <Button variant="primary" type="submit">
