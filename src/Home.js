@@ -17,6 +17,7 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div class="card-body contacts_body">
+						
 					</div>
 				</aside>
 
