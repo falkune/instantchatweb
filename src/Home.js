@@ -2,7 +2,7 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 
-class Accueil extends React.Component{
+class Home extends React.Component{
 
 	render(){
 		return(
@@ -39,4 +39,4 @@ class Accueil extends React.Component{
 	}
 }
 
-export default Accueil;
+export default Home;
