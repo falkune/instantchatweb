@@ -46,7 +46,7 @@ class Loginform extends React.Component{
             });
             console.log(this.state.need);
             ReactDOM.render(
-              <Home need={this.state.need}/>,
+              <Home need={this.state.need.data}/>,
               document.getElementById('container')
             );
           }
