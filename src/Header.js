@@ -45,6 +45,7 @@ class Header extends React.Component{
           connectedUser : undefined,
           token : undefined
         });
+        
       }
     })
   }
