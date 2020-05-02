@@ -17,7 +17,7 @@ class Header extends React.Component{
     }
   }
 
-  login =() =>{
+  login = () =>{
     ReactDOM.render(
       <Loginform action={this.handleConnectedUser}/>,
       document.getElementById('container')
