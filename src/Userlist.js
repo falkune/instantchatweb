@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Userlist extends React.Component{
+class Userlist extends React.Component
 	render(){
 		return(
 			<li>
