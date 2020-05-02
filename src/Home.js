@@ -20,7 +20,7 @@ class Home extends React.Component{
 					<div className="card-body contacts_body">
 						{
 							this.props.users.map(user => 
-								<Userlist key={user['user_id'].toString()} userName={user['user_name']} />
+								<Userlist key={user['user_id'].toString()} userId={user['user_id']} userName={user['user_name']} />
 							)
 						}
 					</div>
