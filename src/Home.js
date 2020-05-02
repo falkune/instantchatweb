@@ -9,15 +9,15 @@ class Home extends React.Component{
 		return(
 			<div id="homeContainer">
 				<aside id="users">
-					<div class="card-header">
-						<div class="input-group">
-							<input type="text" placeholder="Search..." name="" class="form-control search"/>
-							<div class="input-group-prepend">
-								<span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+					<div className="card-header">
+						<div className="input-group">
+							<input type="text" placeholder="Search..." name="" className="form-control search"/>
+							<div className="input-group-prepend">
+								<span className="input-group-text search_btn"><i className="fas fa-search"></i></span>
 							</div>
 						</div>
 					</div>
-					<div class="card-body contacts_body">
+					<div className="card-body contacts_body">
 						
 								<Userlist/>
 							
