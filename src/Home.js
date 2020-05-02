@@ -11,10 +11,7 @@ class Home extends React.Component{
 	}
 
 	componentDidMount(){
-		this.setState({
-			id : this.props.userId,
-			token : this.props.token
-		})
+		
 	}
 
 	render(){
