@@ -6,7 +6,9 @@ class Userlist extends React.Component{
 			<div className="d-flex bd-highlight" id="him">
 				<div className="img_cont">
 					<span className="online_icon"></span>
-					{this.props.userName}
+					<div>
+						{this.props.userName}
+					</div>
 				</div>
 			</div>
 		)
