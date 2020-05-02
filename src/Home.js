@@ -39,7 +39,9 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div class="card-body contacts_body" id="theUsers">
-						<Userlist />
+						{
+							this.listUser.map()
+						}
 					</div>
 				</aside>
 
