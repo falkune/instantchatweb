@@ -4,7 +4,7 @@ class Userlist extends React.Component{
 	render(){
 		return(
 			<li>
-				<div class="d-flex bd-highlight">
+				<div class="d-flex bd-highlight" id="him">
 					<div class="img_cont">
 						<span class="online_icon"></span>
 					</div>
