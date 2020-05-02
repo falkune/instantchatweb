@@ -1,6 +1,7 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import Userlist from './Userlist';
 
 class Home extends React.Component{
 
@@ -17,7 +18,7 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div class="card-body contacts_body">
-						
+						<Userlist />
 					</div>
 				</aside>
 
