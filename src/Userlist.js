@@ -7,7 +7,7 @@ class Userlist extends React.Component{
 				<div className="img_cont">
 					<span className="online_icon"></span>
 				</div>
-				{this.key}
+				{this.props.userId}
 				{this.props.userName}
 			</div>
 		)
