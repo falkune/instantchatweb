@@ -129,11 +129,9 @@ class Registerform extends React.Component{
         <div id="passwordError">
           
         </div>
-        <Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
       </Form>
     );
   }
