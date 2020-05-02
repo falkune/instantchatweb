@@ -41,7 +41,7 @@ class Header extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
-
+        
       }
     })
     this.setState({
