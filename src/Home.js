@@ -7,7 +7,7 @@ class Home extends React.Component{
 	render(){
 		return(
 			<div id="accueiContainer">
-				<aside>
+				<aside id="users">
 					
 				</aside>
 
