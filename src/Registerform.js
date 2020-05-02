@@ -48,9 +48,10 @@ class Registerform extends React.Component{
       if(data.status === 'ok'){
         // ici je vais charger le compoant principale que j'apeelerais home
         this.props.action(data.id, data.token);
-        // ReactDOM.Render(
-        //   <Accueil>
-        // );
+        ReactDOM.render(
+          <Accueil />,
+          document.getElementById('container')
+        );
       }
     });
   }
