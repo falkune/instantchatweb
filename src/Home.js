@@ -20,7 +20,9 @@ class Home extends React.Component{
 		this.fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
-				this.listUser = data.data;
+				this.state({
+					listUser : data.data
+				});
 			}
 		})
 	}
