@@ -19,9 +19,7 @@ class Home extends React.Component{
 					</div>
 					<div className="card-body contacts_body">
 						{
-							for (var i = 0; i < this.props.users.length; i++) {
-								<Userlist key={i}/>
-							}
+							
 						}	
 					</div>
 				</aside>
