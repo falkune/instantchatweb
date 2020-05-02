@@ -19,7 +19,7 @@ class Home extends React.Component{
 					</div>
 					<div className="card-body contacts_body">
 						{
-							this.props.need.data.map((id, nom) => <Userlist/>)
+							this.props.need.data.map((id, nom) => <Userlist key={id} userName={nom}/>)
 						}	
 					</div>
 				</aside>
