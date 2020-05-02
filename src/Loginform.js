@@ -36,7 +36,7 @@ class Loginform extends React.Component{
         let id = data.id;
         let token = data.token;
         this.props.action(id, token);
-        const URL1 = 'http://instantchat/Api/Users/'+id+'/'+token;
+        const URL1 = 'http://instantchat.com/Api/Users/'+id+'/'+token;
         this.fetchData(URL1)
         .then(data => {
           if(data.status === 'ok'){
