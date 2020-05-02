@@ -6,6 +6,7 @@ import Userlist from './Userlist';
 class Home extends React.Component{
 
 	render(){
+		console.log(this.props.users);
 		return(
 			<div id="homeContainer">
 				<aside id="users">
@@ -18,9 +19,7 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div className="card-body contacts_body">
-						{
-							this.props.users.map(e => <Userlist key={e}/>)
-						}	
+						<Userlist/>
 					</div>
 				</aside>
 
