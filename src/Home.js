@@ -10,6 +10,14 @@ class Home extends React.Component{
 				<asside>
 					
 				</asside>
+
+				<main>
+					
+				</main>
+
+				<asside>
+					
+				</asside>
 			</div>
 		);
 	}
