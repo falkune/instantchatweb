@@ -10,6 +10,13 @@ class Home extends React.Component{
 		token : undefined
 	}
 
+	componentDidMount(){
+		this.setState({
+			id : this.props.userId,
+			token : this.props.token
+		})
+	}
+
 	render(){
 		return(
 			<div id="homeContainer">
