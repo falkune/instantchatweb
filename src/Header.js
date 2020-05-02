@@ -30,7 +30,9 @@ class Header extends React.Component{
     );
   }
 
-  
+  fetchData = () => {
+    
+  }
 
   logout = () =>{
     this.setState({
