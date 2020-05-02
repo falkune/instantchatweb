@@ -39,3 +39,7 @@ header{
 #passwordError{
   color: red;
 }
+
+#container{
+  padding-top: 3em;
+}
