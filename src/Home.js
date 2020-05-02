@@ -8,7 +8,14 @@ class Home extends React.Component{
 		return(
 			<div id="accueiContainer">
 				<aside id="users">
-					
+					<div class="card-header">
+						<div class="input-group">
+							<input type="text" placeholder="Search..." name="" class="form-control search">
+							<div class="input-group-prepend">
+								
+							</div>
+						</div>
+					</div>
 				</aside>
 
 				<main id="actualite">
