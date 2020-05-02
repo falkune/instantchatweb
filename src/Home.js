@@ -9,15 +9,13 @@ class Home extends React.Component{
 		return(
 			<div id="homeContainer">
 				<aside id="users">
-					<div className="card-header">
+					<div className="card-body contacts_body" id="userBox">
 						<div className="input-group">
 							<input type="text" placeholder="Search..." name="" className="form-control search"/>
 							<div className="input-group-prepend">
 								<span className="input-group-text search_btn"><i className="fas fa-search"></i></span>
 							</div>
 						</div>
-					</div>
-					<div className="card-body contacts_body" id="userBox">
 						{
 							this.props.users.map(user => 
 								<Userlist key={user['user_id'].toString()} userId={user['user_id']} userName={user['user_name']} />
