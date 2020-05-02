@@ -13,7 +13,7 @@ class Home extends React.Component{
 						<div className="input-group">
 							<input type="text" placeholder="Search..." name="" className="form-control search">
 							<div className="input-group-prepend">
-								<span className="input-group-text search_btn"><i className="fas fa-search"></i></span>
+								<span className="input-group-text search_btn"><i className="fas fa-search"></i> yes</span>
 							</div>
 						</div>
 					</div>
@@ -59,7 +59,7 @@ class Home extends React.Component{
 							<div className="d-flex bd-highlight">
 								<div className="img_cont">
 									<img src="http://profilepicturesdp.com/wp-content/uploads/2018/07/sweet-girl-profile-pictures-9.jpg" className="rounded-circle user_img">
-									<span className="online_icon offline"></span>
+									<span className="online_icon offline">hun</span>
 								</div>
 								<div className="user_info">
 									<span>Nargis Hawa</span>
