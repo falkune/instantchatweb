@@ -5,28 +5,6 @@ import Userlist from './Userlist';
 
 class Home extends React.Component{
 
-	state = {
-		listUser : undefined
-	}
-
-	fetchData(url){
-		return fetch(url)
-			.then((response) => response.json())
-			.catch((error) => console.error(error))
-	}
-
-	componentDidMount(){
-		const URL = 'http://instantchat.com/api/Users/'+this.props.userId+'/'+this.props.token;
-		this.fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.state({
-					listUser : data.data
-				});
-			}
-		})
-	}
-
 	render(){
 		return(
 			<div id="homeContainer">
