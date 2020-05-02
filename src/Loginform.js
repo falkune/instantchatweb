@@ -39,7 +39,7 @@ class Loginform extends React.Component{
           document.getElementById('container')
         );
       }
-    })
+    });
   }
 
   handleEmail = event => {
