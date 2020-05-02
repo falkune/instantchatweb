@@ -54,6 +54,10 @@ header{
   grid-template-columns: 20% 60% 20%;
 }
 
+.card-header{
+  position: fixed;
+}
+
 
 
 
