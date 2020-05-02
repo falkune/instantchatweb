@@ -76,5 +76,5 @@ header{
 
 #searchBar{
   position: fixed;
-  bottom: 0px;
+  bottom: 0;
 }
