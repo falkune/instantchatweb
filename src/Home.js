@@ -6,7 +6,7 @@ class Home extends React.Component{
 
 	render(){
 		return(
-			<div id="accueiContainer">
+			<div id="homeContainer">
 				<aside id="users">
 					<div class="card-header">
 						<div class="input-group">
