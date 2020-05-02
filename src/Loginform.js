@@ -41,7 +41,7 @@ class Loginform extends React.Component{
         .then(data => {
           if(data.status === 'ok'){
             ReactDOM.render(
-              <Home/>,
+              <Home need={data}/>,
               document.getElementById('container')
             );
           }
