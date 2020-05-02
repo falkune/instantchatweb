@@ -8,7 +8,8 @@ class Loginform extends React.Component{
 
   state = {
     email   : "",
-    password  : ""
+    password  : "",
+    need: undefined
   }
 
   handleSubmit = event => {
@@ -40,6 +41,9 @@ class Loginform extends React.Component{
         this.fetchData(URL1)
         .then(data => {
           if(data.status === 'ok'){
+            this.setState({
+              need : data
+            });
             ReactDOM.render(
               <Home need={data}/>,
               document.getElementById('container')
