@@ -19,9 +19,9 @@ class Home extends React.Component{
 					</div>
 					<div className="card-body contacts_body">
 						{
-							this.props.users.map(
-								user => <Userlist ket={this.props.users[user]}/>
-							)
+							for (var i = 0; i < this.props.users.length; i++) {
+								Things[i]
+							}
 						}	
 					</div>
 				</aside>
