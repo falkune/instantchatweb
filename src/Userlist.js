@@ -3,7 +3,7 @@ import React from 'react';
 class Userlist extends React.Component{
 	render(){
 		return(
-			<li class="active">
+			<li>
 				<div class="d-flex bd-highlight">
 					<div class="img_cont">
 						<span class="online_icon"></span>
