@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navlink from './Navlink';
 import Loginform from './Loginform';
 import Registerform from './Registerform';
-import Welcom fron './Welcom';
+import Welcom from './Welcom';
 
 class Header extends React.Component{
 
