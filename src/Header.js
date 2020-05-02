@@ -30,7 +30,7 @@ class Header extends React.Component{
     );
   }
 
-  fetchData = () => {
+  fetchData(url){
     
   }
 
