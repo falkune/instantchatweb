@@ -58,6 +58,12 @@ header{
   background-color: azure;
 }
 
+.img_cont{
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
 
 
 
@@ -164,11 +170,7 @@ header{
       border:1.5px solid #f5f6fa;
     
     }
-  .img_cont{
-      position: relative;
-      height: 70px;
-      width: 70px;
-  }
+  
   .img_cont_msg{
       height: 40px;
       width: 40px;
