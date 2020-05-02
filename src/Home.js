@@ -19,7 +19,7 @@ class Home extends React.Component{
 					</div>
 					<div class="card-body contacts_body" id="theUsers">
 						{
-							for (var i = 0; i < 5; i++) {
+							for (let i = 0; i < 5; i++) {
 								<Userlist/>
 							}
 						}
