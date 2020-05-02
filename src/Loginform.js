@@ -34,10 +34,10 @@ class Loginform extends React.Component{
     .then(data => {
       if(data.status === 'ok' || data.status === 'active'){
         this.props.action(data.id, data.token);
-        // ReactDOM.render(
-        //   <Accueil/>,
-        //   document.getElementById('container')
-        // );
+        ReactDOM.render(
+          <Accueil/>,
+          document.getElementById('container')
+        );
       }
     });
   }
