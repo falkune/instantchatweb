@@ -48,7 +48,6 @@ class Registerform extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
-        // ici je vais charger le compoant principale que j'apeelerais home
         this.props.action(data.id, data.token);
         ReactDOM.render(
           <Home />,
