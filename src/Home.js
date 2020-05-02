@@ -10,8 +10,14 @@ class Home extends React.Component{
 		token : undefined
 	}
 
+	fetchData(url){
+		return fetch(url)
+			.then((response) => response.json())
+			.catch((error) => console.error(error))
+	}
+
 	componentDidMount(){
-		
+
 	}
 
 	render(){
