@@ -25,7 +25,7 @@ class Home extends React.Component{
 						{
 							this.props.users.map(user => {
 								<Userlist key={user['user_id']} userName={user['user_name']} />
-							})
+							});
 						}
 					</div>
 				</aside>
