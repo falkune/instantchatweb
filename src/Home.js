@@ -6,7 +6,10 @@ import Userlist from './Userlist';
 class Home extends React.Component{
 
 	render(){
-		
+		const data = this.props.users;
+		const nameliste = data.map(name => {
+			console.log(name.user_is);
+		})
 		return(
 			<div id="homeContainer">
 				<aside id="users">
