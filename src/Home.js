@@ -17,6 +17,7 @@ class Home extends React.Component{
 	}
 
 	componentDidMount(){
+		const URL 'http://instantchat.com/Users/'+this.props.userId+'/'+this.props.token;
 		
 	}
 
