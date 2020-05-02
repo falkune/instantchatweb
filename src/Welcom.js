@@ -21,3 +21,5 @@ class Welcom extends React.Component{
 	}
 
 }
+
+export default Welcom;
