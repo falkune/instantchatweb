@@ -5,6 +5,11 @@ import Userlist from './Userlist';
 
 class Home extends React.Component{
 
+	state = {
+		id : undefined,
+		token : undefined
+	}
+
 	render(){
 		return(
 			<div id="homeContainer">
