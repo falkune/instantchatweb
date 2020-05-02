@@ -71,7 +71,7 @@ class Home extends React.Component{
 							<div className="d-flex bd-highlight">
 								<div className="img_cont">
 									<img src="https://static.turbosquid.com/Preview/001214/650/2V/boy-cartoon-3D-model_D.jpg" className="rounded-circle user_img">
-									<span className="online_icon offline"></span>
+									<span className="online_icon offline">yes</span>
 								</div>
 								<div className="user_info">
 									<span>Rashid Samim</span>
