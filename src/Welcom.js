@@ -6,7 +6,7 @@ class Welcom extends React.Component{
 
 	render(){
 		return(
-			<div id="accueiContainer">
+			<div id="welcomContainer">
 				<Jumbotron fluid>
 				  <Container>
 				    <h1>Fluid jumbotron</h1>
