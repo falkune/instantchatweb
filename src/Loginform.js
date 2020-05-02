@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Accueil from './Accueil';
+import Home from './Home';
 
 class Loginform extends React.Component{
 
@@ -35,7 +35,7 @@ class Loginform extends React.Component{
       if(data.status === 'ok' || data.status === 'active'){
         this.props.action(data.id, data.token);
         ReactDOM.render(
-          <Accueil/>,
+          <Home/>,
           document.getElementById('container')
         );
       }
