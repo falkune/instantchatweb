@@ -42,7 +42,7 @@ class Loginform extends React.Component{
         .then(data => {
           if(data.status === 'ok'){
             this.setState({
-              need : data
+              need : data.data
             });
             console.log(this.state.need.data);
             ReactDOM.render(
