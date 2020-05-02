@@ -15,7 +15,7 @@ class Home extends React.Component{
 					
 				</main>
 
-				<aside id="">
+				<aside id="pub">
 					
 				</aside>
 			</div>
