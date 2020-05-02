@@ -11,11 +11,11 @@ class Home extends React.Component{
 					
 				</aside>
 
-				<main>
+				<main id="">
 					
 				</main>
 
-				<aside>
+				<aside id="">
 					
 				</aside>
 			</div>
