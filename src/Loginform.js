@@ -36,10 +36,16 @@ class Loginform extends React.Component{
         let id = data.id;
         let token = data.token;
         this.props.action(id, token);
-        ReactDOM.render(
-          <Home userId={id} token={token}/>,
-          document.getElementById('container')
-        );
+        const URL1 = 'http://instantchat/Api/Users/'+id+'/'+token;
+        this.fetchData(URL1)
+        .then(data => {
+          if(data.status === 'ok'){
+            ReactDOM.render(
+              <Home/>,
+              document.getElementById('container')
+            );
+          }
+        })
       }
     });
   }
