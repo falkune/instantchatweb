@@ -41,12 +41,12 @@ class Header extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
-        
+        this.setState({
+          connectedUser : undefined,
+          token : undefined
+        });
       }
     })
-    this.setState({
-      connectedUser : undefined
-    });
   }
 
   addLink(statut){
