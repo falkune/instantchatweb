@@ -18,7 +18,17 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div class="card-body contacts_body" id="theUsers">
-						<Userlist />
+						<li>
+				<div class="d-flex bd-highlight" id="him">
+					<div class="img_cont">
+						<span class="online_icon"></span>
+					</div>
+					<div class="user_info">
+						<span>Khalid</span>
+						<p>Kalid is online</p>
+					</div>
+				</div>
+			</li>
 					</div>
 				</aside>
 
