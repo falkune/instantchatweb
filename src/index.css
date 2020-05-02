@@ -54,6 +54,10 @@ header{
   grid-template-columns: 20% 60% 20%;
 }
 
+#userBox{
+  background-image: azure;
+}
+
 .card-header{
   /*position: fixed;*/
 }
