@@ -35,7 +35,7 @@ class Loginform extends React.Component{
       if(data.status === 'ok' || data.status === 'active'){
         this.props.action(data.id, data.token);
         ReactDOM.render(
-          <Accueil>,
+          <Accueil/>,
           document.getElementById('root')
         );
       }
