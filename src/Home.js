@@ -18,9 +18,9 @@ class Home extends React.Component{
 						</div>
 					</div>
 					<div className="card-body contacts_body">
-						
-								<Userlist/>
+						{
 							
+						}	
 					</div>
 				</aside>
 
