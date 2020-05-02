@@ -10,7 +10,7 @@ class Userlist extends React.Component{
 					</div>
 					<div className="user_info">
 						<span>{this.props.userId}</span>
-						<p>{this.props.userName}</p>
+						
 					</div>
 				</div>
 			</li>
