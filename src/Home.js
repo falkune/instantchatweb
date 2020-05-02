@@ -6,7 +6,7 @@ import Userlist from './Userlist';
 class Home extends React.Component{
 
 	state = {
-		listUser : undefined;
+		listUser : undefined
 	}
 
 	fetchData(url){
