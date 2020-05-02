@@ -36,7 +36,7 @@ class Loginform extends React.Component{
         this.props.action(data.id, data.token);
         ReactDOM.render(
           <Accueil/>,
-          document.getElementById('root')
+          document.getElementById('container')
         );
       }
     })
