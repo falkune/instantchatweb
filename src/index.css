@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+header{
+  position: fixed;
+  width: 100%;
+}
 #navbar_bi{
   display: grid;
   grid-template-columns: 20% 80%;
