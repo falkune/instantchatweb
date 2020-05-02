@@ -58,15 +58,8 @@ header{
   background-color: azure;
 }
 
-.online_icon{
-  position: absolute;
-  height: 15px;
-  width:15px;
-  background-color: #4cd137;
-  border-radius: 50%;
-  bottom: 0.2em;
-  right: 0.4em;
-  border:1.5px solid white;
+.card-header{
+  /*position: fixed;*/
 }
 
 
@@ -184,7 +177,16 @@ header{
       height: 40px;
       width: 40px;
   }
-  
+  .online_icon{
+    position: absolute;
+    height: 15px;
+    width:15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 0.2em;
+    right: 0.4em;
+    border:1.5px solid white;
+  }
   .offline{
     background-color: #c23616 !important;
   }
