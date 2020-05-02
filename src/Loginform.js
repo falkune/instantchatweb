@@ -44,7 +44,7 @@ class Loginform extends React.Component{
             this.setState({
               need : data.data
             });
-            console.log(this.state.need.data);
+            console.log(this.state.need);
             ReactDOM.render(
               <Home users={this.state.need} userName={this.state.need.data.user_name} userId={this.state.need.data.user_id}/>,
               document.getElementById('container')
