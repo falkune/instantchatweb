@@ -9,8 +9,8 @@ class Userlist extends React.Component{
 						<span className="online_icon"></span>
 					</div>
 					<div className="user_info">
-						<span>salut toi</span>
-						<p>c'est moi dh </p>
+						<span>{this.props.userId}</span>
+						<p>{this.props.userName}</p>
 					</div>
 				</div>
 			</li>
