@@ -81,7 +81,7 @@ class Home extends React.Component{
 						</li>
 						</ui>
 					</div>
-					<div className="card-footer"></div>
+					<div className="card-footer"/>
 				</div>
 				</aside>
 
