@@ -59,13 +59,21 @@ header{
 }
 
 .img_cont{
-  position: relative;
   height: 30px;
   width: 100%;
   display: grid;
   grid-template-columns: 20% 80%;
 }
 
+.online_icon{
+    height: 15px;
+    width:15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    bottom: 0.2em;
+    right: 0.4em;
+    border:1.5px solid white;
+  }
 
 
 
@@ -177,16 +185,7 @@ header{
       height: 40px;
       width: 40px;
   }
-  .online_icon{
-    position: absolute;
-    height: 15px;
-    width:15px;
-    background-color: #4cd137;
-    border-radius: 50%;
-    bottom: 0.2em;
-    right: 0.4em;
-    border:1.5px solid white;
-  }
+  
   .offline{
     background-color: #c23616 !important;
   }
