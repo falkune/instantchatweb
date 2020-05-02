@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
+import Welcom from './Welcom';
 
 function App(){
   
@@ -9,7 +10,7 @@ function App(){
     <div className="App">
       <Header/>
       <div id="container">
-      	</Welcom />
+      	<Welcom />
       </div>
     </div>
   );
