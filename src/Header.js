@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navlink from './Navlink';
 import Loginform from './Loginform';
 import Registerform from './Registerform';
+import Welcom fron './Welcom';
 
 class Header extends React.Component{
 
@@ -45,7 +46,7 @@ class Header extends React.Component{
           connectedUser : undefined,
           token : undefined
         });
-        
+
       }
     })
   }
