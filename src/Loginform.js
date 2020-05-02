@@ -33,9 +33,11 @@ class Loginform extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok' || data.status === 'active'){
-        this.props.action(data.id, data.token);
+        let id = data.id;
+        let token = data.token;
+        this.props.action(id, token);
         ReactDOM.render(
-          <Home/>,
+          <Home userId={id} token={token}/>,
           document.getElementById('container')
         );
       }
