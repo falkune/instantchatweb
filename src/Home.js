@@ -19,7 +19,9 @@ class Home extends React.Component{
 					</div>
 					<div className="card-body contacts_body">
 						{
-							this.props.users.map((user) => <Userlist userName={this.props.users.user_name}/>)
+							this.props.users.map(
+								(user) => <Userlist userName={this.props.users.user_name}/>
+							)
 						}	
 					</div>
 				</aside>
