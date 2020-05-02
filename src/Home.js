@@ -40,7 +40,7 @@ class Home extends React.Component{
 					</div>
 					<div class="card-body contacts_body" id="theUsers">
 						{
-							this.listUser.map()
+							this.listUser.map((id, nom) => <Userlist userId={id} userName={nom}/>)
 						}
 					</div>
 				</aside>
