@@ -16,7 +16,7 @@ class Home extends React.Component{
 							)
 						}
 					</div>
-					<div className="card-header">
+					<div div="searchBar">
 						<div className="input-group">
 							<input type="text" placeholder="Search..." name="" className="form-control search"/>
 							<div className="input-group-prepend">
