@@ -73,3 +73,8 @@ header{
 #name{
   margin: auto;
 }
+
+#searchBar{
+  position: fixed;
+  bottom: 0px;
+}
