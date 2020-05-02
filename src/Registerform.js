@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Accueil from './Accueil';
+import Home from './Home';
 
 class Registerform extends React.Component{
 
@@ -51,7 +51,7 @@ class Registerform extends React.Component{
         // ici je vais charger le compoant principale que j'apeelerais home
         this.props.action(data.id, data.token);
         ReactDOM.render(
-          <Accueil />,
+          <Home />,
           document.getElementById('container')
         );
       }
