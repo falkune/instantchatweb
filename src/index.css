@@ -66,14 +66,12 @@ header{
 }
 
 .online_icon{
-  background-color: cadetblue;
+  background-color: lawngreen;
   height: 20px;
   width: 20px;
   float: right;
-  margin-top: 14px;
-  margin-right: -11px;
   border-radius: 50%;
-  border-color: beige;
+  border-color: azure;
   border-style: solid;
 }
 
