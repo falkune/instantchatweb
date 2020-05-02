@@ -31,11 +31,19 @@ class Header extends React.Component{
   }
 
   fetchData(url){
-
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => console.log(error))
   }
 
   logout = () =>{
     const URL = 'http://instantchat.com/api/logout/'+this.state.connectedUser+'/'+this.state.token;
+    this.fetchData(URL)
+    .then(data => {
+      if(data.status === 'ok'){
+
+      }
+    })
     this.setState({
       connectedUser : undefined
     });
