@@ -7,17 +7,17 @@ class Home extends React.Component{
 	render(){
 		return(
 			<div id="accueiContainer">
-				<asside>
+				<aside>
 					
-				</asside>
+				</aside>
 
 				<main>
 					
 				</main>
 
-				<asside>
+				<aside>
 					
-				</asside>
+				</aside>
 			</div>
 		);
 	}
