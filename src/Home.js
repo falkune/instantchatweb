@@ -23,9 +23,9 @@ class Home extends React.Component{
 					</div>
 					<div className="card-body contacts_body">
 						{
-							this.props.users.map(user => {
+							this.props.users.map(user => 
 								<Userlist key={user['user_id']} userName={user['user_name']} />
-							});
+							)
 						}
 					</div>
 				</aside>
