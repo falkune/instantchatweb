@@ -44,3 +44,7 @@ header{
 #container{
   padding-top: 3em;
 }
+
+#welcomContainer{
+  background: white;
+}
