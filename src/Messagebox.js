@@ -19,8 +19,10 @@ class Messagebox extends React.Component{
 	}
 
 	fetchData(url){
-
-	}
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => console.error(error))
+  }
 
 	handleMessage = event => {
 		this.setState({
