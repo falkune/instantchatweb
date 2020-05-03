@@ -50,10 +50,11 @@ header{
 }
 
 #userBox{
-  height: 93%;
+  height: 90%;
   overflow: scroll;
-  position: fixed;
+  position: absolute;
   width: 15%;
+  bottom: 0;
 }
 ::-webkit-scrollbar{
   width: 10px;
@@ -92,8 +93,7 @@ header{
 }
 
 #searchBar{
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 15%;
 }
 
