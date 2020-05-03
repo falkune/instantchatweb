@@ -108,7 +108,7 @@ header{
 }
 
 .modal-dialog{
-  max-width: 500px;
+  width: 500px;
   margin: auto;
 }
 
