@@ -53,6 +53,7 @@ class Registerform extends React.Component{
         let token = data.token;
 
         this.props.action(id, token);
+        
         ReactDOM.render(
           <Home />,
           document.getElementById('container')
