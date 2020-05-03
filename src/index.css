@@ -135,6 +135,10 @@ header{
   padding: 0rem;
 }
 
+#modal-body{
+  
+}
+
 
 @media (min-width: 576px){
   .modal-dialog {
