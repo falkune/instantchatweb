@@ -18,12 +18,10 @@ class Messagebox extends React.Component{
 			  </Modal.Body>
 
 			  <Modal.Footer id="modal-footer">
-			    <Form>
+			    <Form id="messagetype">
 			    	<Form.Control as="textarea" rows="2" />
 			    	<span>
-			    		<Button variant="primary" type="submit">
-			          Send
-			        </Button>
+			    		
 			    	</span>
 			    </Form>
 			  </Modal.Footer>
