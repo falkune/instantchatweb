@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 
 class Messagebox extends React.Component{
 
+	state = {
+		
+	}
+
 	getDiscution = () => {
 		const URL = 'instantchat.com://api/show/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.props.token;
 		this.fetchData(URL)
@@ -31,7 +35,7 @@ class Messagebox extends React.Component{
 
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype">
-			    	<Form.Control as="textarea" rows="2" />
+			    	<Form.Control as="textarea" rows="2" onChange={}/>
 			    	<div>
 			    		<div id="emojibox">
 			    			
