@@ -48,7 +48,11 @@ class Registerform extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
-        this.props.action(data.id, data.token);
+
+        let id = data.id;
+        let token = data.token;
+
+        this.props.action(id, token);
         ReactDOM.render(
           <Home />,
           document.getElementById('container')
@@ -131,7 +135,7 @@ class Registerform extends React.Component{
         <div id="passwordError">
           
         </div>
-        
+
         <Button variant="primary" type="submit">
           Submit
         </Button>
