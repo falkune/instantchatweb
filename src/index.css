@@ -106,3 +106,8 @@ header{
   position: fixed;
   left: 16%;
 }
+
+.modal-dialog{
+  max-width: 500px;
+  margin: auto;
+}
