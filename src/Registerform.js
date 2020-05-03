@@ -10,7 +10,8 @@ class Registerform extends React.Component{
     name : "",
     Email : "",
     password : "",
-    PasswordRepeat : ""
+    PasswordRepeat : "",
+    need: undefined
   }
 
   handleNameChange = event => {
@@ -53,7 +54,7 @@ class Registerform extends React.Component{
         let token = data.token;
 
         this.props.action(id, token);
-        
+
         ReactDOM.render(
           <Home />,
           document.getElementById('container')
