@@ -63,12 +63,12 @@ class Registerform extends React.Component{
             this.setState({
               data : data.data
             });
+            ReactDOM.render(
+              <Home />,
+              document.getElementById('container')
+            );
           }
         })
-        ReactDOM.render(
-          <Home />,
-          document.getElementById('container')
-        );
       }
     });
   }
