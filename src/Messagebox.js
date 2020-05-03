@@ -1,4 +1,6 @@
 import React from 'react';
+import Modal from 'react-bootstrap/Modal';
+import ModalDialog from 'react-bootstrap/ModalDialog';
 
 class Messagebox extends React.Component{
 
@@ -14,8 +16,7 @@ class Messagebox extends React.Component{
 			  </Modal.Body>
 
 			  <Modal.Footer>
-			    <Button variant="secondary">Close</Button>
-			    <Button variant="primary">Save changes</Button>
+			    
 			  </Modal.Footer>
 			</Modal.Dialog>
 		)
