@@ -38,6 +38,8 @@ class Home extends React.Component{
 				</aside>
 
 				<main id="actualite">
+
+					<div id="boxmessage"></div>
 					
 				</main>
 
