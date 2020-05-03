@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 
 class Messagebox extends React.Component{
 
+	getDiscution = () => {
+		
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
