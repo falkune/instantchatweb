@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 class Messagebox extends React.Component{
 
 	getDiscution = () => {
+
+	}
+
+	fetchData(){
 		
 	}
 
