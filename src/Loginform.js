@@ -47,8 +47,8 @@ class Loginform extends React.Component{
             ReactDOM.render(
               <Home 
                 users={this.state.need}
-                connetedUser={this.props.connectedUser}
-                token={this.props.token}
+                connetedUser={id}
+                token={token}
               />,
               document.getElementById('container')
             );
