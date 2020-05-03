@@ -156,7 +156,7 @@ header{
 }
 
 @media (min-width: 576px){
-  .modal-dialog {
+  #modal-dialog {
     max-width: 500px;
     margin: 0;
   }
