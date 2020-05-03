@@ -5,6 +5,10 @@ import Userlist from './Userlist';
 
 class Home extends React.Component{
 
+	showMessage = () => {
+		
+	}
+
 	render(){
 		return(
 			<div id="homeContainer">
@@ -12,7 +16,7 @@ class Home extends React.Component{
 					<div className="card-body contacts_body" id="userBox">
 						{
 							this.props.users.map(user => 
-								<Userlist key={user['user_id'].toString()} userId={user['user_id']} userName={user['user_name']} />
+								<Userlist key={user['user_id'].toString()} userId={user['user_id']} userName={user['user_name']} onClick={this.showMessage}/>
 							)
 						}
 					</div>
