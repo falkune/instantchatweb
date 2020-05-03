@@ -51,7 +51,7 @@ header{
 
 #userBox{
   height: 90%;
-  overflow: scroll;
+  overflow-x: scroll;
   position: absolute;
   width: 15%;
   bottom: 0;
