@@ -20,7 +20,7 @@ class Home extends React.Component{
 									key={user['user_id'].toString()} 
 									userId={user['user_id']} 
 									userName={user['user_name']} 
-									onClick={() => this.showMessage(user['user_id'])}
+									onClick={() => this.showMessage(user['user_id'],this.props.connectedUser, this.props.token)}
 								/>
 							)
 						}
