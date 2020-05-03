@@ -10,7 +10,7 @@ function App(){
       <Header/>
       <div id="container">
       	{
-      		var appHtml = React.renderToString(<Application/>);
+      		React.renderToString(<Application/>);
       	}
       </div>
     </div>
