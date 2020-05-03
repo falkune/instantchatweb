@@ -9,9 +9,7 @@ function App(){
     <div className="App">
       <Header/>
       <div id="container">
-      	{
-      		React.renderToString(<Application/>);
-      	}
+      	<Welcom />
       </div>
     </div>
   );
