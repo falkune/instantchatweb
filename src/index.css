@@ -100,3 +100,9 @@ header{
 #him:hover{
   cursor: pointer;
 }
+
+#boxmessage{
+  bottom: -28px;
+  position: fixed;
+  left: 16%;
+}
