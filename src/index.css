@@ -59,6 +59,12 @@ header{
 ::-webkit-scrollbar{
   width: 100%%;
 }
+::-webkit-scrollbar-button{
+
+}
+::-webkit-scrollbar-track {
+  
+}
 
 .img_cont{
   height: 30px;
