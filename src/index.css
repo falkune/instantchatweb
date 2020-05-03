@@ -50,7 +50,6 @@ header{
 }
 
 #userBox{
- /* background-color: azure;*/
   height: 93%;
   overflow: scroll;
   position: fixed;
