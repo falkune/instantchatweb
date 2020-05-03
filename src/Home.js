@@ -27,7 +27,12 @@ class Home extends React.Component{
 					</div>
 					<div id="searchBar">
 						<div className="input-group">
-							<input type="text" placeholder="Search..." name="" className="form-control search"/>
+							<input 
+								type="text" 
+								placeholder="Search..." 
+								name="" 
+								className="form-control search"
+							/>
 						</div>
 					</div>
 				</aside>
