@@ -21,7 +21,7 @@ class Messagebox extends React.Component{
 			    <Form id="messagetype">
 			    	<Form.Control as="textarea" rows="2" />
 			    	<span>
-			    		<i class="fas fa-arrow-right fa-3x"></i>
+			    		<i class="fas fa-arrow-right fa-2x"></i>
 			    	</span>
 			    </Form>
 			  </Modal.Footer>
