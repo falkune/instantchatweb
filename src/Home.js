@@ -6,7 +6,7 @@ import Userlist from './Userlist';
 class Home extends React.Component{
 
 	showMessage = e => {
-		Container.log(e)
+		console.log(e)
 	}
 
 	render(){
