@@ -106,6 +106,7 @@ class Registerform extends React.Component{
         }
       });
     }
+    
   }
 
   render(){
