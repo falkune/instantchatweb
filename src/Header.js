@@ -56,12 +56,12 @@ class Header extends React.Component{
         <Nav id="link">
           <Navlink value="Login" onClick={this.login} />
           <Navlink value="Register" onClick={this.register} />
-        </Nav>,
-        ReactDOM.render(
+        </Nav>
+      )
+      ReactDOM.render(
           <Welcom />,
           document.getElementById('container')
         );
-      )
     }
     else{
       return(
