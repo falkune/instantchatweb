@@ -56,6 +56,9 @@ header{
   position: fixed;
   width: 15%;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
 
 .img_cont{
   height: 30px;
