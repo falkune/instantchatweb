@@ -10,7 +10,9 @@ class Home extends React.Component{
 	showMessage = (e, f, g) => {
 		console.log(e+' '+f+' '+g)
 		ReactDOM.render(
-			<Messagebox/>,
+			<Messagebox
+				
+			/>,
 			document.getElementById('boxmessage')
 		);
 	}
