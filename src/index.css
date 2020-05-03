@@ -55,6 +55,7 @@ header{
   position: absolute;
   width: 15%;
   bottom: 0;
+  border-top: solid 2px;
 }
 ::-webkit-scrollbar{
   width: 10px;
