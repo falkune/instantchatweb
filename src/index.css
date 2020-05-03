@@ -119,11 +119,11 @@ header{
   height: 330px;
 }
 
-.modal-header {
+.modal-header{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-   padding: 0; 
+  padding: 0; 
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(.3rem - 1px);
   border-top-right-radius: calc(.3rem - 1px);
