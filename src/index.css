@@ -130,11 +130,9 @@ header{
 }
 
 .modal-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding: .75rem;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(.3rem - 1px);
   border-bottom-left-radius: calc(.3rem - 1px);
