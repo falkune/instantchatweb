@@ -13,7 +13,7 @@ class Messagebox extends React.Component{
 			    <Modal.Title>Modal title</Modal.Title>
 			  </Modal.Header>
 
-			  <Modal.Body>
+			  <Modal.Body id="modal-body">
 			    <p>Modal body text goes here.</p>
 			  </Modal.Body>
 
