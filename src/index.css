@@ -129,7 +129,7 @@ header{
   border-top-right-radius: calc(.3rem - 1px);
 }
 
-.modal-footer {
+#modal-footer{
   position: absolute;
   bottom: 0;
   padding: 0rem;
