@@ -19,7 +19,7 @@ class Messagebox extends React.Component{
 
 			  <Modal.Footer>
 			    <Form>
-			    	<Form.Control as="textarea" rows="3" />
+			    	<Form.Control as="textarea" rows="2" />
 			    </Form>
 			  </Modal.Footer>
 			</Modal.Dialog>
