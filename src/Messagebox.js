@@ -17,7 +17,7 @@ class Messagebox extends React.Component{
 			    <p>Modal body text goes here.</p>
 			  </Modal.Body>
 
-			  <Modal.Footer>
+			  <Modal.Footer id="modal-footer">
 			    <Form>
 			    	<Form.Control as="textarea" rows="2" />
 			    	<span>
