@@ -80,7 +80,6 @@ class Header extends React.Component{
   }
 
   render(){
-    // console.log(this.props.user);
     return(
       <header>
         <Navbar id="navbar_bi" bg="info">
