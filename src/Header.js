@@ -90,7 +90,7 @@ class Header extends React.Component{
   render(){
     return(
       <header>
-        <Navbar id="navbar_bi" bg="info">
+        <Navbar id="navbar_bi">
           <Navbar.Brand href="#">Brand link</Navbar.Brand>
           {this.addLink(this.state.connectedUser)}
         </Navbar>
