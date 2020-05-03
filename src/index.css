@@ -149,6 +149,10 @@ header{
   position: absolute
 }
 
+.fas:hover{
+  cursor: pointer;
+}
+
 @media (min-width: 576px){
   .modal-dialog {
     max-width: 500px;
