@@ -27,3 +27,5 @@ class Messagebox extends React.Component{
 	}
 
 }
+
+export default Messagebox;
