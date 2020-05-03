@@ -13,7 +13,8 @@ class Header extends React.Component{
     super(props);
     this.state = {
       connectedUser : undefined,
-      token : undefined
+      token : undefined,
+      name : 'instantchat'
     }
   }
 
