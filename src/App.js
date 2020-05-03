@@ -5,7 +5,6 @@ import Welcom from './Welcom';
 
 function App(){
   
-  
   return (
     <div className="App">
       <Header/>
@@ -15,7 +14,6 @@ function App(){
     </div>
   );
   
-
 }
 
 
