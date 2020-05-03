@@ -133,6 +133,7 @@ header{
   position: absolute;
   bottom: 0;
   padding: 0rem;
+  border-top: none;
 }
 
 #modal-body{
