@@ -22,6 +22,12 @@ class Messagebox extends React.Component{
 
 	}
 
+	handleMessage = event => {
+		this.setState({
+			message : event.currentTarget.value
+		});
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
@@ -35,7 +41,7 @@ class Messagebox extends React.Component{
 
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype">
-			    	<Form.Control as="textarea" rows="2" onChange={}/>
+			    	<Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
 			    	<div>
 			    		<div id="emojibox">
 			    			
