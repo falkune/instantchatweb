@@ -55,7 +55,7 @@ class Registerform extends React.Component{
 
         this.props.action(id, token);
 
-        const URL1 = 'http://instantchat.com/Api/login/'+id+'/'+token;
+        const URL1 = 'http://instantchat.com/Api/users/'+id+'/'+token;
 
         this.fetchData(URL1)
         .then(data => {
