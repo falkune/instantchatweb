@@ -52,8 +52,9 @@ class Registerform extends React.Component{
 
         let id = data.id;
         let token = data.token;
+        let name = data.name;
 
-        this.props.action(id, token);
+        this.props.action(id, token, name);
 
         const URL1 = 'http://instantchat.com/Api/Users/'+id+'/'+token;
 
@@ -106,7 +107,7 @@ class Registerform extends React.Component{
         }
       });
     }
-    
+
   }
 
   render(){
