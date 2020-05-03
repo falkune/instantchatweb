@@ -136,9 +136,13 @@ header{
 }
 
 #modal-body{
-  
+
 }
 
+#messagetype{
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
 
 @media (min-width: 576px){
   .modal-dialog {
