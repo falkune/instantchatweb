@@ -21,7 +21,7 @@ class Header extends React.Component{
     ReactDOM.render(
       <Loginform 
         action={this.handleConnectedUser} 
-        user={this.state.connectedUser}
+        connectedUser={this.state.connectedUser}
         token={this.state.token}
       />,
       document.getElementById('container')
@@ -32,7 +32,7 @@ class Header extends React.Component{
     ReactDOM.render(
       <Registerform 
         action={this.handleConnectedUser}
-        user={this.state.connectedUser}
+        connectedUser={this.state.connectedUser}
         token={this.state.token}
       />,
       document.getElementById('container')
