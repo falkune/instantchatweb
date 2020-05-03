@@ -141,6 +141,10 @@ header{
   grid-template-columns: 90% 10%;
 }
 
+#emojibox{
+  width: 10%;
+}
+
 .fas{
   bottom: 0;
   position: absolute
