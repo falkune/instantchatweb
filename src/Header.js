@@ -87,6 +87,10 @@ class Header extends React.Component{
           {this.addLink(this.state.connectedUser)}
         </Navbar>
       </header>
+      ReactDOM.render(
+          <Welcom />,
+          document.getElementById('container')
+        );
     );
   }
 
