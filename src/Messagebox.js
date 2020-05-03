@@ -18,7 +18,9 @@ class Messagebox extends React.Component{
 			  </Modal.Body>
 
 			  <Modal.Footer>
-			    
+			    <Form>
+			    	
+			    </Form>
 			  </Modal.Footer>
 			</Modal.Dialog>
 		)
