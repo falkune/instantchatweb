@@ -103,7 +103,7 @@ header{
 }
 
 #boxmessage{
-  bottom: -6px;
+  bottom: 3px;
   position: fixed;
   left: 16%;
   width: 220px;
