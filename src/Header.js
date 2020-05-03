@@ -46,10 +46,6 @@ class Header extends React.Component{
           connectedUser : undefined,
           token : undefined
         });
-        ReactDOM.render(
-          <Welcom />,
-          document.getElementById('container')
-        );
       }
     })
   }
