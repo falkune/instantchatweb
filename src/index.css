@@ -119,14 +119,6 @@ header{
   height: 330px;
 }
 
-
-@media (min-width: 576px){
-  .modal-dialog {
-    max-width: 500px;
-    margin: 0;
-  }
-}
-
 .modal-header {
   display: flex;
   align-items: flex-start;
@@ -135,4 +127,23 @@ header{
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(.3rem - 1px);
   border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(.3rem - 1px);
+  border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 500px;
+    margin: 0;
+  }
 }
