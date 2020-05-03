@@ -5,8 +5,8 @@ import Userlist from './Userlist';
 
 class Home extends React.Component{
 
-	showMessage = (e) => {
-		console.log(e)
+	showMessage = (e, f, g) => {
+		console.log(e+' '+f+' '+g)
 	}
 
 	render(){
