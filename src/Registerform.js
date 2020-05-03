@@ -131,6 +131,7 @@ class Registerform extends React.Component{
         <div id="passwordError">
           
         </div>
+        
         <Button variant="primary" type="submit">
           Submit
         </Button>
