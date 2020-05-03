@@ -8,7 +8,6 @@ import Messagebox from './Messagebox';
 class Home extends React.Component{
 
 	showMessage = (interlocutor, connectedUser, token) => {
-		console.log(e+' '+f+' '+g)
 		ReactDOM.render(
 			<Messagebox
 				connectedUser={connectedUser}
