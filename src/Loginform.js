@@ -102,10 +102,6 @@ class Loginform extends React.Component{
           />
         </Form.Group>
 
-        <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Se souvenir de moi"/>
-        </Form.Group>
-
         <div id="passwordError">
           
         </div>
