@@ -1,12 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Userlist from './Userlist';
+import Messagebox from './Messagebox';
 
 class Home extends React.Component{
 
 	showMessage = (e, f, g) => {
 		console.log(e+' '+f+' '+g)
+		ReactDOM.render(
+			<Messagebox/>
+		)
 	}
 
 	render(){
