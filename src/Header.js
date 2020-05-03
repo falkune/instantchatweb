@@ -81,10 +81,11 @@ class Header extends React.Component{
     }
   }
 
-  handleConnectedUser = (id, token) =>{
+  handleConnectedUser = (id, token, name) =>{
     this.setState({
       connectedUser : id,
-      token : token
+      token : token,
+      name : name
     })
   }
 
