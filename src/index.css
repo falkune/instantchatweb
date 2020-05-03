@@ -58,14 +58,14 @@ header{
   border-top: solid 1px lightgrey;
 }
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   /*border: 1px solid #232943;*/
   box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 5, 1);
 }
 ::-webkit-scrollbar-thumb {
-  background: yellow; 
+  background: black; 
 }
 
 .img_cont{
