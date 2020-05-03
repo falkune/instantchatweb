@@ -46,6 +46,10 @@ class Header extends React.Component{
           connectedUser : undefined,
           token : undefined
         });
+        ReactDOM.render(
+          <Welcom />,
+          document.getElementById('container')
+        );
       }
     })
   }
@@ -58,10 +62,6 @@ class Header extends React.Component{
           <Navlink value="Register" onClick={this.register} />
         </Nav>
       )
-      ReactDOM.render(
-          <Welcom />,
-          document.getElementById('container')
-        );
     }
     else{
       return(
