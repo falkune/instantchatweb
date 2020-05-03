@@ -144,6 +144,11 @@ header{
   grid-template-columns: 90% 10%;
 }
 
+.fas{
+  bottom: 0;
+  position: absolute
+}
+
 @media (min-width: 576px){
   .modal-dialog {
     max-width: 500px;
