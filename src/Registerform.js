@@ -64,7 +64,11 @@ class Registerform extends React.Component{
               data : data.data
             });
             ReactDOM.render(
-              <Home />,
+              <Home
+                users={this.state.data}
+                connectedUser={id}
+                token={token}
+              />,
               document.getElementById('container')
             );
           }
