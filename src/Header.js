@@ -88,10 +88,13 @@ class Header extends React.Component{
         </Navbar>
       </header>
     );
-    ReactDOM.render(
+    if(this.state.connectedUser === undefined){
+       ReactDOM.render(
           <Welcom />,
           document.getElementById('container')
         );
+    }
+   
   }
 
 }
