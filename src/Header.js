@@ -87,12 +87,6 @@ class Header extends React.Component{
           {this.addLink(this.state.connectedUser)}
         </Navbar>
       </header>
-      if(this.state.connectedUser === undefined){
-       ReactDOM.render(
-          <Welcom />,
-          document.getElementById('container')
-        );
-    }
     );
   }
 
