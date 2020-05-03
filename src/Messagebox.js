@@ -21,7 +21,7 @@ class Messagebox extends React.Component{
 			    <Form id="messagetype">
 			    	<Form.Control as="textarea" rows="2" />
 			    	<span>
-			    		<div>
+			    		<div id="emojibox">
 			    			
 			    		</div>
 			    		<i className="fas fa-arrow-right fa-2x"></i>
