@@ -57,6 +57,12 @@ class Loginform extends React.Component{
               document.getElementById('container')
             );
           }
+          else{
+            const TEXT = document.createElement("span");
+            let content = document.createTextNode('This email is allready exist get connected...');
+            TEXT.appendChild(content);
+            document.getElementById('passwordError').appendChild(TEXT);
+          }
         })
       }
     });
