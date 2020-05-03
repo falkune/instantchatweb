@@ -9,7 +9,7 @@ class Loginform extends React.Component{
   state = {
     email   : "",
     password  : "",
-    need: undefined
+    data: undefined
   }
 
   handleSubmit = event => {
@@ -41,16 +41,16 @@ class Loginform extends React.Component{
         this.props.action(id, token);
 
         const URL1 = 'http://instantchat.com/Api/Users/'+id+'/'+token;
-        
+
         this.fetchData(URL1)
         .then(data => {
           if(data.status === 'ok'){
             this.setState({
-              need : data.data
+              data : data.data
             });
             ReactDOM.render(
               <Home 
-                users={this.state.need}
+                users={this.state.data}
                 connectedUser={id}
                 token={token}
               />,
