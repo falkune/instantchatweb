@@ -57,7 +57,7 @@ header{
   width: 15%;
 }
 ::-webkit-scrollbar{
-  width: 20%;
+  width: 100%%;
 }
 
 .img_cont{
