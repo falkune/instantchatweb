@@ -8,7 +8,7 @@ class Messagebox extends React.Component{
 
 	render(){
 		return (
-			<Modal.Dialog>
+			<Modal.Dialog id="modal-dialog">
 			  <Modal.Header  id="modal-header" closeButton>
 
 			  </Modal.Header>
