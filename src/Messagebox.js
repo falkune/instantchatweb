@@ -7,11 +7,15 @@ import Button from 'react-bootstrap/Button';
 class Messagebox extends React.Component{
 
 	getDiscution = () => {
-
+		const URL = 'instantchat.com://api/show/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.props.token;
+		this.fetchData(URL)
+		.then(data => {
+			
+		})
 	}
 
-	fetchData(){
-		
+	fetchData(url){
+
 	}
 
 	render(){
