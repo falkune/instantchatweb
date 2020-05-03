@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 class Messagebox extends React.Component{
 
 	state = {
-		
+		message : ''
 	}
 
 	getDiscution = () => {
