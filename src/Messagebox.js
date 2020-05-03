@@ -19,12 +19,13 @@ class Messagebox extends React.Component{
 
 			  <Modal.Footer>
 			    <Form>
-			    	<Form.Control as="textarea" rows="2" />
-			    	<span>
-			    		<Button variant="primary" type="submit">
-			          Send
-			        </Button>
-			    	</span>
+			    	<Form.Control as="textarea" rows="2">
+			    		<span>
+				    		<Button variant="primary" type="submit">
+				          Send
+				        </Button>
+				    	</span>
+			    	</Form.Control>
 			    </Form>
 			  </Modal.Footer>
 			</Modal.Dialog>
