@@ -19,14 +19,22 @@ class Header extends React.Component{
 
   login = () =>{
     ReactDOM.render(
-      <Loginform action={this.handleConnectedUser}/>,
+      <Loginform 
+        action={this.handleConnectedUser} 
+        user={this.state.connectedUser}
+        token={this.state.token}
+      />,
       document.getElementById('container')
     );
   }
 
   register = () =>{
     ReactDOM.render(
-      <Registerform action={this.handleConnectedUser}/>,
+      <Registerform 
+        action={this.handleConnectedUser}
+        user={this.state.connectedUser}
+        token={this.state.token}
+      />,
       document.getElementById('container')
     );
   }
