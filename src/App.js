@@ -9,7 +9,9 @@ function App(){
     <div className="App">
       <Header/>
       <div id="container">
-      	
+      	{
+      		var appHtml = React.renderToString(<Application/>);
+      	}
       </div>
     </div>
   );
