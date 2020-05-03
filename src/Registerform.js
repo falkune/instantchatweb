@@ -11,7 +11,7 @@ class Registerform extends React.Component{
     Email : "",
     password : "",
     PasswordRepeat : "",
-    need: undefined
+    data: undefined
   }
 
   handleNameChange = event => {
