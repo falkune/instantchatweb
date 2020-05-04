@@ -49,13 +49,13 @@ class Messagebox extends React.Component{
 
 	}
 
-	showMessages = () => {
-		if(this.state.discution === undefined)
+	showMessages = (discution) => {
+		if(discution === undefined)
 			return <div id="emojibox"/>
 		else{
 			return(
 				{
-			    this.state.discution.map(msg => <div>{msg}</div>)
+			    discution.map(msg => <div>{msg}</div>)
 			  }
 			)
 		}
@@ -67,7 +67,7 @@ class Messagebox extends React.Component{
 			  <Modal.Header  id="modal-header" closeButton/>
 
 			  <Modal.Body id="modal-body">
-			    {this.showMessages}
+			    {this.showMessages(this.state.discution)}
 			  </Modal.Body>
 
 			  <Modal.Footer id="modal-footer">
