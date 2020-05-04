@@ -17,7 +17,7 @@ class Messagebox extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					
+					discution : data.data
 				});
 			}
 		})
