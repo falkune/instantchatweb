@@ -60,7 +60,14 @@ class Messagebox extends React.Component{
 			return(
 				<Modal.Body id="modal-body">
 					{
-				    this.state.discution.map(msg => <div>{msg['message']}</div>)
+				    this.state.discution.map(msg => 
+				    	if(msg.transmitter === this.props.connectedUser){
+				    		<div id="trasmit">{msg['message']}</div>
+				    	}
+				    	else{
+				    		<div id="recut">{msg['message']}</div>
+				    	}
+				    )
 				  }
 			  </Modal.Body>
 			)
