@@ -12,7 +12,7 @@ class Messagebox extends React.Component{
 	}
 
 	componentDidMount(){
-		this.getDiscution();
+		this.getDiscution;
 	}
 
 	getDiscution = () => {
