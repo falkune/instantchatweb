@@ -31,7 +31,7 @@ class Messagebox extends React.Component{
 		});
 	}
 
-	sendMessage =event =>{
+	sendMessage =event => {
 
 	}
 
