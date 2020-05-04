@@ -73,6 +73,7 @@ class Messagebox extends React.Component{
 
 	render(){
 			console.log(this.getDiscution);
+			return <div></div>
 		// if(this.getDiscution === []){
 		// 	return(
 		// 		<Modal.Dialog id="modal-dialog">
