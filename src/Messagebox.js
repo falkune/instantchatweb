@@ -65,7 +65,7 @@ class Messagebox extends React.Component{
 
 	render(){
 
-		if(this.getDiscution === []){
+		if(this.getDiscution.isArray()){
 			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
