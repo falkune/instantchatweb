@@ -1,6 +1,6 @@
 <Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
-<div>
 
+<div>
 	<span>
 		<Button 
 			variant="primary" 
