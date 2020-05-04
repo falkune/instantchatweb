@@ -127,6 +127,10 @@ header{
   z-index: 10;
 }
 
+.close{
+  color: white;
+}
+
 #modal-footer{
   position: absolute;
   bottom: 0;
