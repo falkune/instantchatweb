@@ -51,14 +51,14 @@ class Messagebox extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					message : ''
+					message : []
 				});
 			}
 		})
 	}
 
 	showMessages = () => {
-		if(this.state.discution === '')
+		if(this.state.discution === [])
 			return <Modal.Body id="modal-body"/>
 		else{
 			return(
