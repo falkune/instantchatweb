@@ -64,7 +64,7 @@ class Messagebox extends React.Component{
 					user={msg['transmitter']}
 					content={msg['message']}
 					/>
-					)
+				)
 			}
 			</Modal.Body>
 		)
