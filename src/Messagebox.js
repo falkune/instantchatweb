@@ -91,8 +91,14 @@ class Messagebox extends React.Component{
 							onChange={this.handleMessage}
 						/>
 						<div class="input-group-append">
-							<span type="submit" class="input-group-text send_btn">
+							<span class="input-group-text send_btn">
+								<Button 
+									variant="primary" 
+									type="submit" 
+									id="envoyer"
+									>
 								<i class="fas fa-location-arrow"></i>
+								</Button>
 							</span>
 						</div>
 			    </Form>
