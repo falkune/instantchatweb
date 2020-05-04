@@ -9,9 +9,9 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : null
+		discution : undefined
 	}
-	
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
