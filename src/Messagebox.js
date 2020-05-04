@@ -57,6 +57,26 @@ class Messagebox extends React.Component{
 		})
 	}
 
+	showMessages = () => {
+		if(this.state.discution === undefined || typeof this.state.discution != "object")
+			return <Modal.Body id="modal-body"/>
+		else{
+			return(
+				<Modal.Body id="modal-body">
+					{
+				    this.state.discution.map(msg => 
+				    	<Singlemessage
+				    		connectedUser={this.props.connectedUser}
+				    		user={msg['transmitter']}
+				    		content={msg['message']}
+				    	/>
+				    )
+				  }
+			  </Modal.Body>
+			)
+		}
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
