@@ -61,9 +61,9 @@ class Messagebox extends React.Component{
 			{
 				this.getDiscution.map(msg => 
 					<Singlemessage
-					connectedUser={this.props.connectedUser}
-					user={msg['transmitter']}
-					content={msg['message']}
+						connectedUser={this.props.connectedUser}
+						user={msg['transmitter']}
+						content={msg['message']}
 					/>
 				)
 			}
