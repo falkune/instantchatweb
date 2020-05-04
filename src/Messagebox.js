@@ -24,7 +24,7 @@ class Messagebox extends React.Component{
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
-				return data = data.data;
+				return data.data;
 			}
 		})
 	}
