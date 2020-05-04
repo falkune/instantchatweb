@@ -8,9 +8,7 @@ import Singlemessage from './Singlemessage';
 class Messagebox extends React.Component{
 
 	state = {
-		message : '',
-		discution : 0,
-		data : undefined
+		message : ''
 	}
 
 	componentDidUpdate(){
@@ -26,10 +24,7 @@ class Messagebox extends React.Component{
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
-				this.setState({
-					discution : data.data.length,
-					data : data.data
-				});
+				return data.data;
 			}
 		})
 	}
