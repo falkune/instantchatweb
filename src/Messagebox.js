@@ -9,7 +9,8 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : 0
+		discution : 0,
+		data : undefined
 	}
 
 	componentDidUpdate(){
@@ -27,6 +28,7 @@ class Messagebox extends React.Component{
 			if(data.status === 'ok'){
 				this.setState({
 					discution : data.data.length
+					data : data.data
 				});
 			}
 		})
