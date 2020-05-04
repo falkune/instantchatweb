@@ -9,7 +9,7 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : undefined
+		discution : null
 	}
 
 	componentDidUpdate(){
