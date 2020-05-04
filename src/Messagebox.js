@@ -52,12 +52,13 @@ class Messagebox extends React.Component{
 	showMessages = () => {
 		if(this.state.discution === undefined)
 			return <div id="emojibox"/>
-		else
+		else{
 			return(
 				{
 			    this.state.discution.map(msg => <div>{msg}</div>)
 			  }
 			)
+		}
 	}
 
 	render(){
