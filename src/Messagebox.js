@@ -84,17 +84,13 @@ class Messagebox extends React.Component{
 			  
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype" onSubmit={this.sendMessage}>
-			    	<Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
-			    	<div>
-			    		
-			    		<span>
-			    			<Button 
-			    				variant="primary" 
-			    				type="submit" 
-			    				id="envoyer"
-			    			/>
-			    		</span>
-			    	</div>
+			    	<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+								<div class="input-group-append">
+									<span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+								</div>
 			    </Form>
 			  </Modal.Footer>
 			</Modal.Dialog>
