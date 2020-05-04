@@ -36,6 +36,7 @@ class Messagebox extends React.Component{
 	}
 
 	sendMessage =event => {
+		event.preventDefault();
 		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
 		this.fetchData(url)
 		.then(data => {
