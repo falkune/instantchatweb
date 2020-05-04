@@ -55,6 +55,7 @@ class Messagebox extends React.Component{
 	}
 
 	showMessages =() => {
+		console.log(this.getDiscution);
 		return(
 			<Modal.Body id="modal-body">
 			{
@@ -71,7 +72,6 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.connectedUser+' '+this.props.interlocutor);
 
 		if(this.getDiscution === []){
 			return(
