@@ -55,7 +55,7 @@ class Messagebox extends React.Component{
 		else{
 			return(
 				{
-			    this.state.discution.map(msg => <div>{msg}</div>)
+			    state.discution.map(msg => <div>{msg}</div>)
 			  }
 			)
 		}
