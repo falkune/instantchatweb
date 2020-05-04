@@ -49,8 +49,8 @@ class Messagebox extends React.Component{
 			    			
 			    		</div>
 			    		<span>
-			    			<Button variant="primary" type="submit" value={<i className="fas fa-arrow-right fa-2x"></i>}>
-			    				
+			    			<Button variant="primary" type="submit">
+				          
 				        </Button>
 			    		</span>
 			    	</div>
