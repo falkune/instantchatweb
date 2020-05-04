@@ -72,7 +72,8 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
-			console.log(this.getDiscution);
+			let data = this.getDiscution;
+			console.log(data);
 			return <div></div>
 		// if(this.getDiscution === []){
 		// 	return(
