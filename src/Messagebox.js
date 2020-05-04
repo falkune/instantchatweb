@@ -72,68 +72,66 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
-			let data = this.getDiscution;
-			console.log(data);
-			return <div></div>
-		// if(this.getDiscution === []){
-		// 	return(
-		// 		<Modal.Dialog id="modal-dialog">
-		// 		  <Modal.Header  id="modal-header" closeButton/>
 
-		// 			<Modal.Body id="modal-body"/>
+		if(this.getDiscution === []){
+			return(
+				<Modal.Dialog id="modal-dialog">
+				  <Modal.Header  id="modal-header" closeButton/>
+
+					<Modal.Body id="modal-body"/>
 				  
-		// 		  <Modal.Footer id="modal-footer">
-		// 		    <Form id="messagetype" onSubmit={this.handleSubmit}>
-		// 					<textarea 
-		// 						id="form-control" 
-		// 						class="form-control type_msg" 
-		// 						placeholder="Type your message..."
-		// 						onChange={this.handleMessage}
-		// 					/>
-		// 					<div class="input-group-append">
-		// 						<span class="input-group-text send_btn">
-		// 							<Button 
-		// 								variant="primary" 
-		// 								type="submit" 
-		// 								id="envoyer"
-		// 								>
-		// 								<i class="fas fa-location-arrow"></i>
-		// 							</Button>
-		// 						</span>
-		// 					</div>
-		// 		    </Form>
-		// 		  </Modal.Footer>
-		// 		</Modal.Dialog>
-		// 	)
-		// }else{
-		// 	return (
-		// 		<Modal.Dialog id="modal-dialog">
-		// 		  <Modal.Header  id="modal-header" closeButton/>
-		// 		  {this.showMessages}
-		// 		  <Modal.Footer id="modal-footer">
-		// 		    <Form id="messagetype" onSubmit={this.handleSubmit}>
-		// 					<textarea 
-		// 						id="form-control" 
-		// 						class="form-control type_msg" 
-		// 						placeholder="Type your message..."
-		// 						onChange={this.handleMessage}
-		// 					/>
-		// 					<div class="input-group-append">
-		// 						<span class="input-group-text send_btn">
-		// 							<Button 
-		// 								variant="primary" 
-		// 								type="submit" 
-		// 								id="envoyer"
-		// 								>
-		// 								<i class="fas fa-location-arrow"></i>
-		// 							</Button>
-		// 						</span>
-		// 					</div>
-		// 		    </Form>
-		// 		  </Modal.Footer>
-		// 		</Modal.Dialog>
-		// 	)
-		// }
+				  <Modal.Footer id="modal-footer">
+				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+							<textarea 
+								id="form-control" 
+								class="form-control type_msg" 
+								placeholder="Type your message..."
+								onChange={this.handleMessage}
+							/>
+							<div class="input-group-append">
+								<span class="input-group-text send_btn">
+									<Button 
+										variant="primary" 
+										type="submit" 
+										id="envoyer"
+										>
+										<i class="fas fa-location-arrow"></i>
+									</Button>
+								</span>
+							</div>
+				    </Form>
+				  </Modal.Footer>
+				</Modal.Dialog>
+			)
+		}else{
+			return (
+				<Modal.Dialog id="modal-dialog">
+				  <Modal.Header  id="modal-header" closeButton/>
+				  {this.showMessages}
+				  <Modal.Footer id="modal-footer">
+				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+							<textarea 
+								id="form-control" 
+								class="form-control type_msg" 
+								placeholder="Type your message..."
+								onChange={this.handleMessage}
+							/>
+							<div class="input-group-append">
+								<span class="input-group-text send_btn">
+									<Button 
+										variant="primary" 
+										type="submit" 
+										id="envoyer"
+										>
+										<i class="fas fa-location-arrow"></i>
+									</Button>
+								</span>
+							</div>
+				    </Form>
+				  </Modal.Footer>
+				</Modal.Dialog>
+			)
+		}
 	}
 
 }
