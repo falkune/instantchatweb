@@ -65,7 +65,9 @@ class Messagebox extends React.Component{
 			    	<Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
 			    	<div>
 			    		<div id="emojibox">
-			    			
+			    			{
+			    				this.state.discution.map(msg => <div>{msg}</div>)
+			    			}
 			    		</div>
 			    		<span>
 			    			<Button 
