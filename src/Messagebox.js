@@ -30,6 +30,10 @@ class Messagebox extends React.Component{
 		});
 	}
 
+	sendMessage =event =>{
+		
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
@@ -42,7 +46,7 @@ class Messagebox extends React.Component{
 			  </Modal.Body>
 
 			  <Modal.Footer id="modal-footer">
-			    <Form id="messagetype">
+			    <Form id="messagetype" onSubmit={this.sendMessage}>
 			    	<Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
 			    	<div>
 			    		<div id="emojibox">
