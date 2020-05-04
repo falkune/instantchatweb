@@ -12,6 +12,26 @@ class Messagebox extends React.Component{
 		discution : undefined
 	}
 
+	componentDidUpdate(){
+		this.getDiscution();
+	}
+
+	componentDidUpdate(){
+		this.getDiscution();
+	}
+
+	getDiscution = () => {
+		let url = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.props.token;
+		this.fetchData(url)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					discution : data.data
+				});
+			}
+		})
+	}
+
 	handleMessage = event => {
 		this.setState({
 			message : event.currentTarget.value
