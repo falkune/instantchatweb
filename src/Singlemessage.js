@@ -7,11 +7,13 @@ class Singlemessage extends React.Component{
 	}
 
 	render(){
-		return(
-			<div>
-				
-			</div>
-		)
+		if(this.props.user === this.props.connectedUser){
+			return(
+				<div id="trasmit">
+					{this.props.content}
+				</div>
+			)
+		}
 	}
 
 }
