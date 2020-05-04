@@ -7,7 +7,8 @@ import Button from 'react-bootstrap/Button';
 class Messagebox extends React.Component{
 
 	state = {
-		message : ''
+		message : '',
+		discution : undefined
 	}
 
 	getDiscution = () => {
@@ -31,7 +32,7 @@ class Messagebox extends React.Component{
 	}
 
 	sendMessage =event =>{
-		
+
 	}
 
 	render(){
