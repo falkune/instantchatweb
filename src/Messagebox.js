@@ -12,6 +12,12 @@ class Messagebox extends React.Component{
 		discution : undefined
 	}
 
+	handleMessage = event => {
+		this.setState({
+			message : event.currentTarget.value
+		});
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
