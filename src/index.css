@@ -165,7 +165,7 @@ span{
 
 #trasmit{
   background: lightskyblue;
-  max-width: 150px;
+  max-width: 140px;
   font-size: small;
   margin-left: 55px;
   border-radius: 5px;
@@ -175,7 +175,7 @@ span{
 
 #recut{
   background: green;
-  max-width: 150px;
+  max-width: 140px;
   font-size: small;
   border-radius: 5px;
   margin-top: 6px;
