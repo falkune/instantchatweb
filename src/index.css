@@ -133,7 +133,9 @@ header{
 }
 
 #modal-body{
- 
+  height: 260px;
+  overflow-y: scroll;
+  position: absolute;
 }
 
 #messagetype{
