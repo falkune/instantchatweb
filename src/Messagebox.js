@@ -66,7 +66,7 @@ class Messagebox extends React.Component{
 			return(
 				<Modal.Body id="modal-body">
 					{
-				    this.state.discution.map(msg => 
+				    this.state.data.map(msg => 
 				    	<Singlemessage
 				    		connectedUser={this.props.connectedUser}
 				    		user={msg['transmitter']}
