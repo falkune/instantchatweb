@@ -76,8 +76,8 @@ class Messagebox extends React.Component{
 			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
-				  
-					<Modal.Body id="modal-body"></Modal.Body>
+
+					<Modal.Body id="modal-body"/>
 				  
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
