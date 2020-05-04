@@ -73,7 +73,7 @@ class Messagebox extends React.Component{
 			  <Modal.Header  id="modal-header" closeButton/>
 
 			  <Modal.Body id="modal-body">
-			    {this.showMessages}
+			    {this.showMessages()}
 			  </Modal.Body>
 
 			  <Modal.Footer id="modal-footer">
