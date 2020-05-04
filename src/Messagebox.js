@@ -72,7 +72,7 @@ class Messagebox extends React.Component{
 
 	render(){
 
-		if(this.getDiscution.length === []){
+		if(this.getDiscution.length === 0){
 			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
@@ -106,7 +106,7 @@ class Messagebox extends React.Component{
 			return (
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
-				  
+				  {this.showMessages}
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
 							<textarea 
