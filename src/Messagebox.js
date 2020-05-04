@@ -55,7 +55,7 @@ class Messagebox extends React.Component{
 	}
 
 	showMessages = () => {
-		if(this.state.discution === undefined)
+		if( !is_array(this.state.discution) )
 			return <Modal.Body id="modal-body"/>
 		else{
 			return(
