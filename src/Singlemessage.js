@@ -14,6 +14,13 @@ class Singlemessage extends React.Component{
 				</div>
 			)
 		}
+		else{
+			return(
+				<div id="recut">
+					{this.props.content}
+				</div>
+			)
+		}
 	}
 
 }
