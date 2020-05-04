@@ -64,7 +64,6 @@ class Messagebox extends React.Component{
 				});
 			}
 		})
-
 	}
 
 	showMessages = () => {
