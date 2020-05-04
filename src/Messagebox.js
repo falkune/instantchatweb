@@ -57,7 +57,9 @@ class Messagebox extends React.Component{
 
 			  <Modal.Body id="modal-body">
 			    {
-			    	this.state.discution.map(msg => <div>{msg}</div>)
+			    	if(this.state.discution != undefined){
+			    		this.state.discution.map(msg => <div>{msg}</div>)
+			    	}
 			    }
 			  </Modal.Body>
 
