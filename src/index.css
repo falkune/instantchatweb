@@ -145,11 +145,6 @@ span{
   position: absolute;
 }
 
-#messagetype{
-  display: grid;
-  grid-template-columns: 90% 10%;
-}
-
 #emojibox{
   width: 10%;
 }
