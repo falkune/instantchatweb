@@ -60,7 +60,7 @@ class Messagebox extends React.Component{
 			return(
 				<div id="emojibox">
 					{
-				    this.state.discution.map(msg => <div>helo worl!</div>)
+				    this.state.discution.map(msg => <div>{msg['message']}</div>)
 				  }
 			  </div>
 			)
