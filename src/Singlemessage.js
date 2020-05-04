@@ -4,7 +4,7 @@ class Singlemessage extends React.Component{
 
 	render(){
 		return(
-			<div id={}>
+			<div>
 				
 			</div>
 		)
