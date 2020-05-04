@@ -60,7 +60,7 @@ class Messagebox extends React.Component{
 		else{
 			return(
 				<Modal.Body id="modal-body">
-					
+					salut toi
 			  </Modal.Body>
 			)
 		}
