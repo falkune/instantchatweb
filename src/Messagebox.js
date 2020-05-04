@@ -18,6 +18,25 @@ class Messagebox extends React.Component{
 		});
 	}
 
+	fetchData(url){
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => console.error(error))
+  }
+
+  sendMessage =event => {
+		event.preventDefault();
+		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
+		this.fetchData(url)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					message : ''
+				});
+			}
+		})
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
