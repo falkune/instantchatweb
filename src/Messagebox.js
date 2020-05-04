@@ -8,7 +8,7 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : undefined
+		discution : null
 	}
 
 	getDiscution = () => {
@@ -57,9 +57,7 @@ class Messagebox extends React.Component{
 
 			  <Modal.Body id="modal-body">
 			    {
-			    	if(this.state.discution != undefined){
-			    		this.state.discution.map(msg => <div>{msg}</div>)
-			    	}
+			    	this.state.discution.map(msg => <div>{msg}</div>)
 			    }
 			  </Modal.Body>
 
