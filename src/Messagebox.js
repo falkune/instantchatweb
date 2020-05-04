@@ -9,7 +9,7 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : ''
+		discution : 0
 	}
 
 	// componentDidUpdate(){
@@ -26,7 +26,7 @@ class Messagebox extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					discution : data.data
+					discution : data.data.length
 				});
 			}
 		})
@@ -58,7 +58,7 @@ class Messagebox extends React.Component{
 	}
 
 	showMessages = () => {
-		if(this.state.discution === [])
+		if(this.state.discution === 0)
 			return <Modal.Body id="modal-body"/>
 		else{
 			return(
