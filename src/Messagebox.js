@@ -21,7 +21,7 @@ class Messagebox extends React.Component{
 	// }
 
 	getDiscution = () => {
-		let url = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.props.token;
+		const url = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.props.token;
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
@@ -44,7 +44,7 @@ class Messagebox extends React.Component{
       .catch((error) => console.error(error))
   }
 
-  handleSubmit =event => {
+  handleSubmit = event => {
 		event.preventDefault();
 		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
 		this.fetchData(url)
