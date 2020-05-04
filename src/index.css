@@ -154,6 +154,21 @@ header{
   cursor: pointer;
 }
 
+#trasmit{
+  background: lightskyblue;
+  max-width: 150px;
+  font-size: small;
+  margin-left: 55px;
+  border-radius: 5px;
+}
+
+#recut{
+  background: green;
+  max-width: 150px;
+  font-size: small;
+  border-radius: 5px;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
