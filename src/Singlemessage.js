@@ -3,7 +3,7 @@ import React from 'react';
 class Singlemessage extends React.Component{
 
 	state = {
-		utilisateur : 
+		utilisateur : ''
 	}
 
 	render(){
