@@ -162,6 +162,8 @@ header{
   font-size: small;
   margin-left: 55px;
   border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 #recut{
@@ -169,6 +171,8 @@ header{
   max-width: 150px;
   font-size: small;
   border-radius: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: 576px){
