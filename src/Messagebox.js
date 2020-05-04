@@ -54,11 +54,11 @@ class Messagebox extends React.Component{
 		})
 	}
 
-	showMessages = () => {
+	showMessages =(data) => {
 		return(
 			<Modal.Body id="modal-body">
 			{
-				this.state.data.map(msg => 
+				data.map(msg => 
 					<Singlemessage
 					connectedUser={this.props.connectedUser}
 					user={msg['transmitter']}
@@ -106,7 +106,7 @@ class Messagebox extends React.Component{
 			return (
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
-				  {this.showMessages}
+				  {this.showMessages(data)}
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
 							<textarea 
