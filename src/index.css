@@ -171,6 +171,7 @@ span{
   border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  min-height: 30px;
 }
 
 #recut{
@@ -180,6 +181,7 @@ span{
   border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
+  min-height: 30px;
 }
 
 @media (min-width: 576px){
