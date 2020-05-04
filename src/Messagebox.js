@@ -62,7 +62,7 @@ class Messagebox extends React.Component{
 				<Modal.Body id="modal-body">
 					{
 				    this.state.discution.map(msg => 
-				    	<div 
+				    	<Singlemessage 
 				    		user={msg['transmitter']}
 				    		content={msg['message']}
 				    	/>
