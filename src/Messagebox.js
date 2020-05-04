@@ -6,6 +6,11 @@ import Button from 'react-bootstrap/Button';
 import Singlemessage from './Singlemessage';
 
 class Messagebox extends React.Component{
+
+	state = {
+		message : '',
+		discution : null
+	}
 	
 	render(){
 		return (
