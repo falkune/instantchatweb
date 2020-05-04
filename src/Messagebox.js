@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import ModalDialog from 'react-bootstrap/ModalDialog';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Singlemessage './Singlemessage';
+import Singlemessage from './Singlemessage';
 
 class Messagebox extends React.Component{
 
