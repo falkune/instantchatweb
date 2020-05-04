@@ -24,7 +24,7 @@ class Messagebox extends React.Component{
       .catch((error) => console.error(error))
   }
 
-  sendMessage =event => {
+  handleSubmit =event => {
 		event.preventDefault();
 		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
 		this.fetchData(url)
@@ -43,7 +43,7 @@ class Messagebox extends React.Component{
 			  <Modal.Header  id="modal-header" closeButton/>
 			  
 			  <Modal.Footer id="modal-footer">
-			    <Form id="messagetype" onSubmit={this.sendMessage}>
+			    <Form id="messagetype" onSubmit={this.handleSubmit}>
 						<textarea 
 							id="form-control" 
 							class="form-control type_msg" 
@@ -57,7 +57,7 @@ class Messagebox extends React.Component{
 									type="submit" 
 									id="envoyer"
 									>
-								<i class="fas fa-location-arrow"></i>
+									<i class="fas fa-location-arrow"></i>
 								</Button>
 							</span>
 						</div>
