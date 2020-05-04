@@ -4,8 +4,10 @@ class Singlemessage extends React.Component{
 
 	render(){
 		return(
-			
+
 		)
 	}
 
 }
+
+export default Singlemessage;
