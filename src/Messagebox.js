@@ -8,7 +8,7 @@ class Messagebox extends React.Component{
 
 	state = {
 		message : '',
-		discution : null
+		discution : undefined
 	}
 
 	getDiscution = () => {
@@ -49,6 +49,17 @@ class Messagebox extends React.Component{
 
 	}
 
+	showMessages = () => {
+		if(this.state.discution === undefined)
+			return <div id="emojibox"/>
+		else
+			return(
+				{
+			    this.state.discution.map(msg => <div>{msg}</div>)
+			  }
+			)
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
@@ -64,11 +75,7 @@ class Messagebox extends React.Component{
 			    <Form id="messagetype" onSubmit={this.sendMessage}>
 			    	<Form.Control as="textarea" rows="2" onChange={this.handleMessage}/>
 			    	<div>
-			    		<div id="emojibox">
-			    			{
-			    				this.state.discution.map(msg => <div>{msg}</div>)
-			    			}
-			    		</div>
+			    		
 			    		<span>
 			    			<Button 
 			    				variant="primary" 
