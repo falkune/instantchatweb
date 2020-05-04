@@ -54,7 +54,7 @@ class Messagebox extends React.Component{
 		})
 	}
 
-	showMessages(data){
+	showMessages = data => {
 		return(
 			<Modal.Body id="modal-body">
 			{
@@ -72,7 +72,7 @@ class Messagebox extends React.Component{
 
 	render(){
 
-		if(this.getDiscution.length === []){
+		if(this.getDiscution === []){
 			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton/>
