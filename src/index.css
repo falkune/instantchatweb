@@ -149,8 +149,8 @@ span{
 }
 
 #messagetype{
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 84% 16%;
 }
 
 #form-control {
