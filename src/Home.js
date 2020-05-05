@@ -9,14 +9,15 @@ class Home extends React.Component{
 
 	showMessage = (interlocutor, connectedUser, userName, token) => {
 		console.log(interlocutor+' '+connectedUser+' '+userName)
-		// ReactDOM.render(
-		// 	<Messagebox
-		// 		connectedUser={connectedUser}
-		// 		interlocutor={interlocutor}
-		// 		token={token}
-		// 	/>,
-		// 	document.getElementById('boxmessage')
-		// );
+		ReactDOM.render(
+			<Messagebox
+				connectedUser={connectedUser}
+				interlocutor={interlocutor}
+				userName={userName}
+				token={token}
+			/>,
+			document.getElementById('boxmessage')
+		);
 	}
 
 	render(){
