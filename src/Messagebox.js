@@ -11,13 +11,26 @@ class Messagebox extends React.Component{
 		message : ''
 	}
 
+	handleSubmit =event => {
+		event.preventDefault();
+		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
+		this.fetchData(url)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					message : ''
+				});
+			}
+		})
+	}
+
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
 			  <Modal.Header  id="modal-header" closeButton/>
 			  
 			  <Modal.Footer id="modal-footer">
-			    <Form id="messagetype" onSubmit={this.sendMessage}>
+			    <Form id="messagetype" onSubmit={this.handleSubmit}>
 						<textarea 
 							id="form-control" 
 							class="form-control type_msg" 
