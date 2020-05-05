@@ -41,18 +41,18 @@ class Messagebox extends React.Component{
 			    <Form id="messagetype" onSubmit={this.handleSubmit}>
 						<textarea 
 							id="form-control" 
-							class="form-control type_msg" 
+							className="form-control type_msg" 
 							placeholder="Type your message..."
 							onChange={this.handleMessage}
 						/>
-						<div class="input-group-append">
-							<span class="input-group-text send_btn">
+						<div className="input-group-append">
+							<span className="input-group-text send_btn">
 								<Button 
 									variant="primary" 
 									type="submit" 
 									id="envoyer"
 									>
-								<i class="fas fa-location-arrow"></i>
+								<i className="fas fa-location-arrow"></i>
 								</Button>
 							</span>
 						</div>
