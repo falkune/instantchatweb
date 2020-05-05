@@ -135,6 +135,7 @@ span{
 #modal-footer{
   width: 100%;
   position: absolute;
+  margin: 0;
   bottom: 0;
   padding: 0rem;
   border-top: none;
