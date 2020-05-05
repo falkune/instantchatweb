@@ -85,7 +85,9 @@ class Messagebox extends React.Component{
 				  	{this.props.userName}
 				  </Modal.Header>
 
-				  {this.showMessages}
+				  <div>
+				  	<h1>HELO !</h1>
+				  </div>
 
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
