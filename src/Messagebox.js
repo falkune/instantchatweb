@@ -33,7 +33,9 @@ class Messagebox extends React.Component{
 	render(){
 		return (
 			<Modal.Dialog id="modal-dialog">
-			  <Modal.Header  id="modal-header" closeButton>{this.props.userName}</Modal.Header>
+			  <Modal.Header  id="modal-header" closeButton>
+			  	{this.props.userName}
+			  </Modal.Header>
 			  
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype" onSubmit={this.handleSubmit}>
