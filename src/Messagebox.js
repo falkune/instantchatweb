@@ -31,7 +31,7 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.userName)
+		console.log(this.props.messages)
 		return (
 			<Modal.Dialog id="modal-dialog">
 			  <Modal.Header  id="modal-header" closeButton>
