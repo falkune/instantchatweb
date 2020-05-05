@@ -212,6 +212,10 @@ span{
   padding: 0;
 }
 
+#boutonDenvoie{
+  
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
