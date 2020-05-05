@@ -123,8 +123,8 @@ header{
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(.3rem - 1px);
   border-top-right-radius: calc(.3rem - 1px);
-  background-color: currentColor;
-  color: white;
+  /*background-color: currentColor;*/
+  font-size: 1.4em;
   z-index: 10;
 }
 
