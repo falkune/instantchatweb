@@ -7,6 +7,10 @@ import Messagebox from './Messagebox';
 
 class Home extends React.Component{
 
+	state = {
+		messages : undefined
+	}
+
 	showMessage = (interlocutor, connectedUser, userName, token) => {
 
 		let url = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
@@ -30,7 +34,9 @@ class Home extends React.Component{
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
-				return data.data;
+				this.setState({
+					messages : data.data
+				});
 			}
 		})
 
