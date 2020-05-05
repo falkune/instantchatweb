@@ -173,8 +173,8 @@ span{
 }
 
 #envoyer{
-  bottom: 0;
-  position: absolute
+  width: 10%;
+  height: 100%;
 }
 
 .fas:hover{
