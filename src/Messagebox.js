@@ -31,13 +31,14 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
+		console.log(this.props.messages)
 		return (
 			<Modal.Dialog id="modal-dialog">
 			  <Modal.Header  id="modal-header" closeButton>
 			  	{this.props.userName}
 			  </Modal.Header>
 			  
-			  
+
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype" onSubmit={this.handleSubmit}>
 						<textarea 
