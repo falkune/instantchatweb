@@ -95,7 +95,7 @@ class Messagebox extends React.Component{
 								placeholder="Type your message..."
 								onChange={this.handleMessage}
 							/>
-							<span>
+							<span className="input-group-text" id="send_btn">
 								<i className="fas fa-location-arrow"></i>
 							</span>
 				    </Form>
