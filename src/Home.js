@@ -11,16 +11,11 @@ class Home extends React.Component{
 		messages : undefined
 	}
 
-	showMessage = (interlocutor, connectedUser, userName, token) => {
+
+	getDiscution = (interlocutor, connectedUser, userName, token) => {
 
 		let url = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
-		this.getDiscution(url);
-
-	}
-
-	getDiscution = (url) => {
-		
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
@@ -60,7 +55,7 @@ class Home extends React.Component{
 									key={user['user_id'].toString()} 
 									userId={user['user_id']} 
 									userName={user['user_name']} 
-									onClick={() => this.showMessage(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
+									onClick={() => this.getDiscution(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
 								/>
 							)
 						}
