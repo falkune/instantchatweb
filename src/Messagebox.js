@@ -95,7 +95,7 @@ class Messagebox extends React.Component{
 								placeholder="Type your message..."
 								onChange={this.handleMessage}
 							/>
-							<div className="input-group-append">
+							<div id="boutonDenvoie">
 								<span className="input-group-text send_btn">
 									<Button 
 										variant="primary" 
