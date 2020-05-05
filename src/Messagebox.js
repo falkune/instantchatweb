@@ -30,11 +30,11 @@ class Messagebox extends React.Component{
 		});
 	}
 
-	showMessages = () => {
+	showMessages = (data) => {
 		return(
 			<Modal.Body id="modal-body">
 			{
-				this.props.messages.map(msg => 
+				data.map(msg => 
 					<Singlemessage
 						connectedUser={this.props.connectedUser}
 						user={msg['transmitter']}
@@ -86,7 +86,7 @@ class Messagebox extends React.Component{
 				  </Modal.Header>
 
 				  <div>
-				  	<h1>HELO !</h1>
+				  	{this.showMessages(this.props.messages)}
 				  </div>
 
 				  <Modal.Footer id="modal-footer">
