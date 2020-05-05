@@ -202,6 +202,11 @@ span{
   min-height: 30px;
 }
 
+.fas fa-location-arrow{
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
