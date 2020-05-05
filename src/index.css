@@ -207,6 +207,10 @@ span{
   justify-content: center;
 }
 
+.input-group-text{
+  padding: 0;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
