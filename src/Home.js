@@ -15,14 +15,15 @@ class Home extends React.Component{
 
 		let url = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
-		let data = this.getDiscution(url);
+		this.getDiscution(url);
+
 		ReactDOM.render(
 			<Messagebox
 				connectedUser={connectedUser}
 				interlocutor={interlocutor}
 				userName={userName}
 				token={token}
-				messages={data}
+				messages={this.state.messages}
 			/>,
 			document.getElementById('boxmessage')
 		);
