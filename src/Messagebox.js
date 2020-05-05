@@ -30,6 +30,22 @@ class Messagebox extends React.Component{
 		});
 	}
 
+	showMessages = () => {
+		return(
+			<Modal.Body id="modal-body">
+			{
+				this.props.messages.map(msg => 
+					<Singlemessage
+						connectedUser={this.props.connectedUser}
+						user={msg['transmitter']}
+						content={msg['message']}
+					/>
+				)
+			}
+			</Modal.Body>
+		)
+	}
+
 	render(){
 		if(this.props.messages.length === 0){
 			return (
@@ -62,7 +78,7 @@ class Messagebox extends React.Component{
 				  </Modal.Footer>
 				</Modal.Dialog>
 			)else{
-				
+
 			}
 		}
 	}
