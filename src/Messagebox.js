@@ -77,12 +77,11 @@ class Messagebox extends React.Component{
 				    </Form>
 				  </Modal.Footer>
 				</Modal.Dialog>
-			)}else{
+			)
+		}else{
 
-			}
 		}
 	}
-
 }
 
 export default Messagebox;
