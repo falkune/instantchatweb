@@ -36,7 +36,7 @@ class Messagebox extends React.Component{
 			  <Modal.Header  id="modal-header" closeButton>
 			  	{this.props.userName}
 			  </Modal.Header>
-			  
+			  {this.props.messages}
 			  <Modal.Footer id="modal-footer">
 			    <Form id="messagetype" onSubmit={this.handleSubmit}>
 						<textarea 
