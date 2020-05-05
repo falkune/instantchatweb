@@ -7,7 +7,7 @@ import Messagebox from './Messagebox';
 
 class Home extends React.Component{
 
-	showMessage = (interlocutor, connectedUser, token) => {
+	showMessage = (interlocutor, connectedUser, userName, token) => {
 		console.log(interlocutor+' '+connectedUser+''+token)
 		// ReactDOM.render(
 		// 	<Messagebox
@@ -30,7 +30,7 @@ class Home extends React.Component{
 									key={user['user_id'].toString()} 
 									userId={user['user_id']} 
 									userName={user['user_name']} 
-									onClick={() => this.showMessage(user['user_id'],this.props.connectedUser, this.props.token)}
+									onClick={() => this.showMessage(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
 								/>
 							)
 						}
