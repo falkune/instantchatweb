@@ -30,7 +30,7 @@ class Home extends React.Component{
 		this.fetchData(url)
 		.then(data => {
 			if(data.status === 'ok'){
-				return messages = data.data;
+				return data.data;
 			}
 		})
 
