@@ -8,17 +8,39 @@ import Messagebox from './Messagebox';
 class Home extends React.Component{
 
 	showMessage = (interlocutor, connectedUser, userName, token) => {
-		// console.log(interlocutor+' '+connectedUser+' '+userName)
+
+		let url = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
+
+		let data = this.getDiscution(url);
 		ReactDOM.render(
 			<Messagebox
 				connectedUser={connectedUser}
 				interlocutor={interlocutor}
 				userName={userName}
 				token={token}
+				messages={data}
 			/>,
 			document.getElementById('boxmessage')
 		);
+
 	}
+
+	getDiscution = (url) => {
+		
+		this.fetchData(url)
+		.then(data => {
+			if(data.status === 'ok'){
+				return messages = data.data;
+			}
+		})
+
+	}
+
+	fetchData(url){
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => console.error(error))
+  }
 
 	render(){
 		return(
