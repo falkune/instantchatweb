@@ -31,37 +31,38 @@ class Messagebox extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.messages)
-		return (
-			<Modal.Dialog id="modal-dialog">
-			  <Modal.Header  id="modal-header" closeButton>
-			  	{this.props.userName}
-			  </Modal.Header>
-			  
+		if(this.props.messages.length === 0){
+			return (
+				<Modal.Dialog id="modal-dialog">
+				  <Modal.Header  id="modal-header" closeButton>
+				  	{this.props.userName}
+				  </Modal.Header>
+				  
 
-			  <Modal.Footer id="modal-footer">
-			    <Form id="messagetype" onSubmit={this.handleSubmit}>
-						<textarea 
-							id="form-control" 
-							className="form-control type_msg" 
-							placeholder="Type your message..."
-							onChange={this.handleMessage}
-						/>
-						<div className="input-group-append">
-							<span className="input-group-text send_btn">
-								<Button 
-									variant="primary" 
-									type="submit" 
-									id="envoyer"
-									>
-								<i className="fas fa-location-arrow"></i>
-								</Button>
-							</span>
-						</div>
-			    </Form>
-			  </Modal.Footer>
-			</Modal.Dialog>
-		)
+				  <Modal.Footer id="modal-footer">
+				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+							<textarea 
+								id="form-control" 
+								className="form-control type_msg" 
+								placeholder="Type your message..."
+								onChange={this.handleMessage}
+							/>
+							<div className="input-group-append">
+								<span className="input-group-text send_btn">
+									<Button 
+										variant="primary" 
+										type="submit" 
+										id="envoyer"
+										>
+									<i className="fas fa-location-arrow"></i>
+									</Button>
+								</span>
+							</div>
+				    </Form>
+				  </Modal.Footer>
+				</Modal.Dialog>
+			)
+		}
 	}
 
 }
