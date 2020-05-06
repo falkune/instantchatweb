@@ -59,7 +59,6 @@ class Messagebox extends React.Component{
 
 
 	render(){
-		{this.forceScroll}
 		if(this.props.messages.length === 0){
 			return (
 				<Modal.Dialog id="modal-dialog">
@@ -87,6 +86,7 @@ class Messagebox extends React.Component{
 			)
 		}else{
 			return (
+				{this.forceScroll}
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton>
 				  	{this.props.userName}
