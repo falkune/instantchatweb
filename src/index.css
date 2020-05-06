@@ -131,10 +131,10 @@ header{
   z-index: 10;
 }
 
-span{
+/*span{
   color: white;
 }
-
+*/
 #modal-footer{
   width: 100%;
   position: absolute;
