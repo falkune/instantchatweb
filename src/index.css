@@ -151,7 +151,7 @@ span{
 
 #messagetype{
   display: grid;
-  grid-template-columns: 88% 12%;
+  grid-template-columns: 90% 12%;
 }
 
 #form-control {
