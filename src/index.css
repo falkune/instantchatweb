@@ -243,6 +243,12 @@ span{
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: aliceblue;
+  border-color: aliceblue;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
