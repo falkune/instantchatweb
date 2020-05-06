@@ -146,6 +146,7 @@ span{
   height: 283px;
   overflow-y: scroll;
   position: absolute;
+  margin-top: 20px;
 }
 
 #messagetype{
