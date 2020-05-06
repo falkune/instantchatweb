@@ -80,7 +80,7 @@ class Home extends React.Component{
 				</main>
 
 				<aside id="pub">
-					
+					<Pubbox/>
 				</aside>
 			</div>
 		);
