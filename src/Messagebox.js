@@ -11,6 +11,10 @@ class Messagebox extends React.Component{
 		message : ''
 	}
 
+	componentDidmount(){
+		{this.forceScroll}
+	}
+
 	handleSubmit =event => {
 		event.preventDefault();
 		let url = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
