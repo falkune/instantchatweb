@@ -11,3 +11,5 @@ class Pubbox extends React.Component{
 	}
 
 }
+
+export default Pubbox;
