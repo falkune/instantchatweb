@@ -4,6 +4,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Userlist from './Userlist';
 import Messagebox from './Messagebox';
+import Pubbox from './Pubbox';
 
 class Home extends React.Component{
 
