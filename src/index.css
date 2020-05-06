@@ -182,7 +182,7 @@ span{
 #trasmit{
   background: lightskyblue;
   max-width: 140px;
-  font-size: small;
+  font-size: smaller;
   margin-left: 55px;
   border-radius: 5px;
   margin-top: 6px;
@@ -193,7 +193,7 @@ span{
 #recut{
   background: green;
   max-width: 140px;
-  font-size: small;
+  font-size: smaller;
   border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 6px;
