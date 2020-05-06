@@ -62,14 +62,14 @@ class Messagebox extends React.Component{
 				  
 
 				  <Modal.Footer id="modal-footer">
-				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+				    <Form id="messagetype">
 							<textarea 
 								id="form-control" 
 								className="form-control type_msg" 
 								placeholder="Type your message..."
 								onChange={this.handleMessage}
 							/>
-							<span className="input-group-text" id="send_btn">
+							<span className="input-group-text" id="send_btn" OnClick={this.handleSubmit}>
 								<i className="fas fa-location-arrow"></i>
 							</span>
 				    </Form>
@@ -86,14 +86,14 @@ class Messagebox extends React.Component{
 				  {this.showMessages(this.props.messages)}
 			
 				  <Modal.Footer id="modal-footer">
-				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+				    <Form id="messagetype">
 							<textarea 
 								id="form-control" 
 								className="form-control type_msg" 
 								placeholder="Type your message..."
 								onChange={this.handleMessage}
 							/>
-							<span className="input-group-text" id="send_btn">
+							<span className="input-group-text" id="send_btn" OnClick={this.handleSubmit}>
 								<i className="fas fa-location-arrow"></i>
 							</span>
 				    </Form>
