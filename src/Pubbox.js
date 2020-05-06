@@ -4,7 +4,8 @@ class Pubbox extends React.Component{
 
 	render(){
 		return(
-			
+
 		)
 	}
+	
 }
