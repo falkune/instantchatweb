@@ -236,7 +236,7 @@ span{
   border-right-color: transparent;
   border-bottom-color: transparent;
   border-left-color: transparent;
-  padding: .375rem .75rem;
+  padding: 0;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
