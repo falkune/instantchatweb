@@ -260,7 +260,8 @@ span{
 }
 
 #pubox{
-  
+  width: 30%;
+  background-color: yellow;
 }
 
 @media (min-width: 576px){
