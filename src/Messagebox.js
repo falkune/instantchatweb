@@ -70,7 +70,9 @@ class Messagebox extends React.Component{
 								onChange={this.handleMessage}
 							/>
 							<span className="input-group-text" id="send_btn">
-								<i className="fas fa-location-arrow"></i>
+								<Button type="submit">
+									<i className="fas fa-location-arrow"></i>
+								</Button>
 							</span>
 				    </Form>
 				  </Modal.Footer>
