@@ -222,7 +222,7 @@ span{
   justify-content: center;
 }
 
-.btn {
+#btn {
   display: inline-block;
   font-weight: 400;
   color: #212529;
