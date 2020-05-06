@@ -53,7 +53,7 @@ class Messagebox extends React.Component{
   }
 
   forceScroll(){
-		elmt = document.getElementById("modal-body");
+		let elmt = document.getElementById("modal-body");
 		elmt.scrollTop = element.scrollHeight;
 	}
 
