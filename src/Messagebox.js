@@ -11,7 +11,7 @@ class Messagebox extends React.Component{
 		message : ''
 	}
 
-	componentDidmount(){
+	componentDidMount(){
 		{this.forceScroll}
 	}
 
