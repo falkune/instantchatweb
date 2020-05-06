@@ -8,6 +8,7 @@ header{
   width: 100%;
   z-index: 10;
   background-color: #00F5D4;
+  height: 52px;
 }
 #navbar_bi{
   display: grid;
