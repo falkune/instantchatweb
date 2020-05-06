@@ -86,14 +86,13 @@ class Messagebox extends React.Component{
 			)
 		}else{
 			return (
-				{this.forceScroll}
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header" closeButton>
 				  	{this.props.userName}
 				  </Modal.Header>
 
 				  {this.showMessages(this.props.messages)}
-			
+					{this.forceScroll}
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
 							<textarea 
