@@ -191,6 +191,8 @@ span{
   margin-top: 6px;
   margin-bottom: 6px;
   min-height: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 #recut{
@@ -201,6 +203,8 @@ span{
   margin-top: 6px;
   margin-bottom: 6px;
   min-height: 30px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .fas fa-location-arrow{
