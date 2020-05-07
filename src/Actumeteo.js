@@ -7,9 +7,9 @@ class Actumeteo extends React.Component{
 		meteo : "helo"
 	}
 
-	// componentDidMount(){
-	// 	this.getMeteo();
-	// }
+	componentDidMount(){
+		this.getMeteo();
+	}
 
 	getMeteo(){
 		const url = 'https://www.prevision-meteo.ch/services/json/paris';
@@ -28,7 +28,7 @@ class Actumeteo extends React.Component{
   }
 
 	render(){
-		console.log(this.getMeteo());
+		console.log(this.state.meteo);
 		return(
 			<Jumbotron id="jumbotron">
 				<p>
