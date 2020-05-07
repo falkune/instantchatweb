@@ -9,12 +9,12 @@ class Actumeteo extends React.Component{
 				<h1>{this.props.meteo.city_info.name}</h1>
 				<div id="journee">
 					<div>
-						<h5>levée du soleil</h5>
+						<h5>sunrise</h5>
 						<span>{this.props.meteo.city_info.sunrise}</span>
 					</div>
 						
 					<div>
-						<h5>couchée du soleil</h5>
+						<h5>sunset</h5>
 						<span>{this.props.meteo.city_info.sunset}</span>
 					</div>
 				</div>
