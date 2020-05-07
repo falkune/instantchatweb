@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import Container from 'react-bootstrap/Container';
 import Userlist from './Userlist';
 import Messagebox from './Messagebox';
-import Pubbox from './Pubbox';
 import Actumeteo from './Actumeteo';
+import Actualite from './Actualite';
 
 class Home extends React.Component{
 
