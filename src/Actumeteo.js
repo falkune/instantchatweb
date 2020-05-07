@@ -27,7 +27,7 @@ class Actumeteo extends React.Component{
 			<Jumbotron id="jumbotron">
 				<h1>{this.getMeteo.CONDITION}</h1>
 				<p>
-					{this.getMeteo.ICON}
+					{this.getMeteo}
 				</p>
 				<p>
 
