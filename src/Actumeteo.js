@@ -7,6 +7,10 @@ class Actumeteo extends React.Component{
 		meteo : "helo"
 	}
 
+	componentDidMount(){
+		this.getMeteo;
+	}
+
 	getMeteo(){
 		const url = 'https://prevision-meteo.ch/services/json/paris';
 		this.fetchData(url)
