@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Pubbox extends React.Component{
+class Actumeteo extends React.Component{
 
 	render(){
 		return(
@@ -15,4 +15,4 @@ class Pubbox extends React.Component{
 
 }
 
-export default Pubbox;
+export default Actumeteo;
