@@ -7,7 +7,7 @@ class Actumeteo extends React.Component{
 		return(
 			<Jumbotron id="jumbotron">
 				<h1>{this.props.meteo.city_info.name}</h1>
-				<p>
+				<div id="journee">
 					<div>
 						<h5>levée du soleil</h5>
 						<span>{this.props.meteo.city_info.sunrise}</span>
@@ -17,12 +17,12 @@ class Actumeteo extends React.Component{
 						<h5>couchée du soleil</h5>
 						<span>{this.props.meteo.city_info.sunset}</span>
 					</div>
-				</p>
-				<p>
+				</div>
+				<div>
 					<div>
 						<img src={this.props.meteo.current_condition.icon} alt=""/>
 					</div>
-				</p>
+				</div>
 			</Jumbotron>
 		)
 	}
