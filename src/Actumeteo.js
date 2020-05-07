@@ -8,7 +8,7 @@ class Actumeteo extends React.Component{
 	}
 
 	componentDidMount(){
-		this.getMeteo;
+		this.getMeteo();
 	}
 
 	getMeteo(){
