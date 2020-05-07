@@ -277,6 +277,11 @@ header{
   vertical-align: middle;
 }
 
+#journee{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
