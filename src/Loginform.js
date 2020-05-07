@@ -47,7 +47,7 @@ class Loginform extends React.Component{
         .then(data => {
           if(data.status === 'ok'){
             this.setState({
-              data : data.data
+              data : data.data,
               meteo : this.getMeteo()
             });
             ReactDOM.render(
