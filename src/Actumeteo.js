@@ -16,8 +16,8 @@ class Actumeteo extends React.Component{
 		this.fetchData(url)
 		.then(data => {
 			this.setState({
-				meteo : data;
-			})
+				meteo : data
+			});
 		})
 	}
 
