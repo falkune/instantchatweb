@@ -17,15 +17,11 @@ class Actumeteo extends React.Component{
 						<h5>couchée du soleil</h5>
 						<span>{this.props.meteo.city_info.sunset}</span>
 					</div>
+				</p>
+				<p>
 					<div>
 						<img src={this.props.meteo.current_condition.icon} alt=""/>
 					</div>
-					<div>
-						<img src={this.props.meteo.current_condition.icon_big} alt=""/>
-					</div>
-				</p>
-				<p>
-
 				</p>
 			</Jumbotron>
 		)
