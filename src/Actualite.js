@@ -12,7 +12,7 @@ class Actualite extends React.Component{
 			    extra attention to featured content or information.
 			  </p>
 			  <p>
-			    <Button variant="primary">Learn more</Button>
+			   
 			  </p>
 			</Jumbotron>
 		)
