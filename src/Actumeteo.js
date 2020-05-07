@@ -20,7 +20,7 @@ class Actumeteo extends React.Component{
 				</div>
 				<div>
 					<div>
-						<img src={this.props.meteo.current_condition.icon_big} alt=""/>
+						<img src={this.props.meteo.current_condition.icon} alt=""/>
 					</div>
 					<strong>{this.props.meteo.current_condition.tmp} °C</strong>
 				</div>
