@@ -46,9 +46,9 @@ class Loginform extends React.Component{
         this.fetchData(URL1)
         .then(data => {
           if(data.status === 'ok'){
-            this.getMeteo();
             this.setState({
               data : data.data,
+              meteo : this.getMeteo()
             });
             ReactDOM.render(
               <Home 
