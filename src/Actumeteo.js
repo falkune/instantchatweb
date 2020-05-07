@@ -4,7 +4,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 class Actumeteo extends React.Component{	
 
 	render(){
-		console.log(this.props.meteo['city_info'])
+		console.log(this.props.meteo)
 		return(
 			<Jumbotron id="jumbotron">
 				<h1></h1>
