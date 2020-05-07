@@ -263,7 +263,7 @@ header{
 #pubox{
   width: 100%;
   min-height: 100%;
-  background-color: bisque;
+  /*background-color: bisque;*/
   border-radius: 5px;
   margin: auto;
   word-wrap: break-word;
