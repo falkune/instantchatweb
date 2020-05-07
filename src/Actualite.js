@@ -1,7 +1,7 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
-class Actumeteo extends React.Component{	
+class Actualite extends React.Component{	
 
 	render(){
 		return(
@@ -30,4 +30,4 @@ class Actumeteo extends React.Component{
 
 }
 
-export default Actumeteo;
+export default Actualite;
