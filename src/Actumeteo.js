@@ -24,7 +24,7 @@ class Actumeteo extends React.Component{
 	render(){
 		return(
 			<Jumbotron id="jumbotron">
-				<h1>Hello, world!</h1>
+				<h1>{this.getMeteo.CONDITION}</h1>
 				<p>
 					{this.getMeteo.ICON}
 				</p>
