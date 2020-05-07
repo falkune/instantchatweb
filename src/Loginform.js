@@ -92,13 +92,13 @@ class Loginform extends React.Component{
     });
   }
 
-  // getMeteo = () => {
-  //   const url = 'https://www.prevision-meteo.ch/services/json/paris';
-  //   this.fetchData(url)
-  //   .then(data => {
-  //     return data
-  //   });
-  // }
+  getMeteo = () => {
+    const url = 'https://www.prevision-meteo.ch/services/json/paris';
+    this.fetchData(url)
+    .then(data => {
+      return data
+    });
+  }
 
   render(){
 
