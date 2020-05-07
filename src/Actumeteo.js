@@ -4,7 +4,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 class Actumeteo extends React.Component{
 
 	state = {
-		meteo : undefined
+		meteo : "helo"
 	}
 
 	getMeteo(){
