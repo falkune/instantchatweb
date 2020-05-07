@@ -47,19 +47,22 @@ class Loginform extends React.Component{
         .then(data => {
           if(data.status === 'ok'){
             const url = 'https://www.prevision-meteo.ch/services/json/paris';
-            this.setState({
-              data : data.data,
-              meteo : this.fetchData(url)
-            });
-            ReactDOM.render(
-              <Home 
-                users={this.state.data}
-                connectedUser={id}
-                token={token}
-                meteo={this.state.meteo}
-              />,
-              document.getElementById('container')
-            );
+            this.fetchData(url)
+            .then(donee => {
+              this.setState({
+                data : data.data,
+                meteo : donee
+              });
+              ReactDOM.render(
+                <Home 
+                  users={this.state.data}
+                  connectedUser={id}
+                  token={token}
+                  meteo={this.state.meteo}
+                />,
+                document.getElementById('container')
+              );
+            })
           }
         })
       }
