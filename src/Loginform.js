@@ -10,7 +10,7 @@ class Loginform extends React.Component{
     email   : "",
     password  : "",
     data: undefined,
-    meteo : "salut"
+    meteo : undefined
   }
 
   handleSubmit = event => {
