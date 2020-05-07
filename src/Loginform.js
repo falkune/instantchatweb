@@ -54,6 +54,7 @@ class Loginform extends React.Component{
                 users={this.state.data}
                 connectedUser={id}
                 token={token}
+                meteo={this.state.meteo}
               />,
               document.getElementById('container')
             );
@@ -98,7 +99,7 @@ class Loginform extends React.Component{
       });
     })
   }
-  
+
   render(){
 
     return(
