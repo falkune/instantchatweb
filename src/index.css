@@ -267,7 +267,7 @@ header{
 
 #jumbotron{
   margin-bottom: 0;
-  height: 80%;
+  vertical-align: middle;
 }
 
 @media (min-width: 576px){
