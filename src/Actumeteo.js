@@ -9,10 +9,10 @@ class Actumeteo extends React.Component{
 	getMeteo(){
 		const url = 'https://www.prevision-meteo.ch/services/json/paris';
 		this.fetchData(url)
-			.then(data => {
-				let day = data.fcst_day_0.hourly_data.0H00;
-				return day;
-			})
+		.then(data => {
+			let day = data.fcst_day_0.hourly_data.0H00;
+			return day;
+		})
 	}
 
 	fetchData(url){
