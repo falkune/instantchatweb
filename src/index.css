@@ -48,7 +48,8 @@ header{
 
 #homeContainer{
   display: grid;
-  grid-template-columns: 15% 65% 20%;
+  grid-template-columns: 15% 62% 20%;
+  grid-column-gap: 1%;
 }
 
 #userBox{
