@@ -266,6 +266,7 @@ header{
   background-color: khaki;
   border-radius: 5px;
   margin: auto;
+  word-wrap: break-word;
 }
 
 #jumbotron{
