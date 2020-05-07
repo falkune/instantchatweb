@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Userlist from './Userlist';
 import Messagebox from './Messagebox';
 import Pubbox from './Pubbox';
+import Actumeteo from './Actumeteo';
 
 class Home extends React.Component{
 
@@ -75,16 +76,7 @@ class Home extends React.Component{
 
 				<main id="actualite">
 
-					<Jumbotron id="jumbotron">
-					  <h1>Hello, world!</h1>
-					  <p>
-					    This is a simple hero unit, a simple jumbotron-style component for calling
-					    extra attention to featured content or information.
-					  </p>
-					  <p>
-					    
-					  </p>
-					</Jumbotron>
+					<Actumeteo/>
 
 					<div id="boxmessage"></div>
 					
