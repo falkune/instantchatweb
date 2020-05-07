@@ -7,7 +7,7 @@ class Actumeteo extends React.Component{
 		console.log(this.state.meteo);
 		return(
 			<Jumbotron id="jumbotron">
-				<h1></h1>
+				<h1>{}</h1>
 				<p>
 					
 				</p>
@@ -17,7 +17,7 @@ class Actumeteo extends React.Component{
 			</Jumbotron>
 		)
 	}
-	
+
 }
 
 export default Actumeteo;
