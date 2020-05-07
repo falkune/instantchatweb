@@ -3,10 +3,6 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 class Actumeteo extends React.Component{
 
-	componentDidMount(){
-
-	}
-
 	getMeteo(){
 		const url = 'https://www.prevision-meteo.ch/services/json/paris';
 		this.fetchData(url)
