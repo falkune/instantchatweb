@@ -75,7 +75,7 @@ class Home extends React.Component{
 
 				<main id="actualite">
 
-					<Jumbotron>
+					<Jumbotron id="jumbotron">
 					  <h1>Hello, world!</h1>
 					  <p>
 					    This is a simple hero unit, a simple jumbotron-style component for calling
