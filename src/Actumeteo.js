@@ -11,7 +11,7 @@ class Actumeteo extends React.Component{
 					<span>
 						<strong>{this.props.meteo.city_info.sunrise}</strong>
 					</span>
-						<strong>{this.props.meteo.city_info.sunrise}</strong>
+						<strong>{this.props.meteo.city_info.sunset}</strong>
 					<span>
 						
 					</span>
