@@ -8,7 +8,13 @@ class Actumeteo extends React.Component{
 			<Jumbotron id="jumbotron">
 				<h1>{this.props.meteo.city_info.name}</h1>
 				<p>
-					
+					<span>
+						<strong>{this.props.meteo.city_info.sunrise}</strong>
+					</span>
+						<strong>{this.props.meteo.city_info.sunrise}</strong>
+					<span>
+						
+					</span>
 				</p>
 				<p>
 
