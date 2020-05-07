@@ -27,7 +27,7 @@ class Actumeteo extends React.Component{
 		return(
 			<Jumbotron id="jumbotron">
 				<p>
-					{this.getMeteo}
+					{this.state.meteo}
 				</p>
 				<p>
 
