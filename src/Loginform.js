@@ -95,10 +95,8 @@ class Loginform extends React.Component{
     const url = 'https://www.prevision-meteo.ch/services/json/paris';
     this.fetchData(url)
     .then(data => {
-      this.setState({
-        meteo : data
-      });
-    })
+      return data
+    });
   }
 
   render(){
