@@ -9,7 +9,8 @@ class Loginform extends React.Component{
   state = {
     email   : "",
     password  : "",
-    data: undefined
+    data: undefined,
+    meteo : undefined
   }
 
   handleSubmit = event => {
@@ -88,6 +89,16 @@ class Loginform extends React.Component{
     });
   }
 
+  getMeteo(){
+    const url = 'https://www.prevision-meteo.ch/services/json/paris';
+    this.fetchData(url)
+    .then(data => {
+      this.setState({
+        meteo : data
+      });
+    })
+  }
+  
   render(){
 
     return(
