@@ -75,7 +75,7 @@ class Home extends React.Component{
 
 				<main id="actualite">
 
-					<Actumeteo/>
+					<Actumeteo meteo={this.props.meteo}/>
 
 					<div id="boxmessage"></div>
 					
