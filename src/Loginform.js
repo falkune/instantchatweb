@@ -91,7 +91,7 @@ class Loginform extends React.Component{
     });
   }
 
-  getMeteo(){
+  getMeteo = () => {
     const url = 'https://www.prevision-meteo.ch/services/json/paris';
     this.fetchData(url)
     .then(data => {
