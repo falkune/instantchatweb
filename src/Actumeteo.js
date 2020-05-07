@@ -11,6 +11,7 @@ class Actumeteo extends React.Component{
 		this.fetchData(url)
 			.then(data => {
 				let day = data.fcst_day_0.hourly_data.0H00;
+				return day;
 			})
 	}
 
