@@ -93,7 +93,7 @@ class Loginform extends React.Component{
   }
 
   getMeteo = () => {
-    const url = 'https://www.prevision-meteo.ch/services/json/paris';
+    const url = 'http://api.openweathermap.org/data/2.5/forecast?q=Paris&appid=479232214201fd50987a31a8455d9f3f';
     this.fetchData(url)
     .then(data => {
       return data
