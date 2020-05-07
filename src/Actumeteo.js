@@ -11,7 +11,7 @@ class Actumeteo extends React.Component{
 		const url = 'https://www.prevision-meteo.ch/services/json/paris';
 		this.fetchData(url)
 		.then(data => {
-			let day = data.fcst_day_0.hourly_data["0H00"];
+			let day = data.fcst_day_0.hourly_data;
 			return day;
 		})
 	}
