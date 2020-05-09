@@ -40,6 +40,7 @@ class Messagebox extends React.Component{
 			{
 				data.map(msg => 
 					<Singlemessage
+						key={this.props.messages.message_id}
 						connectedUser={this.props.connectedUser}
 						user={msg['transmitter']}
 						content={msg['message']}
