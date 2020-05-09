@@ -36,8 +36,8 @@ class Messagebox extends React.Component{
 	}
 
 	showMessages = (data) => {
+		let i=0;
 		return(
-			let i=0;
 			<Modal.Body id="modal-body">
 			{
 				data.map(msg => 
