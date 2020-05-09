@@ -20,11 +20,13 @@ class Header extends React.Component{
 
   login = () =>{
     ReactDOM.render(
-      <Loginform 
-        action={this.handleConnectedUser} 
-        connectedUser={this.state.connectedUser}
-        token={this.state.token}
-      />,
+      <React.StrictMode>
+        <Loginform 
+          action={this.handleConnectedUser} 
+          connectedUser={this.state.connectedUser}
+          token={this.state.token}
+        />
+      </React.StrictMode>,
       document.getElementById('container')
     );
   }
