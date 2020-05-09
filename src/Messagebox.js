@@ -37,15 +37,17 @@ class Messagebox extends React.Component{
 
 	showMessages = (data) => {
 		return(
+			let i=0;
 			<Modal.Body id="modal-body">
 			{
 				data.map(msg => 
 					<Singlemessage
-						key={this.state.key + 1}
+						key={i}
 						connectedUser={this.props.connectedUser}
 						user={msg['transmitter']}
 						content={msg['message']}
 					/>
+					i++;
 				)
 			}
 			</Modal.Body>
