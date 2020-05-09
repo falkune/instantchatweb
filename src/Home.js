@@ -66,7 +66,6 @@ class Home extends React.Component{
 							<input 
 								type="text" 
 								placeholder="Search..." 
-								name="" 
 								className="form-control search"
 							/>
 						</div>
