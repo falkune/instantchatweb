@@ -20,7 +20,7 @@ class Header extends React.Component{
   }
 
   componentDidMount(){
-    this.action;
+    this.action();
   }
 
   login = () =>{
