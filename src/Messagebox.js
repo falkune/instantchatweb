@@ -64,6 +64,10 @@ class Messagebox extends React.Component{
   	}
 	}
 
+	closeMsgBox = () => {
+		
+	}
+
 
 	render(){
 		if(this.props.messages.length === 0){
@@ -71,7 +75,7 @@ class Messagebox extends React.Component{
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
-				  	<span id="closebtn">❌</span>
+				  	<span id="closebtn" onClick={}>❌</span>
 				  </Modal.Header>
 				  
 
