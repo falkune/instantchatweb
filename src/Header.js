@@ -14,7 +14,8 @@ class Header extends React.Component{
     this.state = {
       connectedUser : undefined,
       token : undefined,
-      name : 'instantchat'
+      name : 'instantchat',
+      action: ''
     }
   }
 
@@ -29,6 +30,12 @@ class Header extends React.Component{
       </React.StrictMode>,
       document.getElementById('container')
     );
+  }
+
+  action = () => {
+    if(this.state.action === ''){
+      
+    }
   }
 
   register = () =>{
