@@ -19,6 +19,10 @@ class Header extends React.Component{
     }
   }
 
+  componentDidMount(){
+    this.action;
+  }
+
   login = () =>{
     ReactDOM.render(
       <React.StrictMode>
