@@ -34,7 +34,12 @@ class Header extends React.Component{
 
   action = () => {
     if(this.state.action === ''){
-      
+      ReactDOM.render(
+        <React.StrictMode>
+          <Welcom />
+        </React.StrictMode>,
+        document.getElementById('container')
+      );
     }
   }
 
