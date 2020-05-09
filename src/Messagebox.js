@@ -22,8 +22,7 @@ class Messagebox extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					message : '',
-					key : 0
+					message : ''
 				});
 			}
 		})
@@ -36,18 +35,15 @@ class Messagebox extends React.Component{
 	}
 
 	showMessages = (data) => {
-		let i=0;
 		return(
 			<Modal.Body id="modal-body">
 			{
 				data.map(msg => 
 					<Singlemessage
-						key={i}
 						connectedUser={this.props.connectedUser}
 						user={msg['transmitter']}
 						content={msg['message']}
 					/>
-					i++;
 				)
 			}
 			</Modal.Body>
