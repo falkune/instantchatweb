@@ -283,6 +283,10 @@ header{
   grid-template-columns: 50% 50%;
 }
 
+#closebtn:hover{
+  cursor: pointer;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
