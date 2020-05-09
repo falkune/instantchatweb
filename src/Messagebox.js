@@ -69,7 +69,7 @@ class Messagebox extends React.Component{
 		if(this.props.messages.length === 0){
 			return (
 				<Modal.Dialog id="modal-dialog">
-				  <Modal.Header  id="modal-header" closeButton>
+				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
 				  </Modal.Header>
 				  
@@ -94,7 +94,7 @@ class Messagebox extends React.Component{
 		}else{
 			return (
 				<Modal.Dialog id="modal-dialog">
-				  <Modal.Header  id="modal-header" closeButton>
+				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
 				  </Modal.Header>
 
