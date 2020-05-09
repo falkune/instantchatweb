@@ -14,13 +14,17 @@ class Header extends React.Component{
     this.state = {
       connectedUser : undefined,
       token : undefined,
-      name : 'instantchat',
-      action: ''
+      name : 'instantchat'
     }
   }
 
   componentDidMount(){
-    this.action();
+    ReactDOM.render(
+      <React.StrictMode>
+        <Welcom />
+      </React.StrictMode>,
+      document.getElementById('container')
+    );
   }
 
   login = () =>{
@@ -34,17 +38,6 @@ class Header extends React.Component{
       </React.StrictMode>,
       document.getElementById('container')
     );
-  }
-
-  action = () => {
-    if(this.state.action === ''){
-      ReactDOM.render(
-        <React.StrictMode>
-          <Welcom />
-        </React.StrictMode>,
-        document.getElementById('container')
-      );
-    }
   }
 
   register = () =>{
