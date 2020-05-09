@@ -71,7 +71,7 @@ class Messagebox extends React.Component{
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
-				  	<span>❌</span>
+				  	<span id="closebtn">❌</span>
 				  </Modal.Header>
 				  
 
@@ -97,7 +97,7 @@ class Messagebox extends React.Component{
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
-				  	<span>❌</span>
+				  	<span id="closebtn">❌</span>
 				  </Modal.Header>
 
 				  {this.showMessages(this.props.messages)}
