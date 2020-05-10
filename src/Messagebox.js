@@ -79,7 +79,6 @@ class Messagebox extends React.Component{
 				  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
 				  </Modal.Header>
 				  
-
 				  <Modal.Footer id="modal-footer">
 				    <Form id="messagetype" onSubmit={this.handleSubmit}>
 							<textarea 
