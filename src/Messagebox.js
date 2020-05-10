@@ -8,7 +8,8 @@ import Singlemessage from './Singlemessage';
 class Messagebox extends React.Component{
 
 	state = {
-		message : ''
+		message : '',
+		showmsgbox : true
 	}
 
 	componentDidMount(){
