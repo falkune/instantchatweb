@@ -14,7 +14,6 @@ class Home extends React.Component{
 
 
 	getDiscution = (interlocutor, connectedUser, userName, token) => {
-
 		let url = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
 		this.fetchData(url)
@@ -36,7 +35,6 @@ class Home extends React.Component{
 
 			}
 		})
-
 	}
 
 	fetchData(url){
