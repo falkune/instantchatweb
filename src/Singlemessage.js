@@ -8,14 +8,14 @@ class Singlemessage extends React.Component{
 
 	parsedate = (date) => {
 		var date = new Date(date*1000);
-
+		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 		let month = date.getMonth();
 		let day = date.getDate();
 		let hour = date.getHours();
 		let min = date.getMinutes();
 		let scnd = date.getSeconds();
 		// return month+'/'+day+' à '+hour+':'+min+':'+scnd;
-		return date.toLocaleFormat("%A, %B %e, %Y");
+		return date.toLocaleDateString(undefined, options));
 	}
 
 	render(){
