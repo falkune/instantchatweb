@@ -11,6 +11,9 @@ class Singlemessage extends React.Component{
 			return(
 				<div id="trasmit">
 					{this.props.content}
+					<span>
+						{this.props.editdate}
+					</span>
 				</div>
 			)
 		}
@@ -18,7 +21,9 @@ class Singlemessage extends React.Component{
 			return(
 				<div id="recut">
 					{this.props.content}
-					<span>{this.props.editdate}</span>
+					<span>
+						{this.props.editdate}
+					</span>
 				</div>
 			)
 		}
