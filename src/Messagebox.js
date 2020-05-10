@@ -42,7 +42,7 @@ class Messagebox extends React.Component{
 					<Singlemessage
 						key={msg['message_id']}
 						connectedUser={this.props.connectedUser}
-						user={msg['transmitter']}
+						user={msg['from_user_id']}
 						content={msg['message_body']}
 						editdate={msg['message_edit_at']}
 					/>
