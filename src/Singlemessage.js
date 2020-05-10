@@ -6,13 +6,17 @@ class Singlemessage extends React.Component{
 		utilisateur : ''
 	}
 
+	parsedate = (date) => {
+		return date.getDate();
+	}
+
 	render(){
 		if(this.props.user === this.props.connectedUser){
 			return(
 				<div id="trasmit">
 					{this.props.content}
 					<span>
-						{this.props.editdate}
+						{this.parsedate(this.props.editdate)}
 					</span>
 				</div>
 			)
@@ -22,7 +26,7 @@ class Singlemessage extends React.Component{
 				<div id="recut">
 					{this.props.content}
 					<span>
-						{this.props.editdate}
+						{this.parsedate(this.props.editdate)}
 					</span>
 				</div>
 			)
