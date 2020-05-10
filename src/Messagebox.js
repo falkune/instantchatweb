@@ -103,7 +103,7 @@ class Messagebox extends React.Component{
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
-				  	<span id="closebtn">❌</span>
+				  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
 				  </Modal.Header>
 
 				  {this.showMessages(this.props.messages)}
