@@ -21,7 +21,7 @@ class Singlemessage extends React.Component{
 				<div id="trasmit">
 					{this.props.content}
 					<br/>
-					<span>
+					<span class="datebox">
 						{this.parsedate(this.props.editdate)}
 					</span>
 				</div>
@@ -32,7 +32,7 @@ class Singlemessage extends React.Component{
 				<div id="recut">
 					{this.props.content}
 					<br/>
-					<span>
+					<span class="datebox">
 						{this.parsedate(this.props.editdate)}
 					</span>
 				</div>
