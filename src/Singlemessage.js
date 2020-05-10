@@ -18,6 +18,7 @@ class Singlemessage extends React.Component{
 			return(
 				<div id="recut">
 					{this.props.content}
+					<span>{this.props.editdate.getDate()}</span>
 				</div>
 			)
 		}
