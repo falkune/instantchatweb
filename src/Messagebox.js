@@ -69,11 +69,6 @@ class Messagebox extends React.Component{
 		
 	}
 
-	miseEnAttente = () => {
-    setInterval(listpost(id, id_1, user1), 20000);
-  }
-
-
 	render(){
 		if(this.props.messages.length === 0){
 			return (
