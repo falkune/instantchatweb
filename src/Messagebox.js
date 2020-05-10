@@ -71,7 +71,7 @@ class Messagebox extends React.Component{
 
 	render(){
 		if(this.props.messages.length === 0){
-			return (
+			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
