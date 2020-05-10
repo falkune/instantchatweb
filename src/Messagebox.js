@@ -96,7 +96,7 @@ class Messagebox extends React.Component{
 				</Modal.Dialog>
 			)
 		}else{
-			return (
+			return(
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
 				  	{this.props.userName}
