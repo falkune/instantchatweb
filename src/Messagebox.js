@@ -66,7 +66,7 @@ class Messagebox extends React.Component{
 	}
 
 	closeMsgBox = () => {
-		document.getElementById('boxmessage').innerHTML = '';
+		// document.getElementById('boxmessage').innerHTML = '';
 	}
 
 
