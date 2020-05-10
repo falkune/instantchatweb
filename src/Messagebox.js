@@ -66,9 +66,7 @@ class Messagebox extends React.Component{
 	}
 
 	closeMsgBox = () => {
-		this.setState({
-			showmsgbox : false
-		});
+		
 	}
 
 
