@@ -69,7 +69,7 @@ class Messagebox extends React.Component{
 		
 	}
 
-	function miseEnAttente(){
+	miseEnAttente = () => {
     setInterval(listpost(id, id_1, user1), 20000);
   }
 
