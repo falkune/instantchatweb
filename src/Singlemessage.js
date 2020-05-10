@@ -2,10 +2,6 @@ import React from 'react';
 
 class Singlemessage extends React.Component{
 
-	state = {
-		utilisateur : ''
-	}
-
 	parsedate = (date) => {
 		var date = new Date(date*1000);
 		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
