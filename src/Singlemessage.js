@@ -20,6 +20,7 @@ class Singlemessage extends React.Component{
 			return(
 				<div id="trasmit">
 					{this.props.content}
+					<br/>
 					<span>
 						{this.parsedate(this.props.editdate)}
 					</span>
