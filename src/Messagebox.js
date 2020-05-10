@@ -67,13 +67,14 @@ class Messagebox extends React.Component{
 	}
 
 	closeMsgBox = () => {
-		// document.getElementById('boxmessage').innerHTML = '';
-		React.unmountComponentAtNode(document.getElementById('boxmessage')); 
+		this.setState({
+			showmsgbox : false
+		});
 	}
 
 
 	render(){
-		if(this.props.messages.length === 0){
+		if(this.props.messages.length === 0 && this.state.showmsgbox === true){
 			return (
 				<Modal.Dialog id="modal-dialog">
 				  <Modal.Header  id="modal-header">
