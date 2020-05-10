@@ -8,6 +8,10 @@ class Singlemessage extends React.Component{
 
 	parsedate = (date) => {
 		var date = new Date(date*1000);
+		var month = date.getMonth();
+		var day = date.getDate();
+		var hour = date.getHours();
+		var min = date.getMinutes();
 		return date.getDate();
 	}
 
