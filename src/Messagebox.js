@@ -74,7 +74,7 @@ class Messagebox extends React.Component{
 
 
 	render(){
-		if(this.state.showmsgbox == false){
+		if(this.state.showmsgbox == true){
 			if(this.props.messages.length === 0){
 				return (
 					<Modal.Dialog id="modal-dialog">
