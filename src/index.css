@@ -287,6 +287,10 @@ header{
   cursor: pointer;
 }
 
+.datebox{
+  font-size: xx-small;
+}
+
 @media (min-width: 576px){
   #modal-dialog {
     max-width: 500px;
