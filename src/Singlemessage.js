@@ -31,6 +31,7 @@ class Singlemessage extends React.Component{
 			return(
 				<div id="recut">
 					{this.props.content}
+					<br/>
 					<span>
 						{this.parsedate(this.props.editdate)}
 					</span>
