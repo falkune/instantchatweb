@@ -74,62 +74,60 @@ class Messagebox extends React.Component{
 
 
 	render(){
-		if(this.state.showmsgbox == true){
-			if(this.props.messages.length === 0){
-				return (
-					<Modal.Dialog id="modal-dialog">
-					  <Modal.Header  id="modal-header">
-					  	{this.props.userName}
-					  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
-					  </Modal.Header>
-					  
+		if(this.props.messages.length === 0 this.state.showmsgbox === true){
+			return (
+				<Modal.Dialog id="modal-dialog">
+				  <Modal.Header  id="modal-header">
+				  	{this.props.userName}
+				  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
+				  </Modal.Header>
+				  
 
-					  <Modal.Footer id="modal-footer">
-					    <Form id="messagetype" onSubmit={this.handleSubmit}>
-								<textarea 
-									id="form-control" 
-									className="form-control type_msg" 
-									placeholder="Type your message..."
-									onChange={this.handleMessage}
-								/>
-								<span className="input-group-text" id="send_btn">
-									<Button type="submit" id="btn">
-										<i className="fas fa-location-arrow"></i>
-									</Button>
-								</span>
-					    </Form>
-					  </Modal.Footer>
-					</Modal.Dialog>
-				)
-			}else{
-				return (
-					<Modal.Dialog id="modal-dialog">
-					  <Modal.Header  id="modal-header">
-					  	{this.props.userName}
-					  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
-					  </Modal.Header>
+				  <Modal.Footer id="modal-footer">
+				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+							<textarea 
+								id="form-control" 
+								className="form-control type_msg" 
+								placeholder="Type your message..."
+								onChange={this.handleMessage}
+							/>
+							<span className="input-group-text" id="send_btn">
+								<Button type="submit" id="btn">
+									<i className="fas fa-location-arrow"></i>
+								</Button>
+							</span>
+				    </Form>
+				  </Modal.Footer>
+				</Modal.Dialog>
+			)
+		}else{
+			return (
+				<Modal.Dialog id="modal-dialog">
+				  <Modal.Header  id="modal-header">
+				  	{this.props.userName}
+				  	<span id="closebtn" onClick={this.closeMsgBox()}>❌</span>
+				  </Modal.Header>
 
-					  {this.showMessages(this.props.messages)}
-						
-					  <Modal.Footer id="modal-footer">
-					    <Form id="messagetype" onSubmit={this.handleSubmit}>
-								<textarea 
-									id="form-control" 
-									className="form-control type_msg" 
-									placeholder="Type your message..."
-									onChange={this.handleMessage}
-								/>
-								<span className="input-group-text" id="send_btn">
-									<Button type="submit" id="btn">
-										<i className="fas fa-location-arrow"></i>
-									</Button>
-									
-								</span>
-					    </Form>
-					  </Modal.Footer>
-					</Modal.Dialog>
-				)
-			}
+				  {this.showMessages(this.props.messages)}
+					
+				  <Modal.Footer id="modal-footer">
+				    <Form id="messagetype" onSubmit={this.handleSubmit}>
+							<textarea 
+								id="form-control" 
+								className="form-control type_msg" 
+								placeholder="Type your message..."
+								onChange={this.handleMessage}
+							/>
+							<span className="input-group-text" id="send_btn">
+								<Button type="submit" id="btn">
+									<i className="fas fa-location-arrow"></i>
+								</Button>
+								
+							</span>
+				    </Form>
+				  </Modal.Footer>
+				</Modal.Dialog>
+			)
 		}
 	}
 }
