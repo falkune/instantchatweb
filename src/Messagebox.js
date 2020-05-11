@@ -27,6 +27,7 @@ class Messagebox extends React.Component{
 			}
 		});
 		document.getElementById('messagetype').reset();
+		this.forceScroll();
 	}
 
 	handleMessage = event => {
