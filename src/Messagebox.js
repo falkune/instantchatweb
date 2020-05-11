@@ -25,7 +25,8 @@ class Messagebox extends React.Component{
 					message : ''
 				});
 			}
-		})
+		});
+		document.getElementById('messagetype').reset();
 	}
 
 	handleMessage = event => {
