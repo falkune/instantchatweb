@@ -3,7 +3,7 @@ body{
 	padding: 0;
 }
 
-
+/*media pour large ecran*/
 @media (min-width: 768px)
 {
 	#root{
