@@ -10,6 +10,12 @@ body{
 		width: 90%;
 		margin: 5px auto;
 	}
+
+	#facade{
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-column-gap: 20%;
+	}
 }
 
 /*media pour petit ecran*/
