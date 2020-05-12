@@ -12,7 +12,7 @@ class App extends React.Component{
 
 	render(){
 
-		if(connectedUser === undefined){
+		if(this.state.connectedUser === undefined){
 			return(
 				<div>
 					<Loginform/>
