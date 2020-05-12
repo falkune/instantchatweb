@@ -16,6 +16,11 @@ body{
 		grid-template-columns: 40% 40%;
 		grid-column-gap: 20%;
 	}
+
+	#logo{
+		width: 50%;
+		height: 50%;
+	}
 }
 
 /*media pour petit ecran*/
