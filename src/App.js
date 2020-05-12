@@ -14,7 +14,7 @@ class App extends React.Component{
 
 		if(this.state.connectedUser === undefined){
 			return(
-				<div id="">
+				<div id="facade">
 					<Login/>
 					<Logo/>
 				</div>
