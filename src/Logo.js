@@ -3,7 +3,7 @@ import React from 'react';
 function Logo(){
 	return(
 		<div>
-			<img src="/converza.jpg" alt=""/>			
+			<img id="logo" src="/converza.jpg" alt=""/>			
 		</div>
 	)
 }
