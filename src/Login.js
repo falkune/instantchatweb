@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 
 class Login extends React.Component{
 	render(){
-		<Form className="alert" id="loginform" >
+		return(
+			<Form className="alert" id="loginform" >
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
           <Form.Control 
@@ -32,6 +33,7 @@ class Login extends React.Component{
         </Button>
 
       </Form>
+		)
 	}
 }
 
