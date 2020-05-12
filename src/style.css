@@ -3,6 +3,10 @@ body{
 	padding: 0;
 }
 
-#root{
-	
+
+@media (min-width: 768px)
+{
+	#root{
+
+	}
 }
