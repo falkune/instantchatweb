@@ -31,7 +31,6 @@ class Login extends React.Component{
         <Button variant="primary" type="submit">
           Submit
         </Button>
-
       </Form>
 		)
 	}
