@@ -5,7 +5,8 @@ import Header from './Header';
 class App extends React.Component{
 
 	state = {
-
+		connectedUser : undefined,
+    token : undefined,
 	}
 
 	render(){
@@ -13,7 +14,7 @@ class App extends React.Component{
 		return(
 
 		)
-		
+
 	}
 
 }
