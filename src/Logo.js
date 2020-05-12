@@ -3,7 +3,7 @@ import React from 'react';
 function Logo(){
 	return(
 		<div>
-			<img src="../public/Logo.gif" alt=""/>			
+			<img src="%PUBLIC_URL%/public/Logo.gif" alt=""/>			
 		</div>
 	)
 }
