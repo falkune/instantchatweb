@@ -3,7 +3,7 @@ import React from 'react';
 function Logo(){
 	return(
 		<div>
-			<img src="/quickchat.jpg" alt=""/>			
+			<img src="/converza.jpg" alt=""/>			
 		</div>
 	)
 }
