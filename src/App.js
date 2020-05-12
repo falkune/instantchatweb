@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Logo from './Logo';
-import Loginform from './Loginform';
+import Login from './Login';
 
 class App extends React.Component{
 
@@ -14,7 +14,7 @@ class App extends React.Component{
 
 		if(this.state.connectedUser === undefined){
 			return(
-				<div>
+				<div id="">
 					<Loginform/>
 					<Logo/>
 				</div>
