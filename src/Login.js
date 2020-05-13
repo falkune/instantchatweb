@@ -20,10 +20,14 @@ class Login extends React.Component{
       password : e.currentTarget.value
     });
   }
-  
+
 	render(){
 		return(
-			<Form className="alert" id="loginform" >
+			<Form 
+        className="alert" 
+        id="loginform" 
+        onSubmit={this.props.getConnected(this.state.login, this.state.password)}>
+        
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
           <Form.Control 
@@ -51,7 +55,7 @@ class Login extends React.Component{
         </Button>
 
         <h5>
-        	<a href="#register" onClick={this.props.action}>Creer un compte</a>
+        	<a href="#register" onClick={this.props.registerForm}>Creer un compte</a>
         </h5>
       </Form>
 		)
