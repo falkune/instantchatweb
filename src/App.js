@@ -33,7 +33,8 @@ class App extends React.Component{
 				this.setState({
 					connectedUser : data.id,
 					token : data.token,
-					name : data.name
+					name : data.name,
+					page : 'accueil'
 				});
 			}
 			else{
