@@ -27,11 +27,19 @@ class App extends React.Component{
 
 	getConnected = (login, password) => {
 		const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
+		this.fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok' || data.status === 'active'){
+
+			}
+		});
 	}
 
-	// login = () => {
-	// 	const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
-	// }
+	fetchData(url){
+    return fetch(url)
+      .then((response) => response.json())
+      .catch((error) => console.error(error))
+  }
 
 	render(){
 
