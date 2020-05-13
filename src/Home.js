@@ -4,7 +4,7 @@ import Input from './Input';
 class Home extends React.Component{
 	render(){
 		return(
-			<div className="row justify-content-center h-100">
+			<div className="row justify-content-center">
 				<div className="col-md-4 col-xl-3 chat">
 					<div className="card mb-sm-3 mb-md-0 contacts_card">
 						<div className="card-header">
@@ -13,7 +13,7 @@ class Home extends React.Component{
 
 						<div className="card-body contacts_body">
 							<div className="contacts">
-								
+
 							</div>
 						</div>
 					</div>
