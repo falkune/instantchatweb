@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Userlist extends React.Component{
+class User extends React.Component{
 	render(){
 		return(
 			<div className="d-flex bd-highlight" id="him" onClick={this.props.onClick}>
@@ -17,4 +17,4 @@ class Userlist extends React.Component{
 	}
 }
 
-export default Userlist;
+export default User;
