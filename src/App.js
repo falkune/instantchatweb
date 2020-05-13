@@ -25,14 +25,14 @@ class App extends React.Component{
 		});
 	}
 
-	getConnected = () => {
-
+	getConnected = (login, password) => {
+		const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
 	}
 
 	login = () => {
 		const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
 	}
-	
+
 	render(){
 
 		if(this.state.page === 'login'){
