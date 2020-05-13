@@ -10,9 +10,13 @@ class Home extends React.Component{
 					</div>
 
 					<div className="card-body contacts_body">
-						
+
 					</div>
 				</div>
+			</div>
+
+			<div className="col-md-8 col-xl-6 chat">
+				
 			</div>
 		)
 	}
