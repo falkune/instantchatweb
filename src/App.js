@@ -66,7 +66,7 @@ class App extends React.Component{
 				<div id="facade">
 					<Login 
 						registerForm={this.showRegisterForm}
-						getConnected={this.getConnected().bind(this)}
+						getConnected={this.getConnected.bind(this)}
 					/>
 					<Logo/>
 				</div>
