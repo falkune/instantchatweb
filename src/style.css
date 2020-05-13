@@ -59,7 +59,7 @@ body{
 		display: grid;
 		grid-template-columns: 30% 65%;
 		grid-column-gap: 5%;
-		margin: 8% auto;
+		margin: 7% auto;
 	}
 	
 	.user_info{
