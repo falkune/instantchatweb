@@ -3,11 +3,12 @@ import './App.css';
 import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
+import Home from './Home';
 
 class App extends React.Component{
 
 	state = {
-		page : 'login',
+		page : 'accueil',
 		connectedUser : undefined,
     token : undefined,
 	}
@@ -41,6 +42,9 @@ class App extends React.Component{
 					<Logo/>
 				</div>
 			)
+		}
+		if(this.state.page === 'accueil'){
+
 		}
 		
 
