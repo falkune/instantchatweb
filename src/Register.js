@@ -8,10 +8,9 @@ class Register extends React.Component{
     name : "",
     Email : "",
     password : "",
-    PasswordRepeat : "",
-    data: undefined
+    PasswordRepeat : ""
   }
-  
+
 	render(){
 		return(
 			<Form className="alert" id="registerform">
