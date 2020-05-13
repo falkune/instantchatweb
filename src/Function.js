@@ -2,7 +2,7 @@ export var userInfo = {
 	connectedUser : undefined,
 	token : undefined,
 	name : undefined,
-	page : 'accueil'
+	page : 'login'
 }
 
 
