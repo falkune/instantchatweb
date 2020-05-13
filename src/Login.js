@@ -3,6 +3,24 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 class Login extends React.Component{
+
+  state = {
+    login : undefined,
+    password : undefined
+  }
+
+  handleEmail = (e) => {
+    this.setState({
+      login : e.currentTarget.value
+    });
+  }
+
+  handlePassword = (e) => {
+    this.setState({
+      password : e.currentTarget.value
+    });
+  }
+  
 	render(){
 		return(
 			<Form className="alert" id="loginform" >
@@ -11,7 +29,7 @@ class Login extends React.Component{
           <Form.Control 
             type="email" 
             placeholder="Enter email"
-            // onChange={this.handleEmail}
+            onChange={this.handleEmail}
           />
         </Form.Group>
 
@@ -20,7 +38,7 @@ class Login extends React.Component{
           <Form.Control 
             type="password" 
             placeholder="Password"
-            // onChange={this.handlePassword}
+            onChange={this.handlePassword}
           />
         </Form.Group>
 
