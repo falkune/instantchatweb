@@ -22,8 +22,8 @@ class Home extends React.Component{
 				<div className="chat">
 					<div className="card">
 						<div className="card-header">
-							<div class="d-flex bd-highlight">
-								<div class="user_info">
+							<div className="d-flex bd-highlight">
+								<div className="user_info">
 									<span id="info_user">
 
 									</span>
