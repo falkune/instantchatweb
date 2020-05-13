@@ -9,9 +9,9 @@ import getConnected, {userInfo} from './Function';
 class App extends React.Component{
 
 	state = {
-		page : 'login',
-		connectedUser : undefined,
-    token : undefined,
+		page : userInfo.page,
+		connectedUser : userInfo.connectedUser,
+    token : userInfo.token
 	}
 
 	showRegisterForm = () => {
