@@ -80,7 +80,10 @@ class App extends React.Component{
 		if(this.state.page === 'register'){
 			return(
 				<div id="facade">
-					<Register action={this.showLoginForm}/>
+					<Register 
+						loginForm={this.showLoginForm}
+						getRegistred={this.getRegistred}
+					/>
 					<Logo/>
 				</div>
 			)
