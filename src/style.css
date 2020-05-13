@@ -46,8 +46,8 @@ body{
 	}
 
 	.card{
-	  height: 500px;
-	  /*border-radius: 15px;*/
+	  /*height: 500px;*/
+	  border-radius: 15px;
 	  background-color: #2F4F4F;
 	}
 
