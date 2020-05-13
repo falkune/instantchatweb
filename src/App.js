@@ -96,7 +96,21 @@ class App extends React.Component{
   }
 
   getOut = () => {
-  	
+  	const URL = 'http://instantchat.com/api/logout/'+this.state.connectedUser+'/'+this.state.token;
+    this.fetchData(URL)
+    .then(data => {
+      if(data.status === 'ok'){
+        this.setState({
+          connectedUser : undefined,
+          token : undefined,
+          page : 'login'
+        });
+        ReactDOM.render(
+          <Welcom />,
+          document.getElementById('container')
+        );
+      }
+    })
   }
 
 	render(){
