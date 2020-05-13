@@ -13,7 +13,7 @@ class Home extends React.Component{
 
 						<div className="card-body">
 							<div className="contacts">
-								{{/* ici seront injecter les users*/}}
+								{/* ici seront injecter les users*/}
 							</div>
 						</div>
 					</div>
@@ -36,7 +36,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body">
-								{{/* ici seront injecter les message*/}}
+							{/* ici seront injecter les message*/}
 						</div>
 
 						<div className="card-footer">
