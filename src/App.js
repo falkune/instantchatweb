@@ -95,6 +95,10 @@ class App extends React.Component{
     });
   }
 
+  getOut = () => {
+  	
+  }
+
 	render(){
 
 		if(this.state.page === 'login'){
@@ -127,6 +131,7 @@ class App extends React.Component{
 						token={this.state.token}
 						name={this.state.name}
 						users={this.state.users}
+						logout={this.getOut}
 					/>	
 				</div>
 			)
