@@ -1,7 +1,7 @@
 export default function getConnected(login, password){
 
 	const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
-		this.fetchData(URL)
+		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
 				this.setState({
