@@ -11,6 +11,10 @@ class App extends React.Component{
     token : undefined,
 	}
 
+	showRegisterForm(){
+		
+	}
+
 	render(){
 
 		if(this.state.page === 'login'){
