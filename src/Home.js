@@ -19,7 +19,9 @@ class Home extends React.Component{
 
 						<div className="card-body">
 							<div className="contacts">
-								{/* ici seront injecter les users*/}
+								{
+									
+								}
 							</div>
 						</div>
 					</div>
