@@ -22,3 +22,5 @@ class Textarea extends React.Component{
 		)
 	}
 }
+
+export default Textarea;
