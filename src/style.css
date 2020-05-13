@@ -124,6 +124,10 @@ body{
 	  background: black; 
 	}
 
+	#him:hover{
+	  cursor: pointer;
+	}
+
 }
 
 /*media pour petit ecran*/
