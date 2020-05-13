@@ -37,6 +37,10 @@ body{
 	  border: solid 1px;
 	}
 
+	.chat{
+		height: 70%;
+	}
+
 	#logoBox{
 		margin: 30px auto;
 	}
