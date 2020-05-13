@@ -16,7 +16,9 @@ class Input extends React.Component{
 							className="form-control search"
 						/>
 						<div className="input-group-prepend">
-							
+							<span className="input-group-text search_btn">
+								
+							</span>
 						</div>
 					</div>
 				</div>
