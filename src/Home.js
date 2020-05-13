@@ -12,7 +12,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body contacts_body">
-
+							
 						</div>
 					</div>
 				</div>
