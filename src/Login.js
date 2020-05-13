@@ -9,19 +9,19 @@ class Login extends React.Component{
     password : undefined
   }
 
-  handleEmail = (e) => {
+  handleEmail = (event) => {
     this.setState({
-      login : e.currentTarget.value
+      login : event.currentTarget.value
     });
   }
 
-  handlePassword = (e) => {
+  handlePassword = (event) => {
     this.setState({
-      password : e.currentTarget.value
+      password : event.currentTarget.value
     });
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = event => {
     e.preventDefault();
     this.props.getConnected(this.state.login, this.state.password)
   }
