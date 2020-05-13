@@ -11,7 +11,7 @@ class Home extends React.Component{
 							<Input/>
 						</div>
 
-						<div className="card-body contacts_body">
+						<div className="card-body">
 							<div className="contacts">
 
 							</div>
