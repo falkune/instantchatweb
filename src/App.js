@@ -66,6 +66,7 @@ class App extends React.Component{
 					connectedUser : id,
 					token : token,
 					name : name,
+					users : data.data
 					page : 'accueil'
 				});
 			}
@@ -121,7 +122,12 @@ class App extends React.Component{
 		if(this.state.page === 'accueil'){
 			return(
 				<div>
-					<Home />	
+					<Home 
+						user={this.state.connectedUser}
+						token={this.state.token}
+						name={this.state.name}
+						users={this.state.users}
+					/>	
 				</div>
 			)
 		}
