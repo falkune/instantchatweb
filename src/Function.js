@@ -1,5 +1,5 @@
 var userInfo = {
-	getConnected : undefined,
+	connectedUser : undefined,
 	token : undefined,
 	name : undefined,
 	page : 'login'
@@ -12,12 +12,8 @@ export default function getConnected(login, password){
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
-				this.setState({
-					connectedUser : data.id,
-					token : data.token,
-					name : data.name,
-					page : 'accueil'
-				});
+				userInfo.connectedUser = data.id;
+				userInfo.page = 'accueil';
 			}
 			else{
         if(data.message === "the email is not correct"){
