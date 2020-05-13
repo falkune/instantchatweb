@@ -9,7 +9,7 @@ class Input extends React.Component{
 						<i className="fas fa-users fa-2x"></i>
 					</div>
 
-					<div className="input-group">
+					<div id="input-group" className="input-group">
 						<input 
 							type="text" 
 							placeholder="Search..." 
