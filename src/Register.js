@@ -50,6 +50,10 @@ class Register extends React.Component{
         <Button variant="primary" type="submit">
           Submit
         </Button>
+
+        <h5>
+        	<a href="#register" onClick={this.props.action}>Creer un compte</a>
+        </h5>
       </Form>
 		)
 	}
