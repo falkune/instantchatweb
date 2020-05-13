@@ -36,7 +36,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body">
-
+								{{/* ici seront injecter les message*/}}
 						</div>
 
 						<div className="card-footer">
