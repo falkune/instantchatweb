@@ -34,7 +34,7 @@ class Register extends React.Component{
           />
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group controlId="formGroupPassword">
           <Form.Label className="btn-toolbar alert-link">Confirm Password :</Form.Label>
           <Form.Control  
             placeholder="Password" 
