@@ -22,7 +22,11 @@ class Home extends React.Component{
 				<div className="chat">
 					<div className="card">
 						<div className="card-header">
-							
+							<div class="d-flex bd-highlight">
+								<div class="user_info">
+								
+								</div>
+							</div>
 						</div>
 
 						<div className="card-body">
