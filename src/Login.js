@@ -33,7 +33,7 @@ class Login extends React.Component{
         </Button>
 
         <h5>
-        	<a href="" onClick={this.props.action()}>Creer un compte</a>
+        	<a href="" onClick={this.props.action}>Creer un compte</a>
         </h5>
       </Form>
 		)
