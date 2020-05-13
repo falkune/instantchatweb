@@ -6,7 +6,7 @@ class Home extends React.Component{
 		return(
 			<div id="chat">
 				<div className="chat">
-					<div className="card">
+					<div id="card" className="card">
 						<div className="card-header">
 							<Input/>
 						</div>
@@ -20,7 +20,7 @@ class Home extends React.Component{
 				</div>
 
 				<div className="chat">
-					<div className="card">
+					<div id="card" className="card">
 						<div className="card-header">
 							<div className="d-flex bd-highlight">
 								<div className="user_info">
