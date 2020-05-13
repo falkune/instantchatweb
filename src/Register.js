@@ -3,6 +3,15 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 class Register extends React.Component{
+
+  state = {
+    name : "",
+    Email : "",
+    password : "",
+    PasswordRepeat : "",
+    data: undefined
+  }
+  
 	render(){
 		return(
 			<Form className="alert" id="registerform">
