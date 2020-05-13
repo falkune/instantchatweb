@@ -63,7 +63,22 @@ body{
 		grid-column-gap: 5%;
 		margin: 10% auto;
 	}
+	
+	.user_info{
+	  margin-top: auto;
+	  margin-bottom: auto;
+	  margin-left: 15px;
+	}
 
+	.user_info span{
+	  font-size: 20px;
+	  color: white;
+	}
+
+	.user_info p{
+	  font-size: 10px;
+	  color: #ffff;
+	}
 }
 
 /*media pour petit ecran*/
