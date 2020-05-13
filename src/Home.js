@@ -18,7 +18,7 @@ class Home extends React.Component{
 							<Input/>
 						</div>
 
-						<div className="card-body">
+						<div className="card-body" id="card-body">
 							<div id="userBox">
 								{
 									this.props.users.map(user => 
