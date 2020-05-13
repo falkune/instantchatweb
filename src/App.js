@@ -36,6 +36,20 @@ class App extends React.Component{
 					name : data.name
 				});
 			}
+			else{
+        if(data.message == "the email is not correct"){
+          const TEXT = document.createElement("span");
+          let content = document.createTextNode('This email is no exist get regisred...');
+          TEXT.appendChild(content);
+          document.getElementById('passwordError').appendChild(TEXT);
+        }
+        else{
+          const TEXT = document.createElement("span");
+          let content = document.createTextNode('the passwor is not correct...');
+          TEXT.appendChild(content);
+          document.getElementById('passwordError').appendChild(TEXT);
+        }
+      }
 		});
 	}
 
