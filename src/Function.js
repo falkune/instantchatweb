@@ -12,10 +12,10 @@ export default function getConnected(login, password){
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
-				userInfo.connectedUser : data.id;
-				userInfo.page : 'accueil';
-				userInfo.name : data.name;
-				userInfo.token : data.token;
+				userInfo.connectedUser = data.id;
+				userInfo.page = 'accueil';
+				userInfo.name = data.name;
+				userInfo.token = data.token;
 			}
 			else{
         if(data.message === "the email is not correct"){
