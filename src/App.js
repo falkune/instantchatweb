@@ -13,7 +13,7 @@ class App extends React.Component{
 
 	render(){
 
-		if(this.state.connectedUser === undefined){
+		if(this.state.page === 'login'){
 			return(
 				<div id="facade">
 					<Login/>
