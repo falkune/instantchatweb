@@ -37,7 +37,7 @@ class Register extends React.Component{
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.getRegistred();
+    this.props.getRegistred(this.state.name, this.state.email, this.state.password);
   }
 
 	render(){
