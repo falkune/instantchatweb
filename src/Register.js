@@ -11,9 +11,38 @@ class Register extends React.Component{
     PasswordRepeat : ""
   }
 
+  handleNameChange = event => {
+    this.setState({
+      name : event.currentTarget.value
+    });
+  }
+
+  handleEmailChange = event => {
+    this.setState({
+      email : event.currentTarget.value
+    });
+  }
+
+  handlePasswordChange = event => {
+    this.setState({
+      password : event.currentTarget.value
+    });
+  }
+
+  handlePasswordRepeatChange = event => {
+    this.setState({
+      PasswordRepeat : event.currentTarget.value
+    });
+  }
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.getRegistred();
+  }
+
 	render(){
 		return(
-			<Form className="alert" id="registerform">
+			<Form className="alert" id="registerform" onSubmit={this.handleSubmit}>
         
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label className="btn-toolbar alert-link">Full Name :</Form.Label>
