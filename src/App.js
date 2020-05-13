@@ -60,6 +60,10 @@ class App extends React.Component{
       .catch((error) => console.error(error))
   }
 
+  getUserRegistred = () => {
+  	
+  }
+
 	render(){
 
 		if(this.state.page === 'login'){
