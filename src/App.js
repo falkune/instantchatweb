@@ -66,7 +66,7 @@ class App extends React.Component{
 					connectedUser : id,
 					token : token,
 					name : name,
-					users : data.data
+					users : data.data,
 					page : 'accueil'
 				});
 			}
