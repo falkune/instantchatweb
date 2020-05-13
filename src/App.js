@@ -29,9 +29,9 @@ class App extends React.Component{
 		const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
 	}
 
-	login = () => {
-		const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
-	}
+	// login = () => {
+	// 	const URL = 'http://instantchat.com/Api/login/'+this.state.email+'/'+this.state.password;
+	// }
 
 	render(){
 
