@@ -23,7 +23,7 @@ class App extends React.Component{
 		if(this.state.page === 'login'){
 			return(
 				<div id="facade">
-					<Login actio={this.showRegisterForm}/>
+					<Login action={this.showRegisterForm}/>
 					<Logo/>
 				</div>
 			)
