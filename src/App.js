@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Logo from './Logo';
 import Login from './Login';
+import Register from './Register';
 
 class App extends React.Component{
 
@@ -11,8 +12,10 @@ class App extends React.Component{
     token : undefined,
 	}
 
-	showRegisterForm(){
-		
+	showRegisterForm = () => {
+		this.setState({
+			page : 'register'
+		});
 	}
 
 	render(){
@@ -24,7 +27,17 @@ class App extends React.Component{
 					<Logo/>
 				</div>
 			)
+		}else{
+			if(this.state.page === 'register'){
+				return(
+					<div id="facade">
+						<Login/>
+						<Logo/>
+					</div>
+				)
+			}
 		}
+
 
 	}
 
