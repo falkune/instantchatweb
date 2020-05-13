@@ -79,6 +79,10 @@ body{
 	  color: #ffff;
 	}
 
+	#card-body{
+		padding: 0;
+	}
+
 	#disconected{
 	  position: absolute;
 	  right: 10px;
