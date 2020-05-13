@@ -8,9 +8,9 @@ import Home from './Home';
 class App extends React.Component{
 
 	state = {
-		page : userInfo.page,
-		connectedUser : userInfo.connectedUser,
-    token : userInfo.token
+		page : 'login',
+		connectedUser : undefined,
+    token : undefined
 	}
 
 	showRegisterForm = () => {
