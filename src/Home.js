@@ -19,7 +19,7 @@ class Home extends React.Component{
 					</div>
 				</div>
 
-				<div className="col-md-8 col-xl-6 chat">
+				<div className="chat">
 					<div className="card">
 						<div className="card-header msg_head">
 							
