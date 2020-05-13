@@ -26,8 +26,8 @@ class Login extends React.Component{
 			<Form 
         className="alert" 
         id="loginform" 
-        onSubmit={this.props.getConnected(this.state.login, this.state.password)}>
-        
+        onSubmit={this.props.getConnected(this.state.login, this.state.password).bind(this)}>
+
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
           <Form.Control 
