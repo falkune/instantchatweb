@@ -25,8 +25,7 @@ class Home extends React.Component{
 										<User 
 											key={user['user_id'].toString()} 
 											userId={user['user_id']} 
-											userName={user['user_name']} 
-											// onClick={() => this.getDiscution(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
+											userName={user['user_name']}
 										/>
 									)
 								}
