@@ -6,7 +6,7 @@ class Input extends React.Component{
 			<div className="input-group">
 				<div className="input-group-prepend">
 					<div id="the_users">
-						
+						<i className="fas fa-users fa-2x"></i>
 					</div>
 				</div>
 			</div>
