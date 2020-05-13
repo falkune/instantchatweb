@@ -11,7 +11,8 @@ class App extends React.Component{
 		page : 'login',
 		connectedUser : undefined,
     token : undefined,
-    users : undefined
+    users : undefined,
+    name : undefined
 	}
 
 	showRegisterForm = () => {
@@ -31,12 +32,24 @@ class App extends React.Component{
 		this.fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
-				this.setState({
-					connectedUser : data.id,
-					token : data.token,
-					name : data.name,
-					page : 'accueil'
-				});
+
+				let id = data.id;
+        let token = data.token;
+        let name = data.name;
+
+				const URL1 = 'http://instantchat.com/Api/Users/'+id+'/'+token;
+
+				this.fetchData(URL1)
+				.then(data => {
+					if(data.status === 'ok'){
+						this.setState({
+							connectedUser : id,
+							token : token,
+							name : name,
+							page : 'accueil'
+						});
+					}
+				})
 			}
 			else{
         if(data.message === "the email is not correct"){
@@ -56,7 +69,7 @@ class App extends React.Component{
 	}
 
 	getAllUsers = (id, token) => {
-		
+
 	}
 
 	fetchData(url){
