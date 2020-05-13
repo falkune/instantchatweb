@@ -1,5 +1,5 @@
-export function getConnected(login, password){
-	
+export default function getConnected(login, password){
+
 	const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
 		this.fetchData(URL)
 		.then(data => {
