@@ -13,10 +13,10 @@ export default function getConnected(login, password){
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
 				this.setState({
-					userInfo.connectedUser = data.id;
-					userInfo.page = 'accueil';
-					userInfo.name = data.name;
-					userInfo.token = data.token;
+					connectedUser = data.id;
+					page = 'accueil';
+					name = data.name;
+					token = data.token;
 				})
 			}
 			else{
