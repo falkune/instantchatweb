@@ -60,8 +60,8 @@ class App extends React.Component{
       .catch((error) => console.error(error))
   }
 
-  getUserRegistred = () => {
-  	
+  getRegistred = () => {
+
   }
 
 	render(){
