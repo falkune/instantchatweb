@@ -34,7 +34,7 @@ class Home extends React.Component{
 								</div>
 							</div>
 
-							<span id="disconected">
+							<span id="disconected" onClick={this.props.logout}>
 								<i className="fas fa-power-off fa-2x "></i>
 							</span>
 						</div>
