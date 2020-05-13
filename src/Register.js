@@ -49,7 +49,7 @@ class Register extends React.Component{
           <Form.Control 
             placeholder="Enter your full name" 
             type="text" 
-            // onChange={this.handleNameChange}
+            onChange={this.handleNameChange}
           />
         </Form.Group>
         
@@ -58,7 +58,7 @@ class Register extends React.Component{
           <Form.Control 
             placeholder="Enter email" 
             type="email" 
-            // onChange={this.handleEmailChange}
+            onChange={this.handleEmailChange}
           />
         </Form.Group>
 
@@ -67,7 +67,7 @@ class Register extends React.Component{
           <Form.Control 
             placeholder="Password" 
             type="password" 
-            // onChange={this.handlePasswordChange}
+            onChange={this.handlePasswordChange}
           />
         </Form.Group>
 
@@ -76,7 +76,7 @@ class Register extends React.Component{
           <Form.Control  
             placeholder="Password" 
             type="password"
-            // onChange={this.handlePasswordRepeatChange}
+            onChange={this.handlePasswordRepeatChange}
           />
         </Form.Group>
 
