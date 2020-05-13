@@ -45,7 +45,7 @@ class App extends React.Component{
 		}
 		if(this.state.page === 'accueil'){
 			return(
-				<div>
+				<div id="chat">
 					<Home/>
 				</div>
 			)
