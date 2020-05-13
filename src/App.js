@@ -61,7 +61,19 @@ class App extends React.Component{
   }
 
   getRegistred = () => {
-
+  	const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.password;
+    this.fetchData(URL)
+    .then(data => {
+      if(data.status === 'ok'){
+        this.getUserConnected();
+      }
+      else{
+        const TEXT = document.createElement("span");
+        let content = document.createTextNode('This email is allready exist get connected...');
+        TEXT.appendChild(content);
+        document.getElementById('passwordError').appendChild(TEXT);
+      }
+    });
   }
 
 	render(){
