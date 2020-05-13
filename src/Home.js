@@ -28,6 +28,10 @@ class Home extends React.Component{
 						<div className="card-body">
 
 						</div>
+
+						<div className="card-footer">
+							
+						</div>
 					</div>
 				</div>
 			</div>
