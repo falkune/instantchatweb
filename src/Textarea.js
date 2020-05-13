@@ -15,7 +15,6 @@ class Textarea extends React.Component{
 	}
 
 	render(){
-		console.log(this.state.message);
 		return(
 			<Form id="messagetype">
 				<textarea 
