@@ -52,7 +52,7 @@ class Register extends React.Component{
         </Button>
 
         <h5>
-        	<a href="#register" onClick={this.props.action}>Creer un compte</a>
+        	<a href="#login" onClick={this.props.action}>Creer un compte</a>
         </h5>
       </Form>
 		)
