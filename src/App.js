@@ -44,7 +44,9 @@ class App extends React.Component{
 			)
 		}
 		if(this.state.page === 'accueil'){
-
+			return(
+				<Home/>
+			)
 		}
 		
 
