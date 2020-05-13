@@ -31,6 +31,8 @@ class Login extends React.Component{
         <Button variant="primary" type="submit">
           Submit
         </Button>
+
+        <a href="">Creer un compte</a>
       </Form>
 		)
 	}
