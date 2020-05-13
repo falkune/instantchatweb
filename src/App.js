@@ -60,8 +60,8 @@ class App extends React.Component{
       .catch((error) => console.error(error))
   }
 
-  getRegistred = () => {
-  	const URL = 'http://instantchat.com/Api/register/'+this.state.name+'/'+this.state.email+'/'+this.state.password;
+  getRegistred = (name, email, password) => {
+  	const URL = 'http://instantchat.com/Api/register/'+name+'/'+email+'/'+password;
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
