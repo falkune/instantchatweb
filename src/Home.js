@@ -6,7 +6,7 @@ class Home extends React.Component{
 		return(
 			<div className="row">
 				<div className="chat">
-					<div className="card mb-sm-3 mb-md-0 contacts_card">
+					<div className="card">
 						<div className="card-header">
 							<Input/>
 						</div>
