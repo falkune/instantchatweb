@@ -4,7 +4,7 @@ export default function getConnected(login, password){
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
-				this.setState({
+				setState({
 					connectedUser : data.id,
 					token : data.token,
 					name : data.name,
