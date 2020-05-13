@@ -10,7 +10,8 @@ class App extends React.Component{
 	state = {
 		page : 'login',
 		connectedUser : undefined,
-    token : undefined
+    token : undefined,
+    users : undefined
 	}
 
 	showRegisterForm = () => {
