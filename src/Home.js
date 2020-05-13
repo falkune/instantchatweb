@@ -3,6 +3,11 @@ import Input from './Input';
 import Textarea from './Textarea';
 
 class Home extends React.Component{
+
+	state = {
+		
+	}
+
 	render(){
 		return(
 			<div id="chat">
