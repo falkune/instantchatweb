@@ -18,6 +18,12 @@ class App extends React.Component{
 		});
 	}
 
+	showLoginForm = () => {
+		this.setState({
+			page : 'login'
+		});
+	}
+
 	render(){
 
 		if(this.state.page === 'login'){
