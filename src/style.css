@@ -87,7 +87,10 @@ body{
 	  font-size: 20px;
 	}
 
-	
+	#messagetype{
+	  display: grid;
+	  grid-template-columns: 90% 12%;
+	}
 }
 
 /*media pour petit ecran*/
