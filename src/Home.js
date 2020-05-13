@@ -32,7 +32,7 @@ class Home extends React.Component{
 							</div>
 
 							<span id="disconected">
-								<i className="fas fa-power-off"></i>
+								<i className="fas fa-power-off fa-2x "></i>
 							</span>
 						</div>
 
