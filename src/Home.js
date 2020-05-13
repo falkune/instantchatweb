@@ -25,10 +25,14 @@ class Home extends React.Component{
 							<div class="d-flex bd-highlight">
 								<div class="user_info">
 									<span id="info_user">
-										
+
 									</span>
 								</div>
 							</div>
+
+							<span id="disconected">
+								<i className="fas fa-power-off"></i>
+							</span>
 						</div>
 
 						<div className="card-body">
