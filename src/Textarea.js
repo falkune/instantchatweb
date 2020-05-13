@@ -3,6 +3,17 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 class Textarea extends React.Component{
+
+	state = {
+		message : ''
+	}
+
+	handleMessage = (e) => {
+		this.setState({
+			message : e.target.value;
+		})
+	}
+
 	render(){
 		return(
 			<Form id="messagetype">
