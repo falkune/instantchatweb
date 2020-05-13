@@ -12,11 +12,10 @@ class Textarea extends React.Component{
 		this.setState({
 			message : e.currentTarget.value
 		});
-
-		console.log(this.state.message);
 	}
 
 	render(){
+		console.log(this.state.message);
 		return(
 			<Form id="messagetype">
 				<textarea 
