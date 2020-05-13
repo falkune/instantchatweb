@@ -105,10 +105,6 @@ class App extends React.Component{
           token : undefined,
           page : 'login'
         });
-        ReactDOM.render(
-          <Welcom />,
-          document.getElementById('container')
-        );
       }
     })
   }
