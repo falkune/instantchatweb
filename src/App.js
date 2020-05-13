@@ -4,7 +4,7 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
-import {userInfo}, getConnected from './Function';
+import getConnected, {userInfo} from './Function';
 
 class App extends React.Component{
 
