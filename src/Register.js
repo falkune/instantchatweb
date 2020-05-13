@@ -52,3 +52,5 @@ class Register extends Rract.Component{
 		)
 	}
 }
+
+export default Register;
