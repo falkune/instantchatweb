@@ -30,6 +30,13 @@ body{
 	  border: solid 1px;
 	}
 
+	#registerform{
+		width: 70%;
+	  margin: 30px auto;
+	  padding: 10% 5%;
+	  border: solid 1px;
+	}
+
 	#logoBox{
 		margin: 30px auto;
 	}
