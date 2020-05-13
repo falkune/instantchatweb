@@ -8,6 +8,10 @@ class Input extends React.Component{
 					<div id="the_users">
 						<i className="fas fa-users fa-2x"></i>
 					</div>
+
+					<div className="input-group">
+						
+					</div>
 				</div>
 			</div>
 		)
