@@ -21,7 +21,7 @@ class Home extends React.Component{
 
 				<div className="chat">
 					<div className="card">
-						<div className="card-header msg_head">
+						<div className="card-header">
 							
 						</div>
 					</div>
