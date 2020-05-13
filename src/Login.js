@@ -21,12 +21,16 @@ class Login extends React.Component{
     });
   }
 
+  handleSubmit = () => {
+    this.props.getConnected(this.state.login, this.state.password)
+  }
+
 	render(){
 		return(
 			<Form 
         className="alert" 
         id="loginform" 
-        onSubmit={this.props.getConnected(this.state.login, this.state.password)}>
+        onSubmit={this.handleSubmit}>
 
         <Form.Group controlId="formBasicEmail">
           <Form.Label className="btn-toolbar alert-link">Email address :</Form.Label>
