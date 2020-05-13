@@ -15,6 +15,9 @@ class Input extends React.Component{
 							placeholder="Search..." 
 							className="form-control search"
 						/>
+						<div className="input-group-prepend">
+							
+						</div>
 					</div>
 				</div>
 			</div>
