@@ -26,9 +26,13 @@ class App extends React.Component{
 	}
 
 	getConnected = () => {
-		
+
 	}
 
+	login = () => {
+		
+	}
+	
 	render(){
 
 		if(this.state.page === 'login'){
