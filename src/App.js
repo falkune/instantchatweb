@@ -65,7 +65,7 @@ class App extends React.Component{
     this.fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
-        this.getConnected();
+        this.getConnected(email, password);
       }
       else{
         const TEXT = document.createElement("span");
