@@ -59,7 +59,7 @@ body{
 	#chat{
 		width: 90%;
 		display: grid;
-		grid-template-columns: 10% 20% 10% 60%;
+		grid-template-columns: 20% 60%;
 		margin: 10% auto;
 	}
 
