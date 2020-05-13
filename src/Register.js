@@ -37,7 +37,16 @@ class Register extends React.Component{
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.getRegistred(this.state.name, this.state.email, this.state.password);
+
+     if(this.state.password !== this.state.PasswordRepeat){
+      const TEXT = document.createElement("span");
+      let content = document.createTextNode('The two password are not correspond !');
+      TEXT.appendChild(content);
+      document.getElementById('passwordError').appendChild(TEXT);
+    }
+    else{
+      this.props.getRegistred(this.state.name, this.state.email, this.state.password);
+    }
   }
 
 	render(){
