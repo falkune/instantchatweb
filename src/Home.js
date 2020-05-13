@@ -27,6 +27,8 @@ class Home extends React.Component{
 									<span id="info_user">
 
 									</span>
+
+									<p id="nb_messages"></p>
 								</div>
 							</div>
 
