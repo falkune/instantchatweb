@@ -20,7 +20,14 @@ class Home extends React.Component{
 						<div className="card-body">
 							<div className="contacts">
 								{
-									
+									this.props.users.map(user => 
+										<User 
+											key={user['user_id'].toString()} 
+											userId={user['user_id']} 
+											userName={user['user_name']} 
+											onClick={() => this.getDiscution(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
+										/>
+									)
 								}
 							</div>
 						</div>
