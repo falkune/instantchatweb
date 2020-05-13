@@ -1,4 +1,4 @@
-var userInfo = {
+export var userInfo = {
 	connectedUser : undefined,
 	token : undefined,
 	name : undefined,
