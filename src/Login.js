@@ -32,7 +32,7 @@ class Login extends React.Component{
           Submit
         </Button>
 
-        <a href="">Creer un compte</a>
+        <h5><a href="">Creer un compte</a></h5>
       </Form>
 		)
 	}
