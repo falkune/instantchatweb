@@ -37,10 +37,6 @@ body{
 	  border: solid 1px;
 	}
 
-	.chat{
-		height: 70%;
-	}
-
 	#logoBox{
 		margin: 30px auto;
 	}
@@ -51,7 +47,7 @@ body{
 
 	.card{
 	  height: 500px;
-	  border-radius: 15px;
+	  /*border-radius: 15px;*/
 	  background-color: #2F4F4F;
 	}
 
