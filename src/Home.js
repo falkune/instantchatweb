@@ -4,25 +4,27 @@ import Input from './Input';
 class Home extends React.Component{
 	render(){
 		return(
-			<div className="row">
-				<div className="chat">
-					<div className="card">
-						<div className="card-header">
-							<Input/>
-						</div>
+			<div>
+				<div className="row">
+					<div className="chat">
+						<div className="card">
+							<div className="card-header">
+								<Input/>
+							</div>
 
-						<div className="card-body">
-							<div className="contacts">
+							<div className="card-body">
+								<div className="contacts">
 
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<div className="chat">
-					<div className="card">
-						<div className="card-header">
-							
+					<div className="chat">
+						<div className="card">
+							<div className="card-header">
+								
+							</div>
 						</div>
 					</div>
 				</div>
