@@ -81,8 +81,14 @@ class App extends React.Component{
 				</div>
 			)
 		}
-		if(this.state.page === 'accueil')
-			return <Home />	
+		if(this.state.page === 'accueil'){
+			return(
+				<div>
+					<Logo/>
+					<Home />	
+				</div>
+			)
+		}
 	}
 
 }
