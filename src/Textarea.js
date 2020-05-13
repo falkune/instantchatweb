@@ -10,7 +10,7 @@ class Textarea extends React.Component{
 
 	handleMessage = (e) => {
 		this.setState({
-			message : e.target.value
+			message : e.currentTarget.value
 		});
 
 		console.log(this.state.message);
