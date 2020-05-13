@@ -17,7 +17,8 @@ class Textarea extends React.Component{
 	render(){
 		return(
 			<Form id="messagetype">
-				<textarea 
+				<textarea
+					rows="4"
 					id="form-control" 
 					className="form-control type_msg" 
 					placeholder="Type your message..."
