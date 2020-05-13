@@ -85,7 +85,6 @@ class App extends React.Component{
 		if(this.state.page === 'accueil'){
 			return(
 				<div>
-					<Logo/>
 					<Home />	
 				</div>
 			)
