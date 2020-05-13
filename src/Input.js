@@ -10,7 +10,11 @@ class Input extends React.Component{
 					</div>
 
 					<div className="input-group">
-						
+						<input 
+							type="text" 
+							placeholder="Search..." 
+							className="form-control search"
+						/>
 					</div>
 				</div>
 			</div>
