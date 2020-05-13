@@ -79,6 +79,15 @@ body{
 	  font-size: 10px;
 	  color: #ffff;
 	}
+
+	#disconected{
+	  position: absolute;
+	  right: 10px;
+	  top: 10px;
+	  color: white;
+	  cursor: pointer;
+	  font-size: 20px;
+	}
 }
 
 /*media pour petit ecran*/
