@@ -67,7 +67,7 @@ class App extends React.Component{
 				<div id="facade">
 					<Login 
 						registerForm={this.showRegisterForm}
-						getConnected={getConnected}
+						getConnected={this.getConnected}
 					/>
 					<Logo/>
 				</div>
