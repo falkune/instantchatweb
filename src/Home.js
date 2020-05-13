@@ -4,7 +4,7 @@ import Input from './Input';
 class Home extends React.Component{
 	render(){
 		return(
-			<div id="chat">
+			<div id="chat" className="row">
 				<div className="chat">
 					<div className="card">
 						<div className="card-header">
