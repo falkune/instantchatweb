@@ -56,7 +56,7 @@ header{
   height: 89%;
   overflow-y: scroll;
   position: absolute;
-  width: 100%;
+  width: 15%;
   bottom: 0;
   border-top: solid 1px lightgrey;
 }
