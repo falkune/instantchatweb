@@ -22,6 +22,7 @@ class Login extends React.Component{
   }
 
   handleSubmit = (e) => {
+    e.preventDefault();
     this.props.getConnected(this.state.login, this.state.password)
   }
 
