@@ -1,4 +1,5 @@
 import React from 'react';
+import Input from './Input';
 
 class Home extends React.Component{
 	render(){
