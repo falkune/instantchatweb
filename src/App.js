@@ -31,7 +31,7 @@ class App extends React.Component{
 			if(this.state.page === 'register'){
 				return(
 					<div id="facade">
-						<Login/>
+						<Register/>
 						<Logo/>
 					</div>
 				)
