@@ -1,6 +1,7 @@
 import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
+import User from './User';
 
 class Home extends React.Component{
 
