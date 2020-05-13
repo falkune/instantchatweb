@@ -51,8 +51,6 @@ class App extends React.Component{
         }
       }
 		});
-
-		console.log(login+' '+password);
 	}
 
 	fetchData(url){
