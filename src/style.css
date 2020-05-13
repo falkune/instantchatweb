@@ -28,6 +28,10 @@ body{
 	  margin: 30px auto;
 	  border: solid 1px;
 	}
+
+	#logoBox{
+		margin: 30px auto;
+	}
 }
 
 /*media pour petit ecran*/
