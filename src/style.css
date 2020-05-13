@@ -128,6 +128,10 @@ body{
 	  cursor: pointer;
 	}
 
+	#statut{
+	  margin: auto;
+	}
+
 }
 
 /*media pour petit ecran*/
