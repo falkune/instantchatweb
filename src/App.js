@@ -30,7 +30,11 @@ class App extends React.Component{
 		this.fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
-
+				this.setState({
+					connectedUser : data.id,
+					token : data.token,
+					name : data.name
+				});
 			}
 		});
 	}
