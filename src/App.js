@@ -4,6 +4,7 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
+import getConnected from './Function';
 
 class App extends React.Component{
 
