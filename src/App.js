@@ -6,6 +6,7 @@ import Login from './Login';
 class App extends React.Component{
 
 	state = {
+		page : 'login',
 		connectedUser : undefined,
     token : undefined,
 	}
