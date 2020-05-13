@@ -44,6 +44,12 @@ body{
 	h5{
 		text-align: center;
 	}
+
+	.card{
+	  height: 500px;
+	  border-radius: 15px;
+	  background-color: #2F4F4F;
+	}
 }
 
 /*media pour petit ecran*/
