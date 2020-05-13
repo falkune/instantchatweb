@@ -89,7 +89,7 @@ class Register extends React.Component{
         </Button>
 
         <h5>
-        	<a href="#login" onClick={this.props.action}>Se connecter</a>
+        	<a href="#login" onClick={this.props.loginForm}>Se connecter</a>
         </h5>
       </Form>
 		)
