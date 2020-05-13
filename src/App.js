@@ -37,7 +37,7 @@ class App extends React.Component{
 				});
 			}
 			else{
-        if(data.message == "the email is not correct"){
+        if(data.message === "the email is not correct"){
           const TEXT = document.createElement("span");
           let content = document.createTextNode('This email is no exist get regisred...');
           TEXT.appendChild(content);
