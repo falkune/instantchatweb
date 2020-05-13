@@ -7,7 +7,7 @@ class Register extends React.Component{
 		return(
 			<Form className="alert" id="registerform">
         
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label className="btn-toolbar alert-link">Full Name :</Form.Label>
           <Form.Control 
             placeholder="Enter your full name" 
