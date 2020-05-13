@@ -66,6 +66,7 @@ body{
 	  margin-top: auto;
 	  margin-bottom: auto;
 	  margin-left: 15px;
+	  padding: 3px;
 	}
 
 	.user_info span{
@@ -100,7 +101,7 @@ body{
 	#passwordError{
 	  color: red;
 	}
-	
+
 }
 
 /*media pour petit ecran*/
