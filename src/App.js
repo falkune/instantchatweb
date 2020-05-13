@@ -37,19 +37,7 @@ class App extends React.Component{
         let token = data.token;
         let name = data.name;
 
-				const URL1 = 'http://instantchat.com/Api/Users/'+id+'/'+token;
-
-				this.fetchData(URL1)
-				.then(data => {
-					if(data.status === 'ok'){
-						this.setState({
-							connectedUser : id,
-							token : token,
-							name : name,
-							page : 'accueil'
-						});
-					}
-				})
+        this.getAllUsers(id, token, name);
 			}
 			else{
         if(data.message === "the email is not correct"){
@@ -68,8 +56,20 @@ class App extends React.Component{
 		});
 	}
 
-	getAllUsers = (id, token) => {
+	getAllUsers = (id, token, name) => {
+		const URL = 'http://instantchat.com/Api/Users/'+id+'/'+token;
 
+		this.fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					connectedUser : id,
+					token : token,
+					name : name,
+					page : 'accueil'
+				});
+			}
+		})
 	}
 
 	fetchData(url){
