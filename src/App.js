@@ -27,16 +27,16 @@ class App extends React.Component{
 					<Logo/>
 				</div>
 			)
-		}else{
-			if(this.state.page === 'register'){
-				return(
-					<div id="facade">
-						<Register />
-						<Logo/>
-					</div>
-				)
-			}
 		}
+		if(this.state.page === 'register'){
+			return(
+				<div id="facade">
+					<Register />
+					<Logo/>
+				</div>
+			)
+		}
+		
 
 
 	}
