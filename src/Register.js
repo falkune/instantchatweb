@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Register extends Rract.Component{
+class Register extends React.Component{
 	render(){
 		return(
 			<Form className="alert" id="registerform">
