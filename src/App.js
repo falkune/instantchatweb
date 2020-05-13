@@ -8,7 +8,7 @@ import Home from './Home';
 class App extends React.Component{
 
 	state = {
-		page : 'accueil',
+		page : 'login',
 		connectedUser : undefined,
     token : undefined,
 	}
