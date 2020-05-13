@@ -64,7 +64,6 @@ header{
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  /*border: 1px solid #232943;*/
   box-shadow: inset 0 0 2.5px 2px grey;
 }
 ::-webkit-scrollbar-thumb {
