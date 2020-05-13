@@ -17,7 +17,7 @@ class Input extends React.Component{
 						/>
 						<div className="input-group-prepend">
 							<span className="input-group-text search_btn">
-								
+								<i className="fas fa-search"></i>
 							</span>
 						</div>
 					</div>
