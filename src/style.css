@@ -7,7 +7,6 @@ body{
 @media (min-width: 768px)
 {
 	#root{
-		width: 90%;
 		margin: 5px auto;
 	}
 
