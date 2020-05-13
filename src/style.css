@@ -12,7 +12,7 @@ body{
 	}
 
 	#facade{
-		margin: 200px auto;
+		margin: 150px auto;
 		display: grid;
 		grid-template-columns: 40% 40%;
 		grid-column-gap: 20%;
