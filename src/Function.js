@@ -1,3 +1,11 @@
+var userInfo = {
+	getConnected : undefined,
+	token : undefined,
+	name : undefined,
+	page : 'login'
+}
+
+
 export default function getConnected(login, password){
 
 	const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
