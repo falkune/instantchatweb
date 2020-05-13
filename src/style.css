@@ -33,6 +33,10 @@ body{
 	#logoBox{
 		margin: 30px auto;
 	}
+
+	h5{
+		text-align: center;
+	}
 }
 
 /*media pour petit ecran*/
