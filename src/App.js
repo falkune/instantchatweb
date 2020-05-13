@@ -25,12 +25,19 @@ class App extends React.Component{
 		});
 	}
 
+	getConnected = () => {
+		
+	}
+
 	render(){
 
 		if(this.state.page === 'login'){
 			return(
 				<div id="facade">
-					<Login action={this.showRegisterForm}/>
+					<Login 
+						registerForm={this.showRegisterForm}
+						getConnected={this.getConnected}
+					/>
 					<Logo/>
 				</div>
 			)
