@@ -55,6 +55,10 @@ class App extends React.Component{
 		});
 	}
 
+	getAllUsers = () => {
+		
+	}
+	
 	fetchData(url){
     return fetch(url)
       .then((response) => response.json())
