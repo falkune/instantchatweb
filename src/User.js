@@ -7,7 +7,7 @@ class User extends React.Component{
 		messages : undefined
 	}
 
-	getDiscution = (interlocutor, connectedUser, userName, token) =>{
+	getDiscution = () =>{
 		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
 		fetchData(URL)
@@ -26,7 +26,7 @@ class User extends React.Component{
 
 	render(){
 		return(
-			<div className="d-flex bd-highlight" id="him">
+			<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 				<div className="img_cont">
 					<div id="name">
 						{this.props.userName}
