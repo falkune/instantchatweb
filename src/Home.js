@@ -33,9 +33,9 @@ class Home extends React.Component{
 									this.props.users.map(user => 
 										<User 
 											key={user['user_id'].toString()} 
-											userId={user['user_id']} 
+											// userId={user['user_id']} 
 											userName={user['user_name']}
-											discustion={this.getDiscution}
+											onClick={() => this.getDiscution(user['user_id'],this.props.connectedUser, user['user_name'], this.props.token)}
 										/>
 									)
 								}
