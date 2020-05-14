@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import fetchData from './Function';
-import Singlemessage from './Singlemessage';
-import Singlemessage from './Singlemessage';
-// import Messagebox from './Messagebox';
+import Messagebox from './Messagebox';
 
 class User extends React.Component{
 
@@ -21,7 +19,7 @@ class User extends React.Component{
 					messages : data.data
 				});
 				ReactDOM.render(
-					<Singlemessage
+					<Messagebox
 						connectedUser={this.props.connectedUser}
 						interlocutor={this.props.user}
 						userName={this.props.userName}
