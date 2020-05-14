@@ -1,5 +1,6 @@
 import React from 'react';
 import fetchData from './Function';
+import Messagebox from './Messagebox';
 
 class User extends React.Component{
 
@@ -16,6 +17,16 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
+				ReactDOM.render(
+					<Messagebox
+						connectedUser={this.props.connectedUser}
+						interlocutor={this.props.user}
+						userName={this.props.userName}
+						token={token}
+						messages={this.state.messages}
+					/>,
+					document.getElementById('boxmessage')
+				);
 			}
 		})
 	}
