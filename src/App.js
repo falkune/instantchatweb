@@ -4,6 +4,7 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
+import fetchData from './Function'
 
 class App extends React.Component{
 
@@ -72,12 +73,6 @@ class App extends React.Component{
 			}
 		})
 	}
-
-	fetchData(url){
-    return fetch(url)
-      .then((response) => response.json())
-      .catch((error) => console.error(error))
-  }
 
   getRegistred = (name, email, password) => {
   	const URL = 'http://instantchat.com/Api/register/'+name+'/'+email+'/'+password;
