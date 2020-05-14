@@ -5,10 +5,6 @@ import User from './User';
 
 class Home extends React.Component{
 
-	state = {
-		
-	}
-
 	render(){
 		return(
 			<div id="chat">
@@ -26,6 +22,7 @@ class Home extends React.Component{
 											key={user['user_id'].toString()} 
 											userId={user['user_id']} 
 											userName={user['user_name']}
+											onClick={this.getDiscution}
 										/>
 									)
 								}
