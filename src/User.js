@@ -26,7 +26,7 @@ class User extends React.Component{
 						token={this.props.token}
 						messages={this.state.messages}
 					/>,
-					document.getElementById('boxmessage')
+					document.getElementById('fil-discution')
 				);
 			}
 		})
