@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import fetchData from './Function';
-import Messagebox from './Messagebox';
 
 class User extends React.Component{
 
