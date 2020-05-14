@@ -7,10 +7,6 @@ import Singlemessage from './Singlemessage';
 
 class Messagebox extends React.Component{
 
-	state = {
-		message : ''
-	}
-
 	componentDidMount(){
 		this.forceScroll();
 	}
