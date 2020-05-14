@@ -20,8 +20,8 @@ class Home extends React.Component{
 									this.props.users.map(user => 
 										<User 
 											key={user['user_id'].toString()}
-											user={this.props.user}
-											connectedUser={user['user_id']}
+											connectedUser={this.props.user}
+											user={user['user_id']}
 											token={this.props.token} 
 											userName={user['user_name']}
 										/>
