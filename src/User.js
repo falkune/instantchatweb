@@ -2,8 +2,25 @@ import React from 'react';
 
 class User extends React.Component{
 
-	getdiscution = () => {
-		this.props.getDiscution();
+	state = {
+		messages : undefined
+	}
+
+	getDiscution = (interlocutor, connectedUser, userName, token) =>{
+		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
+
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					messages : data.data
+				});
+				console.log(this.state.messages);
+			}
+			else{
+				console.log('so bad!')
+			}
+		})
 	}
 
 	render(){
