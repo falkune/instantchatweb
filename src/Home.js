@@ -10,7 +10,7 @@ class Home extends React.Component{
 		messages : undefined
 	}
 
-	getDiscution = (interlocutor, connectedUser, userName, token) => {
+	getDiscution(interlocutor, connectedUser, userName, token){
 		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
 		fetchData(URL)
