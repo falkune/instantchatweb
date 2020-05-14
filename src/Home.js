@@ -21,6 +21,7 @@ class Home extends React.Component{
 										<User 
 											key={user['user_id'].toString()}
 											user={this.props.user}
+											connectedUser={user['user_id']}
 											token={this.props.token} 
 											userName={user['user_name']}
 										/>
