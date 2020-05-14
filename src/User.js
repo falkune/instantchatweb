@@ -1,6 +1,11 @@
 import React from 'react';
 
 class User extends React.Component{
+
+	getdiscution = () => {
+
+	}
+	
 	render(){
 		return(
 			<div className="d-flex bd-highlight" id="him">
