@@ -5,6 +5,10 @@ import User from './User';
 
 class Home extends React.Component{
 
+	getDiscution = () => {
+		console.log('so cool...');
+	}
+
 	render(){
 		return(
 			<div id="chat">
