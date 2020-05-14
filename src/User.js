@@ -21,7 +21,7 @@ class User extends React.Component{
 					messages : data.data
 				});
 				ReactDOM.render(
-					<Messagebox
+					<Singlemessage
 						connectedUser={this.props.connectedUser}
 						interlocutor={this.props.user}
 						userName={this.props.userName}
