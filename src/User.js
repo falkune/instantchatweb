@@ -23,7 +23,7 @@ class User extends React.Component{
 						connectedUser={this.props.connectedUser}
 						interlocutor={this.props.user}
 						userName={this.props.userName}
-						token={token}
+						token={this.props.token}
 						messages={this.state.messages}
 					/>,
 					document.getElementById('boxmessage')
