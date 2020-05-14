@@ -21,6 +21,9 @@ class Home extends React.Component{
 				});
 				console.log(this.state.messages);
 			}
+			else{
+				console.log('so bad!')
+			}
 		})
 	}
 
