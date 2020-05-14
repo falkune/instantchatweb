@@ -16,10 +16,6 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				console.log(this.state.messages);
-			}
-			else{
-				console.log('so bad!')
 			}
 		})
 	}
