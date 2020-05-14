@@ -1,4 +1,5 @@
 import React from 'react';
+import fetchData from './Function';
 
 class User extends React.Component{
 
