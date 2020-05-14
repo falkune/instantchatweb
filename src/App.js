@@ -137,7 +137,7 @@ class App extends React.Component{
 			return(
 				<div>
 					<Home 
-						user={this.state.connectedUser}
+						connectedUser={this.state.connectedUser}
 						token={this.state.token}
 						name={this.state.name}
 						users={this.state.users}
