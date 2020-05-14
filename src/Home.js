@@ -14,17 +14,6 @@ class Home extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				ReactDOM.render(
-					<Messagebox
-						connectedUser={connectedUser}
-						interlocutor={interlocutor}
-						userName={userName}
-						token={token}
-						messages={this.state.messages}
-					/>,
-					document.getElementById('boxmessage')
-				);
-
 			}
 		})
 	}
