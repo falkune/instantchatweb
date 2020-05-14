@@ -6,10 +6,6 @@ import fetchData from './Function';
 
 class Home extends React.Component{
 
-	state = {
-		messages : undefined
-	}
-
 	render(){
 		return(
 			<div id="chat">
