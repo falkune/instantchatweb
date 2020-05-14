@@ -32,7 +32,6 @@ class Home extends React.Component{
 					/>,
 					document.getElementById('boxmessage')
 				);
-
 			}
 		})
 	}
