@@ -9,28 +9,28 @@ class User extends React.Component{
 		messages : undefined
 	}
 
-	getDiscution = () =>{
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+	// getDiscution = () =>{
+	// 	const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					messages : data.data
-				});
-				this.state.messages.map(msg => 
-					<Singlemessage
-						key={msg['message_id']}
-						connectedUser={this.props.connectedUser}
-						user={msg['from_user_id']}
-						content={msg['message_body']}
-						editdate={msg['message_edit_at']}
-					/>,
-					document.getElementById('fil-discution')
-				);
-			}
-		})
-	}
+	// 	fetchData(URL)
+	// 	.then(data => {
+	// 		if(data.status === 'ok'){
+	// 			this.setState({
+	// 				messages : data.data
+	// 			});
+	// 			this.state.messages.map(msg => 
+	// 				<Singlemessage
+	// 					key={msg['message_id']}
+	// 					connectedUser={this.props.connectedUser}
+	// 					user={msg['from_user_id']}
+	// 					content={msg['message_body']}
+	// 					editdate={msg['message_edit_at']}
+	// 				/>,
+	// 				document.getElementById('fil-discution')
+	// 			);
+	// 		}
+	// 	})
+	// }
 
 	render(){
 		return(
