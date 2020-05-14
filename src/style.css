@@ -126,7 +126,7 @@ body{
 
 	#him{
 		height: 30px;
-    background: radial-gradient(black, transparent);
+    padding-left: 10%;
 	}
 
 	#him:hover{
