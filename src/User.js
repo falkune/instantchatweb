@@ -18,6 +18,16 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
+				this.state.messages.map(msg => 
+					<Singlemessage
+						key={msg['message_id']}
+						connectedUser={this.props.connectedUser}
+						user={msg['from_user_id']}
+						content={msg['message_body']}
+						editdate={msg['message_edit_at']}
+					/>,
+					document.getElementById('fil-discution')
+				);
 			}
 		})
 	}
