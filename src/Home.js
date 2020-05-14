@@ -10,23 +10,6 @@ class Home extends React.Component{
 		messages : undefined
 	}
 
-	getDiscution = (interlocutor, connectedUser, userName, token) =>{
-		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
-
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					messages : data.data
-				});
-				console.log(this.state.messages);
-			}
-			else{
-				console.log('so bad!')
-			}
-		})
-	}
-
 	render(){
 		return(
 			<div id="chat">
@@ -42,9 +25,8 @@ class Home extends React.Component{
 									this.props.users.map(user => 
 										<User 
 											key={user['user_id'].toString()} 
-											// userId={user['user_id']} 
+											token={this.props.token} 
 											userName={user['user_name']}
-											onClick={() => this.getDiscution(user['user_id'],this.props.user,user['user_name'],this.props.token)}
 										/>
 									)
 								}
