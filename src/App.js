@@ -30,7 +30,7 @@ class App extends React.Component{
 
 	getConnected = (login, password) => {
 		const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
-		this.fetchData(URL)
+		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok' || data.status === 'active'){
 
@@ -60,7 +60,7 @@ class App extends React.Component{
 	getAllUsers = (id, token, name) => {
 		const URL = 'http://instantchat.com/Api/Users/'+id+'/'+token;
 
-		this.fetchData(URL)
+		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
@@ -76,7 +76,7 @@ class App extends React.Component{
 
   getRegistred = (name, email, password) => {
   	const URL = 'http://instantchat.com/Api/register/'+name+'/'+email+'/'+password;
-    this.fetchData(URL)
+    fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
         this.getConnected(email, password);
@@ -92,7 +92,7 @@ class App extends React.Component{
 
   getOut = () => {
   	const URL = 'http://instantchat.com/api/logout/'+this.state.connectedUser+'/'+this.state.token;
-    this.fetchData(URL)
+    fetchData(URL)
     .then(data => {
       if(data.status === 'ok'){
         this.setState({
