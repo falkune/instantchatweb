@@ -6,7 +6,7 @@ import User from './User';
 class Home extends React.Component{
 
 	state = {
-		
+		messages : undefined
 	}
 
 	getDiscution = (interlocutor, connectedUser, userName, token) => {
