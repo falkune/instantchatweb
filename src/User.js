@@ -3,7 +3,7 @@ import React from 'react';
 class User extends React.Component{
 
 	getdiscution = () => {
-		this.props.discustion
+		this.props.discustion()
 	}
 
 	render(){
