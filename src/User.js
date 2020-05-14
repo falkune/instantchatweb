@@ -10,7 +10,7 @@ class User extends React.Component{
 		return(
 			<div className="d-flex bd-highlight" id="him">
 				<div className="img_cont">
-					<div id="name" onClick={this.getdiscution}>
+					<div id="name">
 						{this.props.userName}
 					</div>
 				</div>
