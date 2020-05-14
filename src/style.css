@@ -124,6 +124,11 @@ body{
 	  background: black; 
 	}
 
+	#him{
+		height: 30px;
+    background: radial-gradient(black, transparent);
+	}
+
 	#him:hover{
 	  cursor: pointer;
 	}
