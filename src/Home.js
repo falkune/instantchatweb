@@ -46,7 +46,7 @@ class Home extends React.Component{
 							</span>
 						</div>
 
-						<div className="card-body">
+						<div className="card-body" id="fil-discution">
 							{/* ici seront injecter les message */}
 						</div>
 
