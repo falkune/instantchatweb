@@ -5,8 +5,28 @@ import User from './User';
 
 class Home extends React.Component{
 
-	getDiscution = () => {
-		console.log('so cool...');
+	getDiscution = (interlocutor, connectedUser, userName, token) => {
+		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
+
+		this.fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					messages : data.data
+				});
+				ReactDOM.render(
+					<Messagebox
+						connectedUser={connectedUser}
+						interlocutor={interlocutor}
+						userName={userName}
+						token={token}
+						messages={this.state.messages}
+					/>,
+					document.getElementById('boxmessage')
+				);
+
+			}
+		})
 	}
 
 	render(){
