@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import fetchData from './Function';
+import Singlemessage from './Singlemessage';
 
 class User extends React.Component{
 
