@@ -5,6 +5,10 @@ import User from './User';
 
 class Home extends React.Component{
 
+	state = {
+		
+	}
+
 	getDiscution = (interlocutor, connectedUser, userName, token) => {
 		const URL = 'http://instantchat.com/api/show/'+connectedUser+'/'+interlocutor+'/'+token;
 
