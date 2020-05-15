@@ -9,8 +9,8 @@ class Home extends React.Component{
 		interlocutor : undefined
 	}
 
-	postMessage =() => {
-
+	getInterlocutorId =() => {
+		
 	}
 
 	render(){
