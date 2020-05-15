@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import fetchData from './Function';
 
 class Textarea extends React.Component{
 
@@ -15,7 +16,16 @@ class Textarea extends React.Component{
 	}
 
 	handleSubmit = (event) => {
-		
+		event.preventDefault();
+		const URL = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
+		this.fetchData(url)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					message : ''
+				});
+			}
+		});
 	}
 
 	render(){
