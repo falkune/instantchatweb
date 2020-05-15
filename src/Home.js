@@ -42,7 +42,7 @@ class Home extends React.Component{
 								}
 							</div>
 						</div>
-						<div className="card-footer" id="footer">
+						<div className="cardFooter" id="footer">
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@ class Home extends React.Component{
 							{/* ici seront injectés les messages */}
 						</div>
 
-						<div className="card-footer">
+						<div className="cardFooter">
 							<Textarea
 								connectedUser={this.props.user}
 								interlocutor={this.state.interlocutorID}
