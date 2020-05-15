@@ -39,7 +39,7 @@ class Textarea extends React.Component{
 					</div>
 
 					<textarea 
-						row="1" 
+						rows="1" 
 						class="form-control type_msg" 
 						placeholder="Type your message..."
 						onChange={this.handleMessage}
