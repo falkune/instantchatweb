@@ -42,7 +42,7 @@ class Home extends React.Component{
 								}
 							</div>
 						</div>
-						<div className="card-footer">
+						<div className="card-footer" id="footer">
 						</div>
 					</div>
 				</div>
