@@ -5,6 +5,10 @@ import User from './User';
 
 class Home extends React.Component{
 
+	postMessage =() => {
+		
+	}
+
 	render(){
 		return(
 			<div id="chat">
