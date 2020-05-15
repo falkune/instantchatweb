@@ -174,7 +174,7 @@ body{
 
 	.recut p{
 		max-width: 65%;
-    float: right;
+    float: left;
     background: green;
     padding: 0px 2px;
 	}
