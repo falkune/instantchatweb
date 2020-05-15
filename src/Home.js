@@ -21,7 +21,7 @@ class Home extends React.Component{
 		return(
 			<div id="chat">
 				<div className="chat">
-					<div id="cardi" className="card">
+					<div id="card" className="card">
 						<div className="card-header">
 							<Input/>
 						</div>
