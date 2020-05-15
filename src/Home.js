@@ -64,7 +64,8 @@ class Home extends React.Component{
 
 						<div className="card-footer">
 							<Textarea
-								
+								connectedUser={this.props.user}
+								interlocutor={this.state.interlocutorID}
 							/>
 						</div>
 					</div>
