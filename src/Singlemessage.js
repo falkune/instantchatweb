@@ -3,7 +3,7 @@ import React from 'react';
 class Singlemessage extends React.Component{
 
 	parsedate = (date) => {
-		var date = new Date(date*1000);
+		date = new Date(date*1000);
 		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 		let hour = date.getHours();
 		let min = date.getMinutes();
