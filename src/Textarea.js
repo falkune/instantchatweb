@@ -39,6 +39,9 @@ class Textarea extends React.Component{
 					<span className="input-group-text attach_btn">
 						<i className="fas fa-paperclip"></i>
 					</span>
+					<span className="input-group-text emojis_btn">
+						<i class="fas fa-smile"></i>
+					</span>
 				</div>
 
 				<textarea
@@ -46,11 +49,7 @@ class Textarea extends React.Component{
 					className="form-control type_msg" 
 					placeholder="Type your message..."
 					onChange={this.handleMessage}
-				>
-					<span className="input-group-text emojis_btn">
-						<i class="fas fa-smile"></i>
-					</span>	
-				</textarea>
+				/>
 
 				<div className="input-group-append" onClick={this.handleSubmit}>
 					<span className="input-group-text send_btn">
