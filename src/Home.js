@@ -79,7 +79,11 @@ class Home extends React.Component{
 						</div>
 
 						<div className="cardFooter">
-							{this.postMessage}
+							<Textarea
+								connectedUser={this.props.user}
+								interlocutor={this.state.interlocutorID}
+								token={this.props.token}
+							/>
 						</div>
 					</div>
 				</div>
