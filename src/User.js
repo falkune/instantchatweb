@@ -1,5 +1,6 @@
 import React from 'react';
 import fetchData from './Function';
+import Singlemessage from './Singlemessage';
 
 class User extends React.Component{
 
@@ -16,7 +17,23 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				console.log(this.state.messages)
+				if(this.state.messages.length !== 0){
+					return(
+						<div>
+							{
+								this.state.messages.map(msg =>
+									<Singlemessage
+										key={msg['message_id']}
+										connectedUser={this.props.connectedUser}
+										user={msg['from_user_id']}
+										content={msg['message_body']}
+										editdate={msg['message_edit_at']}
+									/>
+								)
+							}
+						</div>
+					)
+				}
 			}
 		})
 	}
