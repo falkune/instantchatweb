@@ -18,7 +18,9 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				this.props.setIntelocutor(this.props.user);
+				
+				this.props.setIntelocutor(this.props.user, this.props.userName);
+
 				if(this.state.messages.length !== 0){
 					ReactDOM.render(
 						<div id="modal-body">
