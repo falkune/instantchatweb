@@ -101,9 +101,8 @@ body{
 	  font-size: 20px;
 	}
 	
-	#send_btn{
-	  padding: 0;
-	  align-items: normal;
+	#send_btn:hover{
+	  cursor: pointer;
 	}
 
 	#passwordError{
