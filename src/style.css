@@ -137,6 +137,14 @@ body{
 	  margin: auto;
 	}
 
+	#modal-body{
+	  width: 100%;
+	  height: 266px;
+	  overflow-y: scroll;
+	  position: absolute;
+	  margin-top: 10px;
+	}
+
 	#trasmit{
 	  background: lightskyblue;
 	  max-width: 140px;
