@@ -7,6 +7,7 @@ class Home extends React.Component{
 
 	state = {
 		interlocutorID : undefined
+		interlocutorName : undefined
 	}
 
 	getInterlocutorId =(id) => {
