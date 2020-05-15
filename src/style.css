@@ -163,6 +163,7 @@ body{
     float: right;
     background: lightskyblue;
     padding: 0px 2px;
+    border-radius: 5px;
 	}
 
 	.recut{
@@ -177,6 +178,7 @@ body{
     float: left;
     background: green;
     padding: 0px 2px;
+    border-radius: 5px;
 	}
 
 }
