@@ -1,6 +1,4 @@
 import React from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import fetchData from './Function';
 
 class Textarea extends React.Component{
@@ -24,6 +22,7 @@ class Textarea extends React.Component{
 				this.setState({
 					message : ''
 				});
+				document.getElementBytagName('textarea').reset();
 			}
 		});
 	}
