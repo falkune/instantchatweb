@@ -16,7 +16,7 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				console.log(messages)
+				console.log(this.state.messages)
 			}
 		})
 	}
