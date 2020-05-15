@@ -165,6 +165,13 @@ body{
 	  float: right;
 	}
 
+	.transmit p{
+		max-width: 50%;
+    float: right;
+    background: azure;
+    padding: 0px 2px;
+	}
+
 	.recut{
 	  background: green;
 	  max-width: 140px;
