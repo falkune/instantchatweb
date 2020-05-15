@@ -122,13 +122,13 @@ body{
 	  bottom: 0;
 	  border-top: solid 1px lightgrey;
 	}
-	
+	::-webkit-scrollbar{
+	  width: 6px;
+	}
 	::-webkit-scrollbar-track {
 	  box-shadow: inset 0 0 2.5px 2px grey;
 	}
-	::-webkit-scrollbar-thumb {
-	  background: black; 
-	}
+	
 
 	#him{
 		height: 30px;
