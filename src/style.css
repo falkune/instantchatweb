@@ -53,8 +53,9 @@ body{
 		border-radius: 1.25rem;
 	}
 
-	.card{
+	#card{
 	  height: 600px;
+	  border-radius: 1.25rem;
 	}
 
 	.cardHheader{
