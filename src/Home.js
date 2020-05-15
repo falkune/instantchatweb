@@ -9,11 +9,21 @@ class Home extends React.Component{
 		interlocutorID : undefined
 	}
 
+	componentDidMount(){
+		this.forceScroll();
+	}
+
 	getInterlocutorId =(id) => {
 		this.setState({
 			interlocutorID : id
 		});
-		console.log(this.state.interlocutorID)
+	}
+
+	forceScroll(){
+  	const parent = document.getElementById('modal-body');
+  	if(parent !== undefined){
+  		parent.scrollTop = document.getElementById('modal-body').scrollHeight;
+  	}
 	}
 
 	render(){
