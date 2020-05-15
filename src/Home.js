@@ -10,9 +10,10 @@ class Home extends React.Component{
 		interlocutorName : undefined
 	}
 
-	getInterlocutorId =(id) => {
+	getInterlocutorId =(id, name) => {
 		this.setState({
-			interlocutorID : id
+			interlocutorID : id,
+			interlocutorName : name
 		});
 	}
 
@@ -49,7 +50,7 @@ class Home extends React.Component{
 						<div className="card-header">
 							<div className="d-flex bd-highlight">
 								<div className="user_info">
-									<span id="info_user">{this.props.name}</span>
+									<span id="info_user">{this.state.interlocutorName}</span>
 								</div>
 							</div>
 
