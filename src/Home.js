@@ -52,10 +52,11 @@ class Home extends React.Component{
 								<div className="user_info">
 									<span id="info_user">{this.state.interlocutorName}</span>
 								</div>
-								<span id="disconected" onClick={this.props.logout}>
-									<i className="fas fa-power-off fa-2x "></i>
-								</span>
 							</div>
+
+							<span id="disconected" onClick={this.props.logout}>
+								<i className="fas fa-power-off fa-2x "></i>
+							</span>
 						</div>
 
 						<div className="card-body" id="fil-discution">
