@@ -19,7 +19,7 @@ class User extends React.Component{
 					messages : data.data
 				});
 				if(this.state.messages.length !== 0){
-					return(
+					ReactDOM.render(
 						<div>
 							{
 								this.state.messages.map(msg =>
@@ -32,8 +32,9 @@ class User extends React.Component{
 									/>
 								)
 							}
-						</div>
-					)
+						</div>,
+						document.getElementById('fil-discution')
+					);
 				}
 			}
 		})
