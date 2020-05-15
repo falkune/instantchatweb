@@ -14,23 +14,27 @@ class Singlemessage extends React.Component{
 	render(){
 		if(this.props.user === this.props.connectedUser){
 			return(
-				<div id="trasmit">
-					{this.props.content}
-					<br/>
-					<span className="datebox">
-						{this.parsedate(this.props.editdate)}
-					</span>
+				<div>
+					<p id="trasmit">
+						{this.props.content}
+						<br/>
+						<span className="datebox">
+							{this.parsedate(this.props.editdate)}
+						</span>
+					</p>
 				</div>
 			)
 		}
 		else{
 			return(
-				<div id="recut">
-					{this.props.content}
-					<br/>
-					<span className="datebox">
-						{this.parsedate(this.props.editdate)}
-					</span>
+				<div>
+					<p id="recut">
+						{this.props.content}
+						<br/>
+						<span className="datebox">
+							{this.parsedate(this.props.editdate)}
+						</span>
+					</p>
 				</div>
 			)
 		}
