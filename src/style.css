@@ -63,7 +63,7 @@ body{
 	}
 	
 	#chat{
-		width: 80%;
+		width: 90%;
 		display: grid;
 		grid-template-columns: 30% 65%;
 		grid-column-gap: 5%;
@@ -79,7 +79,6 @@ body{
 
 	.user_info span{
 	  font-size: 20px;
-	  /*color: white;*/
 	}
 
 	.user_info p{
@@ -95,7 +94,6 @@ body{
 	  position: absolute;
 	  right: 10px;
 	  top: 10px;
-	  /*color: red;*/
 	  cursor: pointer;
 	  font-size: 20px;
 	}
