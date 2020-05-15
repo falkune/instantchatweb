@@ -6,11 +6,13 @@ import User from './User';
 class Home extends React.Component{
 
 	state = {
-		interlocutor : undefined
+		interlocutorID : undefined
 	}
 
-	getInterlocutorId =() => {
-		
+	getInterlocutorId =(id) => {
+		this.setState({
+			interlocutorID : id
+		});
 	}
 
 	render(){
