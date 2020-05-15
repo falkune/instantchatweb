@@ -45,7 +45,7 @@ class Textarea extends React.Component{
 				/>
 
 				<div className="input-group-append" onClick={this.handleSubmit}>
-					<span Type="button" className="input-group-text send_btn">
+					<span className="input-group-text send_btn">
 						<i className="fas fa-location-arrow"></i>
 					</span>
 				</div>
