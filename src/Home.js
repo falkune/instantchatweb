@@ -22,7 +22,7 @@ class Home extends React.Component{
 			<div id="chat">
 				<div className="chat">
 					<div id="card" className="card">
-						<div className="card-header">
+						<div className="cardHheader">
 							<Input/>
 						</div>
 
@@ -49,7 +49,7 @@ class Home extends React.Component{
 
 				<div className="chat">
 					<div id="card" className="card">
-						<div className="card-header">
+						<div className="cardHheader">
 							<div className="d-flex bd-highlight">
 								<div className="user_info">
 									<span id="targetbutton"><i className="fas fa-ellipsis-v"></i></span>
