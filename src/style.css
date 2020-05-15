@@ -44,6 +44,10 @@ body{
 	h5{
 		text-align: center;
 	}
+	
+	.chat{
+		border-radius: 1.5rem;
+	}
 
 	.card{
 	  height: 600px;
