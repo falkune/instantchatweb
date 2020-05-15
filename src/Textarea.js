@@ -14,9 +14,13 @@ class Textarea extends React.Component{
 		});
 	}
 
+	handleSubmit = (event) => {
+		
+	}
+
 	render(){
 		return(
-			<Form id="messagetype">
+			<Form id="messagetype" onSubmit={this.handleSubmit}>
 				<textarea
 					rows="1"
 					id="form-control" 
