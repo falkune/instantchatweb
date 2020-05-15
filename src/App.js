@@ -130,7 +130,7 @@ class App extends React.Component{
 		}
 		if(this.state.page === 'accueil'){
 			return(
-				<div>
+				<div id="container">
 					<Home 
 						user={this.state.connectedUser}
 						token={this.state.token}
