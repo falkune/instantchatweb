@@ -100,11 +100,6 @@ body{
 	  cursor: pointer;
 	  font-size: 20px;
 	}
-
-	#messagetype{
-	  display: grid;
-	  grid-template-columns: 93% 7.5%;
-	}
 	
 	#send_btn{
 	  padding: 0;
