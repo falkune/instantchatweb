@@ -4,7 +4,9 @@ body{
 	background: #f1faee;
 }
 
-
+input[type="text"]:focus {
+	outline:none;
+}
 
 /*media pour large ecran*/
 @media (min-width: 768px)
