@@ -178,6 +178,12 @@ body{
 		cursor: pointer;
 	}
 
+	#footer{
+		position: absolute;
+    bottom: 0px;
+    width: 100%;
+	}
+
 }
 
 /*media pour petit ecran*/
