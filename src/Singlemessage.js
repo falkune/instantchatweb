@@ -7,9 +7,9 @@ class Singlemessage extends React.Component{
 	}
 
 	forceScroll(){
-  	const parent = document.getElementById('fil-discution');
+  	const parent = document.getElementById('modal-body');
   	if(parent !== undefined){
-  		parent.scrollTop = document.getElementById('fil-discution').scrollHeight;
+  		parent.scrollTop = document.getElementById('modal-body').scrollHeight;
   	}
 	}
 
