@@ -5,6 +5,10 @@ import User from './User';
 
 class Home extends React.Component{
 
+	state = {
+		messages : []
+	}
+
 	render(){
 		return(
 			<div id="chat">
