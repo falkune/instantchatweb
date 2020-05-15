@@ -50,7 +50,7 @@ class Home extends React.Component{
 						<div className="card-header">
 							<div className="d-flex bd-highlight">
 								<div className="user_info">
-									<span><i class="fas fa-ellipsis-v"></i></span>
+									<span><i className="fas fa-ellipsis-v"></i></span>
 									<span id="info_user">{this.state.interlocutorName}</span>
 								</div>
 							</div>
