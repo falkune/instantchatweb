@@ -51,7 +51,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{/* ici seront injecter les message */}
+							{/* ici seront injectés les messages */}
 						</div>
 
 						<div className="card-footer">
