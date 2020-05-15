@@ -159,6 +159,7 @@ body{
     background-color: #82ccdd;
     padding: 10px;
     position: relative;
+    float: right;
 	}
 
 	.recut p{
@@ -176,6 +177,7 @@ body{
     background-color: #78e08f;
     padding: 10px;
     position: relative;
+    float: left;
 	}
 
 	#targetbutton{
