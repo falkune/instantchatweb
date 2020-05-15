@@ -15,17 +15,21 @@ class Textarea extends React.Component{
 	}
 
 	handleSubmit = (event) => {
-		event.preventDefault();
-		const URL = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					message : '',
-					messageValue : ''
-				});
-			}
-		});
+		if(this.props.interlocutor !== undefined){
+			const URL = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
+			fetchData(URL)
+			.then(data => {
+				if(data.status === 'ok'){
+					this.setState({
+						message : '',
+						messageValue : ''
+					});
+				}
+			});
+		}
+		else{
+			alert('no')
+		}
 	}
 
 	render(){
