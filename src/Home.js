@@ -63,7 +63,9 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-footer">
-							<Textarea/>
+							<Textarea
+								
+							/>
 						</div>
 					</div>
 				</div>
