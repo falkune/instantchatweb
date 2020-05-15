@@ -30,10 +30,10 @@ class Textarea extends React.Component{
 
 	render(){
 		return(
-			<div class="input-group">
-				<div class="input-group-append">
-					<span class="input-group-text attach_btn">
-						<i class="fas fa-paperclip"></i>
+			<div className="input-group">
+				<div className="input-group-append">
+					<span className="input-group-text attach_btn">
+						<i className="fas fa-paperclip"></i>
 					</span>
 				</div>
 
@@ -44,9 +44,9 @@ class Textarea extends React.Component{
 					onChange={this.handleMessage}
 				/>
 
-				<div class="input-group-append" onClick={this.handleSubmit}>
-					<span Type="button" class="input-group-text send_btn">
-						<i class="fas fa-location-arrow"></i>
+				<div className="input-group-append" onClick={this.handleSubmit}>
+					<span Type="button" className="input-group-text send_btn">
+						<i className="fas fa-location-arrow"></i>
 					</span>
 				</div>
 			</div>
