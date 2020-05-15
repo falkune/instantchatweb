@@ -66,6 +66,7 @@ class Home extends React.Component{
 							<Textarea
 								connectedUser={this.props.user}
 								interlocutor={this.state.interlocutorID}
+								token={this.props.token}
 							/>
 						</div>
 					</div>
