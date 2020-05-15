@@ -17,6 +17,18 @@ class Home extends React.Component{
 		});
 	}
 
+	postMessage = () => {
+		if(interlocutorID !== undefined){
+			return(
+				<Textarea
+					connectedUser={this.props.user}
+					interlocutor={this.state.interlocutorID}
+					token={this.props.token}
+				/>
+			)
+		}
+	}
+
 	render(){
 		return(
 			<div id="chat">
@@ -67,11 +79,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="cardFooter">
-							<Textarea
-								connectedUser={this.props.user}
-								interlocutor={this.state.interlocutorID}
-								token={this.props.token}
-							/>
+							{this.postMessage}
 						</div>
 					</div>
 				</div>
