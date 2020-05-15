@@ -22,7 +22,7 @@ class Textarea extends React.Component{
 				this.setState({
 					message : ''
 				});
-				document.getElementBytagName('textarea').reset();
+				document.getElementsByTagName('textarea').reset();
 			}
 		});
 	}
@@ -38,7 +38,7 @@ class Textarea extends React.Component{
 
 				<textarea
 					rows="1" 
-					class="form-control type_msg" 
+					className="form-control type_msg" 
 					placeholder="Type your message..."
 					onChange={this.handleMessage}
 				/>
