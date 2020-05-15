@@ -2,6 +2,17 @@ import React from 'react';
 
 class Singlemessage extends React.Component{
 
+	componentDidMount(){
+		this.forceScroll();
+	}
+
+	forceScroll(){
+  	const parent = document.getElementById('modal-body');
+  	if(parent !== undefined){
+  		parent.scrollTop = document.getElementById('modal-body').scrollHeight;
+  	}
+	}
+
 	parsedate = (date) => {
 		date = new Date(date*1000);
 		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
