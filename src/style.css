@@ -150,12 +150,7 @@ body{
 	}
 
 	.transmit p{
-		max-width: 65%; */
-    float: right;
-    /* background: lightskyblue; */
-    /* padding: 0px 2px; */
-    /* border-radius: 5px; */
-    /* min-height: 30px; */
+		max-width: 65%;
     font-size: smaller;
     margin-top: auto;
     margin-bottom: auto;
