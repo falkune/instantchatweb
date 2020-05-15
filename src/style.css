@@ -146,6 +146,7 @@ body{
 	  height: 472px;
 	  overflow-y: scroll;
 	  padding: 0px 10%;
+	  display: grid;
 	  /*position: absolute;
 	  margin-top: 10px;*/
 	}
