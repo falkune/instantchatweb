@@ -51,11 +51,11 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{
+							
 								if(this.state.messages.length === 0){
-									
+
 								}
-							}
+							
 						</div>
 
 						<div className="card-footer">
