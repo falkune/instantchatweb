@@ -170,6 +170,14 @@ body{
 	  min-height: 30px;
 	}
 
+	#targetbutton{
+		margin-right: 10px;
+	}
+
+	#targetbutton:hover{
+		cursor: pointer;
+	}
+
 }
 
 /*media pour petit ecran*/
