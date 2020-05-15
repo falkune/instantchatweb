@@ -23,7 +23,7 @@ class User extends React.Component{
 
 				if(this.state.messages.length !== 0){
 					ReactDOM.render(
-						<div id="modal-body">
+						<div>
 							{
 								this.state.messages.map(msg =>
 									<Singlemessage
