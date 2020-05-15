@@ -63,10 +63,6 @@ class Messagebox extends React.Component{
   	}
 	}
 
-	closeMsgBox = () => {
-		
-	}
-
 	render(){
 		if(this.props.messages.length === 0){
 			return(
