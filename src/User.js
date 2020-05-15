@@ -38,7 +38,7 @@ class User extends React.Component{
 				}
 				else{
 					ReactDOM.render(
-						
+						<div/>
 					)
 				}
 			}
