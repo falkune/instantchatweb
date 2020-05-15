@@ -52,9 +52,9 @@ class Home extends React.Component{
 
 						<div className="card-body" id="fil-discution">
 							
-								if(this.state.messages.length === 0){
+							if(this.state.messages.length === 0){
 
-								}
+							}
 							
 						</div>
 
