@@ -18,7 +18,7 @@ class User extends React.Component{
 				this.setState({
 					messages : data.data
 				});
-				if(this.state.messages.length !== 0){
+				if(this.state.messages.length === 0){
 					ReactDOM.render(
 						<div>
 							{
