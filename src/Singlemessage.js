@@ -14,8 +14,8 @@ class Singlemessage extends React.Component{
 	render(){
 		if(this.props.user === this.props.connectedUser){
 			return(
-				<div>
-					<p id="trasmit">
+				<div className="transmit">
+					<p>
 						{this.props.content}
 						<br/>
 						<span className="datebox">
@@ -27,8 +27,8 @@ class Singlemessage extends React.Component{
 		}
 		else{
 			return(
-				<div>
-					<p id="recut">
+				<div className="recut">
+					<p>
 						{this.props.content}
 						<br/>
 						<span className="datebox">
