@@ -152,9 +152,7 @@ body{
 	}
 
 	.transmit{
-	  font-size: smaller;
-	  /*margin-top: 6px;
-	  margin-bottom: 6px;*/
+	  
 	}
 
 	.transmit p{
@@ -164,15 +162,15 @@ body{
     padding: 0px 2px;
     border-radius: 5px;
 	  min-height: 30px;
+	  font-size: smaller;
 	}
 
 	.recut{
-	  font-size: smaller;
-	  /*margin-top: 6px;
-	  margin-bottom: 6px;*/
+	 
 	}
 
 	.recut p{
+		font-size: smaller;
 		max-width: 65%;
     float: left;
     background: green;
