@@ -39,7 +39,7 @@ class User extends React.Component{
 				else{
 					ReactDOM.render(
 						<div/>,document.getElementById('fil-discution')
-					)
+					);
 				}
 			}
 		})
