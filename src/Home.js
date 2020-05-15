@@ -56,7 +56,7 @@ class Home extends React.Component{
 						</div>
 						<div className="cardFooter" id="footer">
 							<span>
-								<i class="fas fa-users fa-2x"></i>
+								<i className="fas fa-users fa-2x"></i>
 							</span>
 						</div>
 					</div>
