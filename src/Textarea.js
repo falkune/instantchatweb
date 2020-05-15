@@ -4,12 +4,13 @@ import fetchData from './Function';
 class Textarea extends React.Component{
 
 	state = {
-		message : ''
+		message : '',
+		messageValue : ''
 	}
 
 	handleMessage = (e) => {
 		this.setState({
-			message : e.currentTarget.value
+			message : e.currentTarget.value,
 		});
 	}
 
@@ -20,9 +21,9 @@ class Textarea extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					message : ''
+					message : '',
+					messageValue : ''
 				});
-				document.getElementsByTagName('textarea').reset();
 			}
 		});
 	}
