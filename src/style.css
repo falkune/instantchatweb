@@ -5,7 +5,7 @@ body{
 }
 
 input[type="text"]:focus {
-	outline:none;
+	outline:transparent;
 }
 
 /*media pour large ecran*/
