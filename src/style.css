@@ -138,7 +138,6 @@ body{
 
 	#fil-discution{
 		padding: 0;
-		overflow-y: scroll;
 	}
 
 	#modal-body{
@@ -151,13 +150,13 @@ body{
 	}
 
 	.transmit p{
-		margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-    border-radius: 25px;
-    background-color: #82ccdd;
-    padding: 10px;
-    position: relative;
+		max-width: 65%;
+    float: right;
+    background: lightskyblue;
+    padding: 0px 2px;
+    border-radius: 5px;
+	  min-height: 30px;
+	  font-size: smaller;
 	}
 
 	.recut p{
