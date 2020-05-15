@@ -13,6 +13,7 @@ class Home extends React.Component{
 		this.setState({
 			interlocutorID : id
 		});
+		console.log(this.state.interlocutorID)
 	}
 
 	render(){
