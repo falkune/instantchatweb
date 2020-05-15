@@ -1,6 +1,9 @@
 import React from 'react';
 
 class Singlemessage extends React.Component{
+	state = {
+		
+	}
 
 	parsedate = (date) => {
 		date = new Date(date*1000);
