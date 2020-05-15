@@ -155,7 +155,6 @@ body{
 	  font-size: smaller;
 	  /*margin-top: 6px;
 	  margin-bottom: 6px;*/
-	  min-height: 30px;
 	}
 
 	.transmit p{
@@ -164,13 +163,13 @@ body{
     background: lightskyblue;
     padding: 0px 2px;
     border-radius: 5px;
+	  min-height: 30px;
 	}
 
 	.recut{
 	  font-size: smaller;
 	  /*margin-top: 6px;
 	  margin-bottom: 6px;*/
-	  min-height: 30px;
 	}
 
 	.recut p{
@@ -179,6 +178,7 @@ body{
     background: green;
     padding: 0px 2px;
     border-radius: 5px;
+	  min-height: 30px;
 	}
 
 }
