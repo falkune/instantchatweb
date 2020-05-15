@@ -31,19 +31,26 @@ class Textarea extends React.Component{
 	render(){
 		return(
 			<Form id="messagetype" onSubmit={this.handleSubmit}>
-				<textarea
-					rows="1"
-					id="form-control" 
-					className="form-control type_msg" 
-					placeholder="Type your message..."
-					onChange={this.handleMessage}
-				/>
-				<span className="input-group-text" id="send_btn">
-					<Button type="submit" id="btn">
-						<i className="fas fa-location-arrow"></i>
-					</Button>
-					
-				</span>
+				<div class="input-group">
+					<div class="input-group-append">
+						<span class="input-group-text attach_btn">
+							<i class="fas fa-paperclip"></i>
+						</span>
+					</div>
+
+					<textarea 
+						name="" 
+						class="form-control type_msg" 
+						placeholder="Type your message..."
+						onChange={this.handleMessage}
+					/>
+
+					<div class="input-group-append">
+						<span class="input-group-text send_btn">
+							<i class="fas fa-location-arrow"></i>
+						</span>
+					</div>
+				</div>
 	    </Form>
 		)
 	}
