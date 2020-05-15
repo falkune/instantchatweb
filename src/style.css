@@ -151,10 +151,6 @@ body{
 	  margin-top: 10px;*/
 	}
 
-	.transmit{
-	  
-	}
-
 	.transmit p{
 		max-width: 65%;
     float: right;
@@ -163,10 +159,6 @@ body{
     border-radius: 5px;
 	  min-height: 30px;
 	  font-size: smaller;
-	}
-
-	.recut{
-	 
 	}
 
 	.recut p{
