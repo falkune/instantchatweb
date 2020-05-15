@@ -28,7 +28,7 @@ class Textarea extends React.Component{
 			});
 		}
 		else{
-			alert('no')
+			alert(this.props.token)
 		}
 	}
 
