@@ -169,6 +169,13 @@ body{
     padding: 0px 2px;
     border-radius: 5px;
 	  min-height: 30px;
+	  margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #78e08f;
+    padding: 10px;
+    position: relative;
 	}
 
 	#targetbutton{
