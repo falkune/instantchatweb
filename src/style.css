@@ -107,9 +107,9 @@ body{
 	}
 
 	#userBox{
-	  height: 90%;
+	  height: 95.3%;
 	  overflow-y: scroll;
-	  position: absolute;
+	  /*position: absolute;*/
 	  width: 100%;
 	  bottom: 0;
 	  border-top: solid 1px lightgrey;
