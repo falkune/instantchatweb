@@ -51,7 +51,11 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{/* ici seront injecter les message */}
+							{
+								if(this.state.messages.length === 0){
+									
+								}
+							}
 						</div>
 
 						<div className="card-footer">
