@@ -32,8 +32,9 @@ class Home extends React.Component{
 											key={user['user_id'].toString()}
 											connectedUser={this.props.user}
 											user={user['user_id']}
-											token={this.props.token} 
+											token={this.props.token}
 											userName={user['user_name']}
+											setIntelocutor={this.getInterlocutorId}
 										/>
 									)
 								}
