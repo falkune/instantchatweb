@@ -18,7 +18,7 @@ class Home extends React.Component{
 	}
 
 	postMessage = () => {
-		if(this.state.interlocutorID !== undefined){
+		if(this.state.interlocutorID === undefined){
 			return(
 				<Textarea
 					connectedUser={this.props.user}
