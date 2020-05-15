@@ -4,10 +4,6 @@ body{
 	background: #f1faee;
 }
 
-input:focus {
-	outline:transparent;
-}
-
 /*media pour large ecran*/
 @media (min-width: 768px)
 {
