@@ -84,7 +84,6 @@ class App extends React.Component{
 				this.setState({
 					connectedUsers : data.data
 				});
-				console.log(this.state.connectedUsers)
 			}
 		})
 	}
