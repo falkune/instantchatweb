@@ -206,11 +206,6 @@ body{
     cursor: pointer;
 	}
 
-	.emojis_btn{
-		/*border-radius: 50%;
-		color: #e9c46a;*/
-	}
-
 	.emojis_btn:hover{
 		cursor: pointer;
 	}
