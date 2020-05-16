@@ -52,12 +52,12 @@ class Textarea extends React.Component{
 					<span className="input-group-text emojis_btn" id="action_menu_btn">
 						<i className="fas fa-smile fa-2x"></i>
 					</span>
-					<div class="action_menu">
+					<div className="action_menu">
 						<ul>
-							<li><i class="fas fa-user-circle"></i> View profile</li>
-							<li><i class="fas fa-users"></i> Add to close friends</li>
-							<li><i class="fas fa-plus"></i> Add to group</li>
-							<li><i class="fas fa-ban"></i> Block</li>
+							<li><i className="fas fa-user-circle"></i> View profile</li>
+							<li><i className="fas fa-users"></i> Add to close friends</li>
+							<li><i className="fas fa-plus"></i> Add to group</li>
+							<li><i className="fas fa-ban"></i> Block</li>
 						</ul>
 					</div>
 				</div>
