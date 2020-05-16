@@ -29,21 +29,6 @@ class Home extends React.Component{
 		}
 	}
 
-	showUser = () => {
-		return(
-			this.props.users.map(user => 
-				<User 
-					key={user['user_id'].toString()}
-					connectedUser={this.props.user}
-					user={user['user_id']}
-					token={this.props.token}
-					userName={user['user_name']}
-					setIntelocutor={this.getInterlocutorId}
-				/>
-			)
-		);
-	}
-
 	render(){
 		return(
 			<div id="chat">
@@ -64,6 +49,7 @@ class Home extends React.Component{
 											token={this.props.token}
 											userName={user['user_name']}
 											setIntelocutor={this.getInterlocutorId}
+											online={this.props.online}
 										/>
 									)
 								}
