@@ -244,6 +244,11 @@ body{
 	.emo:hover{
 		cursor: pointer;
 	}
+
+	.modal-content{
+		height: 250px;
+    overflow-y: scroll;
+	}
 }
 
 /*media pour petit ecran*/
