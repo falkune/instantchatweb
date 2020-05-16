@@ -36,9 +36,9 @@ class Textarea extends React.Component{
 		}
 	}
 
-	useThisEmoji = (event) => {
+	useThisEmoji = (emo) => {
 		this.setState({
-			message : event.currentTarget.value,
+			message : emo
 		});
 	}
 
@@ -60,7 +60,7 @@ class Textarea extends React.Component{
 			    			<span
 			    				className="emo"
 			    				key={emo}
-			    				onClick={this.useThisEmoji}
+			    				onClick={this.useThisEmoji(emo)}
 			    				>
 			    				{emo}
 			    			</span>
