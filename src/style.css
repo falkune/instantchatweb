@@ -165,6 +165,7 @@ body{
 
 	.transmit span{
 		font-size: xx-small;
+		color: #ffffff;
 	}
 
 	.recut p{
@@ -180,6 +181,7 @@ body{
 
 	.recut span{
 		font-size: xx-small;
+		color: #ffffff;
 	}
 
 	#targetbutton{
