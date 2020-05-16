@@ -51,7 +51,7 @@ class Textarea extends React.Component{
 			    <Button variant="primary">Save changes</Button>
 			  </Modal.Footer>
 			</Modal.Dialog>,
-			document.getElementById('fil-discution');
+			document.getElementById('emojis');
 		)
 	}
 
