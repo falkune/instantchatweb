@@ -48,7 +48,13 @@ class Textarea extends React.Component{
 			  </Modal.Header>
 
 			  <Modal.Body>
-			    <p>Modal body text goes here.</p>
+			    <p>
+			    	{
+			    		EMOJIS.map(em =>
+			    			<span>{em}</span>
+			    		)
+			    	}
+			    </p>
 			  </Modal.Body>
 			</Modal.Dialog>,
 			document.getElementById('emojis')
