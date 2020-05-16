@@ -36,7 +36,7 @@ class Textarea extends React.Component{
 	}
 
 	useThisEmoji = emo => {
-		document.getElementById('saisie').value = emo
+		document.getElementById('saisie').value = this.state.message+' '+emo;
 	}
 
 	showemojis = () => {
