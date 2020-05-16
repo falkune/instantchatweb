@@ -10,7 +10,7 @@ export function getConnectedUser(id, token){
 		if(data.status === 'ok'){
 			return data.data
 		}
-	});
+	})
 }
 
 export const EMOJIS = [
