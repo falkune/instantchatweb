@@ -2,18 +2,12 @@ import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import User from './User';
-import fetchData from './Function';
 
 class Home extends React.Component{
 
 	state = {
 		interlocutorID : undefined,
-		connectedUsers : undefined,
 		interlocutorName : undefined
-	}
-
-	componentDidMount(){
-		this.getConnectedUser(this.props.user, this.props.token);
 	}
 
 	getInterlocutorId =(id, name) => {
@@ -21,18 +15,6 @@ class Home extends React.Component{
 			interlocutorID : id,
 			interlocutorName : name
 		});
-	}
-
-	getConnectedUser = (id, token) => {
-		const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					connectedUsers : data.data
-				});
-			}
-		})
 	}
 
 	postMessage = () => {
@@ -67,7 +49,7 @@ class Home extends React.Component{
 											token={this.props.token}
 											userName={user['user_name']}
 											setIntelocutor={this.getInterlocutorId}
-											online={this.state.connectedUsers}
+											online={this.props.online}
 										/>
 									)
 								}
