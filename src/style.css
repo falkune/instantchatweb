@@ -245,14 +245,8 @@ body{
 		cursor: pointer;
 	}
 
-	.modal-content{
-		height: 250px;
-    overflow-y: scroll;
-    background-color: rgba(0,0,0,0.5);
-	}
-
 	#Modal{
-		
+
 	}
 }
 
