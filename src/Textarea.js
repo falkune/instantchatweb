@@ -42,7 +42,7 @@ class Textarea extends React.Component{
 					<span className="input-group-text emojis_btn">
 						<i className="fas fa-smile fa-2x"></i>
 					</span>
-					<Modal.Dialog style="visibility: hidden">
+					<Modal.Dialog visibility: hidden>
 					  <Modal.Header closeButton>
 					    <Modal.Title>Modal title</Modal.Title>
 					  </Modal.Header>
