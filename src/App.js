@@ -4,13 +4,14 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
-import fetchData from './Function';
+import fetchData from './Function'
 
 class App extends React.Component{
 
 	state = {
 		page : 'login',
 		connectedUser : undefined,
+		connectedUsers : undefined,
     token : undefined,
     users : undefined,
     name : undefined
@@ -63,12 +64,26 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
+				this.getConnectedUser(id, token);
+
 				this.setState({
 					connectedUser : id,
 					token : token,
 					name : name,
 					users : data.data,
 					page : 'accueil'
+				});
+			}
+		})
+	}
+
+	getConnectedUser = (id, token) => {
+		const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					connectedUsers : data.data
 				});
 			}
 		})
@@ -128,7 +143,7 @@ class App extends React.Component{
 				</div>
 			)
 		}
-		if(this.state.page === 'accueil'){
+		if(this.state.page === 'accueil' & this.state.connectedUsers !== undefined){
 			return(
 				<div id="container">
 					<Home 
@@ -137,6 +152,7 @@ class App extends React.Component{
 						name={this.state.name}
 						users={this.state.users}
 						logout={this.getOut}
+						online={this.state.connectedUsers}
 					/>	
 				</div>
 			)
