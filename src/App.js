@@ -4,13 +4,14 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
-import fetchData from './Function'
+import fetchData, {getConnectedUser} from './Function'
 
 class App extends React.Component{
 
 	state = {
 		page : 'login',
 		connectedUser : undefined,
+		connectedUsers : undefined,
     token : undefined,
     users : undefined,
     name : undefined
