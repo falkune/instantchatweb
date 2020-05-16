@@ -207,7 +207,10 @@ body{
 	}
 
 	.emojis_btn{
-		border-radius: 50%;
+		/*border-radius: 50%;*/
+		color: #e9c46a;
+    background-color: #457b9d;
+    border: none;
 	}
 
 	.emojis_btn:hover{
