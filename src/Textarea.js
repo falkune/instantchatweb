@@ -46,23 +46,21 @@ class Textarea extends React.Component{
 	showemojis = () => {
 		const EMOJIS = ['😂','😀','😁','😍','😘','🤭','🤫','😬','😔','😪','😷','😎','☹','🙈','💋','💘','❤️','👋','🤚','👌','✌','👈','👉','👍','👎','👊','👏','🤝','🙏','💪','👂','👃','🧠','🦷','👀','👁','🤦','🤦‍♂️','🤰','🏃','🏋️‍♂️','🏋️‍♀️','🚴','🗣','🥰','😛','😋','🥺','🐵','🐰','🕊','🐬','🐸','🍉','🍊','🍍','🍌','🍎','🍑','🥝','🍆','🌽','🥕','🌶','🥒','🥜','🍞','🥐','🥖','🥯','🍖','🍗','🥩','🍔','🍟','🌮','🍼','☕','🍾','🍷','🍸','🍺','🥂','🍽','🏥','🏦','🏨','🏫','🏭','🕌','⛪','🕋','🚖','🏍','🛴','🛹',''];
 		ReactDOM.render(
-			<Modal.Dialog>
-			  <Modal.Body>
-			    <p>
-			    	{
-			    		EMOJIS.map(emo =>
-			    			<span
-			    				className="emo"
-			    				key={emo}
-			    				onClick={() => this.useThisEmoji(emo)}
-			    			>
-			    				{emo}
-			    			</span>
-			    		)
-			    	}
-			    </p>
-			  </Modal.Body>
-			</Modal.Dialog>,
+		  <Modal.Body>
+		    <p>
+		    	{
+		    		EMOJIS.map(emo =>
+		    			<span
+		    				className="emo"
+		    				key={emo}
+		    				onClick={() => this.useThisEmoji(emo)}
+		    			>
+		    				{emo}
+		    			</span>
+		    		)
+		    	}
+		    </p>
+		  </Modal.Body>,
 			document.getElementById('emojis')
 		);
 	}
