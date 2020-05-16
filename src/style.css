@@ -231,6 +231,10 @@ body{
 	#close_emojis{
 		color: #e63946;
 	}
+
+	#close_emojis:hover{
+		cursor: pointer;
+	}
 }
 
 /*media pour petit ecran*/
