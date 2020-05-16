@@ -42,9 +42,9 @@ class Textarea extends React.Component{
 	render(){
 		return(
 			<div className="input-group">
-				<div className="input-group-append">
+				<div className="input-group-append" id="action_menu_btn">
 					<span className="input-group-text emojis_btn">
-						<i className="fas fa-smile fa-2x" onClick={this.showemojis}></i>
+						<i class="fas fa-ellipsis-v"></i>
 					</span>
 				</div>
 
