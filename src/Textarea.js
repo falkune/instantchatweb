@@ -7,7 +7,8 @@ class Textarea extends React.Component{
 
 	state = {
 		message : '',
-		messageValue : ''
+		messageValue : '',
+		modal : undefined
 	}
 
 	handleMessage = (event) => {
