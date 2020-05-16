@@ -66,6 +66,7 @@ class App extends React.Component{
 			if(data.status === 'ok'){
 				this.setState({
 					connectedUser : id,
+					connectedUsers : getConnectedUser,
 					token : token,
 					name : name,
 					users : data.data,
