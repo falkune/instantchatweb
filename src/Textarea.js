@@ -51,7 +51,7 @@ class Textarea extends React.Component{
 			    <p>
 			    	{
 			    		EMOJIS.map(em =>
-			    			<span>{em}</span>
+			    			<span key={em}>{em}</span>
 			    		)
 			    	}
 			    </p>
