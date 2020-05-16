@@ -69,7 +69,7 @@ class Textarea extends React.Component{
 		ReactDOM.render(
 			<p/>,
 			document.getElementById('emojis')
-		):
+		);
 	}
 
 	emojiEontrol = () => {
