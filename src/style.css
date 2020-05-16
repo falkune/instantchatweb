@@ -165,7 +165,6 @@ body{
 
 	.transmit span{
 		font-size: xx-small;
-		/*color: #ffffff;*/
 		float: right;
 	}
 
@@ -182,7 +181,6 @@ body{
 
 	.recut span{
 		font-size: xx-small;
-		/*color: #ffffff;*/
 	}
 
 	#targetbutton{
