@@ -70,7 +70,7 @@ class App extends React.Component{
 					name : name,
 					users : data.data,
 					page : 'accueil',
-					connectedUsers = this.getConnectedUser(id, token)
+					connectedUsers : this.getConnectedUser(id, token)
 				});
 			}
 		})
@@ -81,6 +81,7 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
+				console.log(data.data)
 				return data.data;
 			}
 		})
