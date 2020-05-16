@@ -11,7 +11,6 @@ class App extends React.Component{
 	state = {
 		page : 'login',
 		connectedUser : undefined,
-		connectedUsers : undefined,
     token : undefined,
     users : undefined,
     name : undefined
