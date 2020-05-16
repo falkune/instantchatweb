@@ -64,13 +64,14 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
+				this.getConnectedUser()
+
 				this.setState({
 					connectedUser : id,
 					token : token,
 					name : name,
 					users : data.data,
-					page : 'accueil',
-					connectedUsers : this.getConnectedUser()
+					page : 'accueil'
 				});
 			}
 		})
@@ -81,7 +82,9 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
-				return data.data;
+				this.setState({
+					connectedUsers : data.data
+				});
 			}
 		})
 	}
