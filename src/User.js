@@ -49,7 +49,6 @@ class User extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.online)
 		return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
