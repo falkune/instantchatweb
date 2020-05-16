@@ -39,7 +39,7 @@ class Textarea extends React.Component{
 	showemojis = () => {
 		ReactDOM.render(
 			<Modal.Dialog>
-			  <Modal.Header closeButton>
+			  <Modal.Header id="Modal_header">
 			    <Modal.Title>Modal title</Modal.Title>
 			  </Modal.Header>
 
