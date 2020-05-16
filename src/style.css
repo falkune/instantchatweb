@@ -210,6 +210,10 @@ body{
 		border-radius: 50%;
 	}
 
+	.emojis_btn:hover{
+		cursor: pointer;
+	}
+
 }
 
 /*media pour petit ecran*/
