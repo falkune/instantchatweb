@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import fetchData from './Function';
+import fetchData, {EMOJIS} from './Function';
 import Modal from 'react-bootstrap/Modal';
 
 class Textarea extends React.Component{
