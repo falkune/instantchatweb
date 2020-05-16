@@ -8,7 +8,7 @@ export function getConnectedUser(id, token){
 	const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
 	fetchData(URL)
 	.then(data => {
-		return data.data;
+		return data;
 	})
     
 }
