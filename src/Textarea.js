@@ -46,20 +46,6 @@ class Textarea extends React.Component{
 					<span className="input-group-text emojis_btn">
 						<i className="fas fa-smile fa-2x" onClick={this.showemojis}></i>
 					</span>
-					<Modal.Dialog id="modale" visibility="hide">
-					  <Modal.Header closeButton>
-					    <Modal.Title>Modal title</Modal.Title>
-					  </Modal.Header>
-
-					  <Modal.Body>
-					    <p>Modal body text goes here.</p>
-					  </Modal.Body>
-
-					  <Modal.Footer>
-					    <Button variant="secondary">Close</Button>
-					    <Button variant="primary">Save changes</Button>
-					  </Modal.Footer>
-					</Modal.Dialog>
 				</div>
 
 				<textarea
