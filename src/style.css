@@ -240,7 +240,7 @@ body{
 		border-top-left-radius: 15px;
 		/*background-color: #457b9d;*/
 		/*opacity: 0.9;*/
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.8);
 	}
 	::-webkit-scrollbar{
   	width: 6px;
