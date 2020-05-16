@@ -225,18 +225,6 @@ body{
 		max-width: 45%;
 	}
 
-	#Modal_header{
-		padding: 0;
-	}
-	
-	#close_emojis{
-		color: #e63946;
-	}
-
-	#close_emojis:hover{
-		cursor: pointer;
-	}
-
 	.emo{
 
 	}
@@ -247,6 +235,7 @@ body{
 
 	#Modal{
 		padding: 0px 2px;
+		background-color: #
 	}
 }
 
