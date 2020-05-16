@@ -10,6 +10,12 @@ class Textarea extends React.Component{
 		messageValue : ''
 	}
 
+	componentDidMount(){
+		document.getElementById('action_menu_btn').click(function(){
+			document.getElementsByClassName('.action_menu').toggle();
+		});
+	}
+
 	handleMessage = (e) => {
 		this.setState({
 			message : e.currentTarget.value,
