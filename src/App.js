@@ -70,7 +70,7 @@ class App extends React.Component{
 					name : name,
 					users : data.data,
 					page : 'accueil',
-					connectedUsers : this.getConnectedUser(id, token)
+					connectedUsers = this.getConnectedUser(id, token)
 				});
 			}
 		})
