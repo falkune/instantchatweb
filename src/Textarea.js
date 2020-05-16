@@ -36,7 +36,7 @@ class Textarea extends React.Component{
 	}
 
 	showemojis = () => {
-		document.getElementById("modale").style.visibility="visible";
+		console.log('emojis')
 	}
 
 	render(){
