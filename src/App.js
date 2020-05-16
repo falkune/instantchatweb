@@ -151,6 +151,7 @@ class App extends React.Component{
 						name={this.state.name}
 						users={this.state.users}
 						logout={this.getOut}
+						online={this.state.connectedUsers}
 					/>	
 				</div>
 			)
