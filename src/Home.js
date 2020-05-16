@@ -12,7 +12,7 @@ class Home extends React.Component{
 	}
 
 	componentDidMount(){
-		this.getConnectedUser(this.props.user, this.props.token)
+		this.getConnectedUser(this.props.user, this.props.token);
 	}
 
 	getInterlocutorId =(id, name) => {
