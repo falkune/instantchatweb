@@ -71,12 +71,12 @@ class App extends React.Component{
 					users : data.data,
 					page : 'accueil'
 				});
-				console.log(this.state.connectedUsers)
+				this.getConnectedUser(id, token);
 			}
 		})
 	}
 
-	getConnectedUser = () => {
+	getConnectedUser = (id, token) => {
 		const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
 		fetchData(URL)
 		.then(data => {
