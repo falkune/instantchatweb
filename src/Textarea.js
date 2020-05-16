@@ -36,7 +36,7 @@ class Textarea extends React.Component{
 	}
 
 	showemojis = () => {
-		document.getElementById(id).style.visibility="visible";
+		document.getElementById("modale").style.visibility="visible";
 	}
 
 	render(){
@@ -46,7 +46,7 @@ class Textarea extends React.Component{
 					<span className="input-group-text emojis_btn">
 						<i className="fas fa-smile fa-2x" onClick={this.showemojis}></i>
 					</span>
-					<Modal.Dialog hidden>
+					<Modal.Dialog hidden id="modale">
 					  <Modal.Header closeButton>
 					    <Modal.Title>Modal title</Modal.Title>
 					  </Modal.Header>
