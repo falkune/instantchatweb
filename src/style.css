@@ -224,7 +224,6 @@ body{
 		bottom: 60px;
     max-width: 35%;
     height: 250px;
-    overflow-y: scroll;
 	}
 
 	.emo{
@@ -236,6 +235,7 @@ body{
 	}
 
 	#Modal{
+		overflow-y: scroll;
 		padding: 0px 2px;
 		background-color: #f1faee;
 	}
