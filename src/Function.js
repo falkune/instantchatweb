@@ -5,7 +5,9 @@ export default function fetchData(url){
 }
 
 export function getConnectedUser(id, token){
-	
+	const URL = 'http://instantchat.com/Api/Users/'+id+'/'+token;
+	fetchData(URL)
+	.then(data => return data.data)
 }
 
 export const EMOJIS = [
