@@ -238,7 +238,8 @@ body{
 		overflow-y: scroll;
 		padding: 15px 2px;
 		border-top-left-radius: 15px;
-		background-color: #5e6472;
+		/*background-color: #5e6472;*/
+		background-color: rgba(0,0,0,0.5);
 	}
 	::-webkit-scrollbar{
   	width: 6px;
