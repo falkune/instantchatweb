@@ -29,6 +29,7 @@ class Singlemessage extends React.Component{
 					<p>
 						{this.props.content}
 					</p>
+					<br/>
 					<span className="datebox">
 						{this.parsedate(this.props.editdate)}
 					</span>
@@ -41,6 +42,7 @@ class Singlemessage extends React.Component{
 					<p>
 						{this.props.content}
 					</p>
+					<br/>
 					<span className="datebox">
 						{this.parsedate(this.props.editdate)}
 					</span>
