@@ -4,7 +4,7 @@ import Logo from './Logo';
 import Login from './Login';
 import Register from './Register';
 import Home from './Home';
-import fetchData, {getConnectedUser} from './Function'
+import fetchData from './Function'
 
 class App extends React.Component{
 
