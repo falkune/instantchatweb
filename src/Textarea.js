@@ -44,7 +44,7 @@ class Textarea extends React.Component{
 		});
 	}
 
-	emojibox = () => {
+	showEmoji = () => {
 		ReactDOM.render(
 			  <Modal.Body id="Modal">
 			    <p>
