@@ -235,6 +235,14 @@ body{
 	#close_emojis:hover{
 		cursor: pointer;
 	}
+
+	.emo{
+
+	}
+
+	.emo:hover{
+		cursor: pointer;
+	}
 }
 
 /*media pour petit ecran*/
