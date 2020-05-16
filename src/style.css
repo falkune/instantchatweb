@@ -236,7 +236,8 @@ body{
 	#Modal{
 		height: 250px;
 		overflow-y: scroll;
-		padding: 0px 2px;
+		padding: 15px 0;
+		/*padding: 0px 2px;*/
 		background-color: rgba(0,0,0,0.5);
 	}
 }
