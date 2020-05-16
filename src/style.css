@@ -227,7 +227,10 @@ body{
 	#Modal_header{
 		padding: 0;
 	}
-
+	
+	#close_emojis{
+		color: #e63946;
+	}
 }
 
 /*media pour petit ecran*/
