@@ -60,7 +60,7 @@ class Textarea extends React.Component{
 			    			<span
 			    				className="emo"
 			    				key={emo}
-			    				onClick={this.useThisEmoji(emo).bind(this)}
+			    				onClick={this.useThisEmoji.bind(emo, this)}
 			    				>
 			    				{emo}
 			    			</span>
