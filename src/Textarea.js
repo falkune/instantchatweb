@@ -40,7 +40,7 @@ class Textarea extends React.Component{
 		ReactDOM.render(
 			<Modal.Dialog>
 			  <Modal.Header id="Modal_header">
-			    <Modal.Title>Emoji</Modal.Title>
+			    <Modal.Title></Modal.Title>
 			    <span id="close_emojis">
 			    	<i class="fas fa-times-circle"></i>
 			    </span>
