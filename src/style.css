@@ -221,7 +221,7 @@ body{
 
 	#emojis{
 		position: absolute;
-		bottom: 25px;
+		bottom: 43px;
 		max-width: 45%;
 	}
 
@@ -246,7 +246,7 @@ body{
 	}
 
 	#Modal{
-
+		padding: 0px 2px;
 	}
 }
 
