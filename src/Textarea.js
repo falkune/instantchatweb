@@ -46,8 +46,8 @@ class Textarea extends React.Component{
 	showemojis = () => {
 		const EMOJIS = ['😂','😀','😁','😍','😘','🤭','🤫','😬','😔','😪','😷','😎','☹','🙈','💋','💘','❤️','👋','🤚','👌','✌','👈','👉','👍','👎','👊','👏','🤝','🙏','💪','👂','👃','🧠','🦷','👀','👁','🤦','🤦‍♂️','🤰','🏃','🏋️‍♂️','🏋️‍♀️','🚴','🗣','🥰','😛','😋','🥺','🐵','🐰','🕊','🐬','🐸','🍉','🍊','🍍','🍌','🍎','🍑','🥝','🍆','🌽','🥕','🌶','🥒','🥜','🍞','🥐','🥖','🥯','🍖','🍗','🥩','🍔','🍟','🌮','🍼','☕','🍾','🍷','🍸','🍺','🥂','🍽','🏥','🏦','🏨','🏫','🏭','🕌','⛪','🕋','🚖','🏍','🛴','🛹',''];
 		ReactDOM.render(
-			<Modal.Dialog id="Modal">
-			  <Modal.Body>
+			
+			  <Modal.Body id="Modal">
 			    <p>
 			    	{
 			    		EMOJIS.map(emo =>
@@ -61,8 +61,7 @@ class Textarea extends React.Component{
 			    		)
 			    	}
 			    </p>
-			  </Modal.Body>
-			</Modal.Dialog>,
+			  </Modal.Body>,
 			document.getElementById('emojis')
 		);
 	}
