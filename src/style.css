@@ -222,6 +222,7 @@ body{
 	#emojis{
 		position: absolute;
 		bottom: 16px;
+		max-width: 45%;
 	}
 
 	#Modal_header{
