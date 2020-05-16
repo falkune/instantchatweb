@@ -49,8 +49,36 @@ class User extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.online)
-		return(
+		// console.log(this.props.online)
+		// return(
+		// 		<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
+		// 			<div className="img_cont">
+		// 				<div id="ofline">
+							
+		// 				</div>
+		// 				<div id="name">
+		// 					{this.props.userName}
+		// 				</div>
+		// 			</div>
+		// 		</div>
+		// 	)
+
+		if(this.props.online.find(this.props.connectedUser)){
+			return(
+				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
+					<div className="img_cont">
+						<div id="online">
+							
+						</div>
+						<div id="name">
+							{this.props.userName}
+						</div>
+					</div>
+				</div>
+			)
+		}
+		else{
+			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
 						<div id="ofline">
@@ -62,8 +90,7 @@ class User extends React.Component{
 					</div>
 				</div>
 			)
-
-
+		}
 	}
 }
 
