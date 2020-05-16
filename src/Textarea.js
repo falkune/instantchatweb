@@ -40,7 +40,8 @@ class Textarea extends React.Component{
 		ReactDOM.render(
 			<Modal.Dialog>
 			  <Modal.Header id="Modal_header">
-			    <Modal.Title>Modal title</Modal.Title>
+			    <Modal.Title>Emoji</Modal.Title>
+			    <span id="close_emojis"></span>
 			  </Modal.Header>
 
 			  <Modal.Body>
