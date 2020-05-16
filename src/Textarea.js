@@ -41,7 +41,9 @@ class Textarea extends React.Component{
 			<Modal.Dialog>
 			  <Modal.Header id="Modal_header">
 			    <Modal.Title>Emoji</Modal.Title>
-			    <span id="close_emojis"></span>
+			    <span id="close_emojis">
+			    	<i class="fas fa-times-circle"></i>
+			    </span>
 			  </Modal.Header>
 
 			  <Modal.Body>
