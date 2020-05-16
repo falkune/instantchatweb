@@ -64,7 +64,7 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
-				this.getConnectedUser()
+				this.getConnectedUser(id, token);
 
 				this.setState({
 					connectedUser : id,
