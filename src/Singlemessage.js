@@ -28,11 +28,11 @@ class Singlemessage extends React.Component{
 				<div className="transmit">
 					<p>
 						{this.props.content}
+						<br/>
+						<span className="datebox">
+							{this.parsedate(this.props.editdate)}
+						</span>
 					</p>
-					<br/>
-					<span className="datebox">
-						{this.parsedate(this.props.editdate)}
-					</span>
 				</div>
 			)
 		}
@@ -41,11 +41,11 @@ class Singlemessage extends React.Component{
 				<div className="recut">
 					<p>
 						{this.props.content}
+						<br/>
+						<span className="datebox">
+							{this.parsedate(this.props.editdate)}
+						</span>
 					</p>
-					<br/>
-					<span className="datebox">
-						{this.parsedate(this.props.editdate)}
-					</span>
 				</div>
 			)
 		}
