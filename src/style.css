@@ -182,6 +182,7 @@ body{
 	.recut span{
 		font-size: xx-small;
 		color: #ffffff;
+		float: right;
 	}
 
 	#targetbutton{
