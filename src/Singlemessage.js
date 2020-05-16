@@ -19,7 +19,7 @@ class Singlemessage extends React.Component{
 		let hour = date.getHours();
 		let min = date.getMinutes();
 
-		return date.toLocaleDateString(undefined, options)+':'+hour+':'+min;
+		return date.toLocaleDateString(undefined, options)+'/'+hour+':'+min;
 	}
 
 	render(){
