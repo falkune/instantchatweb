@@ -56,14 +56,13 @@ class Textarea extends React.Component{
 			    <p>
 			    	{
 			    		EMOJIS.map(emo =>
-			    			<a
-			    				href="#emo"
+			    			<span
 			    				className="emo"
 			    				key={emo}
 			    				onClick={this.useThisEmoji({emo})}
 			    				>
 			    				{emo}
-			    			</a>
+			    			</span>
 			    		)
 			    	}
 			    </p>
