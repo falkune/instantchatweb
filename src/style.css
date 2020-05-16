@@ -221,6 +221,11 @@ body{
 		cursor: pointer;
 	}
 
+	#emojis{
+		position: absolute;
+		bottom: 0px;
+	}
+
 }
 
 /*media pour petit ecran*/
