@@ -67,7 +67,7 @@ class Home extends React.Component{
 											token={this.props.token}
 											userName={user['user_name']}
 											setIntelocutor={this.getInterlocutorId}
-											online={this.props.online}
+											online={this.state.connectedUsers}
 										/>
 									)
 								}
