@@ -36,9 +36,8 @@ class Textarea extends React.Component{
 		}
 	}
 
-	const EMOJIS = ['🥰','🥵', '🥶', '🥺', '❤️'];
-
 	showemojis = () => {
+		const EMOJIS = ['🥰','🥵', '🥶', '🥺', '❤️'];
 		ReactDOM.render(
 			<Modal.Dialog>
 			  <Modal.Header id="Modal_header">
