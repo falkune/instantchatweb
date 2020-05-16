@@ -1,6 +1,7 @@
 import React from 'react';
 import fetchData from './Function';
 import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 class Textarea extends React.Component{
 
