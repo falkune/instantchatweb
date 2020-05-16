@@ -17,7 +17,7 @@ class Textarea extends React.Component{
 	}
 
 	handleSubmit = (event) => {
-		if(this.props.interlocutor !== undefined && this.state.message! ==''){
+		if(this.props.interlocutor !== undefined && this.state.message !==''){
 			const URL = 'http://instantchat.com/api/send/'+this.props.connectedUser+'/'+this.props.interlocutor+'/'+this.state.message+'/'+this.props.token;
 			fetchData(URL)
 			.then(data => {
