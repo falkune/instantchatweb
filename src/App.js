@@ -74,10 +74,6 @@ class App extends React.Component{
 		})
 	}
 
-	getConnectedUser = () => {
-		
-	}
-
   getRegistred = (name, email, password) => {
   	const URL = 'http://instantchat.com/Api/register/'+name+'/'+email+'/'+password;
     fetchData(URL)
