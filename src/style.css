@@ -221,8 +221,10 @@ body{
 
 	#emojis{
 		position: absolute;
-		bottom: 43px;
-		max-width: 45%;
+		bottom: 62px;
+    max-width: 35%;
+    height: 250px;
+    overflow-y: scroll;
 	}
 
 	.emo{
