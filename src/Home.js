@@ -30,7 +30,16 @@ class Home extends React.Component{
 	}
 
 	showUser = () => {
-		
+		this.props.users.map(user => 
+			<User 
+				key={user['user_id'].toString()}
+				connectedUser={this.props.user}
+				user={user['user_id']}
+				token={this.props.token}
+				userName={user['user_name']}
+				setIntelocutor={this.getInterlocutorId}
+			/>
+		)
 	}
 
 	render(){
