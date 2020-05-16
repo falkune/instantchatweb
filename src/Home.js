@@ -29,6 +29,10 @@ class Home extends React.Component{
 		}
 	}
 
+	showUser = () => {
+		
+	}
+
 	render(){
 		return(
 			<div id="chat">
