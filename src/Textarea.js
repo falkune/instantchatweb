@@ -37,7 +37,7 @@ class Textarea extends React.Component{
 			<div className="input-group">
 				<div className="input-group-append">
 					<span className="input-group-text emojis_btn">
-						<i className="fas fa-smile"></i>
+						<i className="fas fa-smile fa-2x"></i>
 					</span>
 				</div>
 
