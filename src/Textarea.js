@@ -8,7 +8,7 @@ class Textarea extends React.Component{
 	state = {
 		message : '',
 		messageValue : '',
-		modal : undefined
+		modal : false
 	}
 
 	handleMessage = (event) => {
@@ -44,7 +44,7 @@ class Textarea extends React.Component{
 		});
 	}
 
-	showemojis = () => {
+	emojibox = () => {
 		ReactDOM.render(
 			  <Modal.Body id="Modal">
 			    <p>
@@ -65,11 +65,33 @@ class Textarea extends React.Component{
 		);
 	}
 
+	hideEmojis = () => {
+		ReactDOM.render(
+			<p/>,
+			document.getElementById('emojis')
+		):
+	}
+
+	emojiEontrol = () => {
+		if(this.state.modal === false){
+			this.setState({
+				modal : true
+			});
+			this.showEmoji();
+		}
+		else{
+			this.setState({
+				modal : false
+			});
+			this.hideEmojis();
+		}
+	}
+
 	render(){
 		return(
 			<div className="input-group">
 				<div className="input-group-append">
-					<span className="input-group-text emojis_btn" onClick={this.showemojis}>
+					<span className="input-group-text emojis_btn" onClick={this.emojiEontrol}>
 						<i className="fas fa-smile fa-2x"></i>
 					</span>
 					<div id="emojis"></div>
