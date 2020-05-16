@@ -29,7 +29,7 @@ class Textarea extends React.Component{
 			});
 		}
 		else{
-			document.getElementById('saisie').value = 'je ne sais pas à qui l\'envoyer' ;
+			document.getElementById('saisie').value = 'je ne sais pas à qui l\'envoyer';
 		}
 	}
 
