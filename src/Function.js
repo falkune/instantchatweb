@@ -7,7 +7,7 @@ export default function fetchData(url){
 export function getConnectedUser(id, token){
 	const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
 	return fetch(URL)
-    .then((response) => response.data.json())
+    .then((response) => response.json().data)
     .catch((error) => console.error(error))
 }
 
