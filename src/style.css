@@ -222,7 +222,7 @@ body{
 	}
 
 	#modale{
-		visibility: hidden;
+		visibility: none;
 	}
 
 }
