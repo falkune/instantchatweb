@@ -36,6 +36,12 @@ class Textarea extends React.Component{
 		}
 	}
 
+	useThisEmoji = (event) => {
+		this.setState({
+			message : event.currentTarget.value,
+		});
+	}
+
 	showemojis = () => {
 		const EMOJIS = ['🥰','🥵', '🥶', '🥺', '❤️'];
 		ReactDOM.render(
@@ -50,8 +56,14 @@ class Textarea extends React.Component{
 			  <Modal.Body>
 			    <p>
 			    	{
-			    		EMOJIS.map(em =>
-			    			<span key={em}>{em}</span>
+			    		EMOJIS.map(emo =>
+			    			<span
+			    				className="emo"
+			    				key={emo}
+			    				onClick={this.useThisEmoji}
+			    				>
+			    				{emo}
+			    			</span>
 			    		)
 			    	}
 			    </p>
