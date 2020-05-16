@@ -63,26 +63,12 @@ class App extends React.Component{
 		fetchData(URL)
 		.then(data => {
 			if(data.status === 'ok'){
-				this.getConnectedUser(id, token);
-
 				this.setState({
 					connectedUser : id,
 					token : token,
 					name : name,
 					users : data.data,
 					page : 'accueil'
-				});
-			}
-		})
-	}
-
-	getConnectedUser = (id, token) => {
-		const URL = 'http://instantchat.com/Api/connected/'+id+'/'+token;
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					connectedUsers : data.data
 				});
 			}
 		})
