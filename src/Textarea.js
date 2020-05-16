@@ -37,7 +37,7 @@ class Textarea extends React.Component{
 
 	useThisEmoji = (emo) => {
 		this.setState({
-			message : emo
+			message : {emo}
 		});
 	}
 
