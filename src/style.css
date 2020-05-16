@@ -221,6 +221,10 @@ body{
 		cursor: pointer;
 	}
 
+	#modale{
+		visibility: hidden;
+	}
+
 }
 
 /*media pour petit ecran*/
