@@ -40,7 +40,7 @@ class Home extends React.Component{
 					userName={user['user_name']}
 					setIntelocutor={this.getInterlocutorId}
 				/>
-			);
+			)
 		);
 	}
 
