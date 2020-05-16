@@ -163,6 +163,10 @@ body{
     float: right;
 	}
 
+	.transmit span{
+		font-size: xx-small;
+	}
+
 	.recut p{
 		font-size: smaller;
 		max-width: 70%;
@@ -172,6 +176,10 @@ body{
     background-color: #98c1d9;
     padding: 10px;
     float: left;
+	}
+
+	.recut span{
+		font-size: xx-small;
 	}
 
 	#targetbutton{
