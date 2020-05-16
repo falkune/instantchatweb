@@ -24,6 +24,7 @@ class Textarea extends React.Component{
 						message : '',
 						messageValue : ''
 					});
+					document.getElementById('saisie').value = '';
 				}
 			});
 		}
@@ -42,6 +43,7 @@ class Textarea extends React.Component{
 				</div>
 
 				<textarea
+					id="saisie"
 					rows="1" 
 					className="form-control type_msg" 
 					placeholder="Type your message..."
