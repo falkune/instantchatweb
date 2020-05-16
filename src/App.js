@@ -72,6 +72,7 @@ class App extends React.Component{
 					users : data.data,
 					page : 'accueil'
 				});
+				console.log(this.state.connectedUsers)
 			}
 		})
 	}
