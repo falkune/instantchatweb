@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import fetchData from './Function';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
