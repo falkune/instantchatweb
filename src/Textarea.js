@@ -46,21 +46,21 @@ class Textarea extends React.Component{
 
 	showEmoji = () => {
 		ReactDOM.render(
-			  <Modal.Body id="Modal">
-			    <p>
-			    	{
-			    		EMOJIS.map(emo =>
-			    			<span
-			    				className="emo"
-			    				key={emo}
-			    				onClick={() => this.useThisEmoji(emo)}
-			    			>
-			    				{emo}
-			    			</span>
-			    		)
-			    	}
-			    </p>
-			  </Modal.Body>,
+		  <Modal.Body id="Modal">
+		    <p>
+		    	{
+		    		EMOJIS.map(emo =>
+		    			<span
+		    				className="emo"
+		    				key={emo}
+		    				onClick={() => this.useThisEmoji(emo)}
+		    			>
+		    				{emo}
+		    			</span>
+		    		)
+		    	}
+		    </p>
+		  </Modal.Body>,
 			document.getElementById('emojis')
 		);
 	}
