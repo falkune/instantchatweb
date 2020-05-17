@@ -17,7 +17,7 @@ class App extends React.Component{
     name : undefined
 	}
 
-	componetDidMount(){
+	componetDidUpdate(){
 		if(this.state.page === 'accueil'){
 			setTimeout(this.reloadUser, 2000);
 		}
