@@ -134,7 +134,6 @@ body{
 	  border-top: solid 1px lightgrey;
 	}
 
-
 	#him{
     display: grid!important;
     grid-template-columns: 20% 80%;
