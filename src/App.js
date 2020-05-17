@@ -84,7 +84,7 @@ class App extends React.Component{
 			if(data.status === 'ok'){
 				this.setState({
 					connectedUsers : Object.keys(data.data).map(function(key){
-						return [Number(key), obj[key]];
+						return [Number(key), data.data[key]];
 					})
 				});
 			}
