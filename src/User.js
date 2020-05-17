@@ -54,7 +54,7 @@ class User extends React.Component{
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
 						<div className="onlineBox">
-							<span className="online">
+							<span className="online"/>
 						</div>
 						<div className="name">
 							{this.props.userName}
@@ -68,7 +68,7 @@ class User extends React.Component{
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
 						<div className="oflineBox">
-							<span className="ofline"></span>
+							<span className="ofline"/>
 						</div>
 						<div className="name">
 							{this.props.userName}
