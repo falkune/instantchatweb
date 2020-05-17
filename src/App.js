@@ -120,9 +120,9 @@ class App extends React.Component{
   }
 
   showLoader = () => {
-  	
+  	return <div className="loader"></div>
   }
-  
+
 	render(){
 
 		if(this.state.page === 'login'){
