@@ -119,10 +119,6 @@ class App extends React.Component{
     })
   }
 
-  showLoader = () => {
-  	return <div className="loader"></div>
-  }
-
 	render(){
 
 		if(this.state.page === 'login'){
@@ -136,7 +132,7 @@ class App extends React.Component{
 				</div>
 			)
 		}
-		if(this.state.page === 'register'){
+		else if(this.state.page === 'register'){
 			return(
 				<div id="facade">
 					<Register 
@@ -147,7 +143,7 @@ class App extends React.Component{
 				</div>
 			)
 		}
-		if(this.state.page === 'accueil' & this.state.connectedUsers !== undefined){
+		else if(this.state.page === 'accueil' & this.state.connectedUsers !== undefined){
 			return(
 				<div id="container">
 					<Home 
@@ -161,8 +157,10 @@ class App extends React.Component{
 				</div>
 			)
 		}
+		else{
+			return <div className="loader"></div>
+		}
 	}
-
 }
 
 
