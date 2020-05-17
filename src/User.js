@@ -46,8 +46,10 @@ class User extends React.Component{
 				}
 			}
 		})
-		setTimeout('tafonction',2000); 
 	}
+
+	setTimeout('getDiscution',2000); 
+
 
 	render(){
 		if(this.props.online.find(element => element.connected_user === this.props.user)){
