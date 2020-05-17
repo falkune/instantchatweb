@@ -162,7 +162,7 @@ class App extends React.Component{
 			)
 		}
 		else{
-			this.showLoade}
+			{this.showLoader}
 		}
 	}
 }
