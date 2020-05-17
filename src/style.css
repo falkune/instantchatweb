@@ -262,6 +262,18 @@ body{
 	  background: #1d3557; 
 	}
 
+	.online{
+		background-color: cadetblue;
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 14px;
+    margin-right: -11px;
+    border-radius: 50%;
+    border-color: beige;
+    border-style: solid;
+	}
+
 }
 
 /*media pour petit ecran*/
