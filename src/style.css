@@ -272,6 +272,16 @@ body{
     border-style: solid;
 	}
 
+	.ofline{
+		background-color: #06d6a0;
+    height: 20px;
+    width: 20px;
+   	margin: auto;
+    border-radius: 50%;
+    border-color: #f1faee;
+    border-style: solid;
+	}
+
 }
 
 /*media pour petit ecran*/
