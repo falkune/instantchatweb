@@ -85,7 +85,7 @@ class App extends React.Component{
 				this.setState({
 					connectedUsers : Object.keys(data.data).map(function(key) {
 					  return [Number(key), data.data[key]];
-					});
+					})
 				});
 			}
 		})
