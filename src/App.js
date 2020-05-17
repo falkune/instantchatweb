@@ -27,7 +27,7 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.reloadUser, 2000);
+		// setTimeout(this.reloadUser, 2000);
 	}
 
 	showRegisterForm = () => {
