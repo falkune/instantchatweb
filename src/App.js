@@ -89,7 +89,7 @@ class App extends React.Component{
 		})
 
 		if(this.state.connectedUser !== undefined & this.state.token !== undefined){
-			setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.this.state.), 2000);
+			setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.token), 2000);
 		}
 	}
 
