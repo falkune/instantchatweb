@@ -49,7 +49,7 @@ class User extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.online+ ' '+ this.props.user)
+		console.log(this.props.online)
 		if(this.props.online.find(element => element === this.props.user)){
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
