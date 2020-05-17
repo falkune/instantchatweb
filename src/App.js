@@ -17,20 +17,20 @@ class App extends React.Component{
     name : undefined
 	}
 
-	reloadUser = () => {
-		const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					connectedUsers : data.data
-				});
-			}
-		})
-		if(this.state.connectedUser !== undefined & this.state.token !== undefined){
-			setTimeout(this.reloadUser, 2000);
-		}
-	}
+	// reloadUser = () => {
+	// 	const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
+	// 	fetchData(URL)
+	// 	.then(data => {
+	// 		if(data.status === 'ok'){
+	// 			this.setState({
+	// 				connectedUsers : data.data
+	// 			});
+	// 		}
+	// 	})
+	// 	if(this.state.connectedUser !== undefined & this.state.token !== undefined){
+	// 		setTimeout(this.reloadUser, 2000);
+	// 	}
+	// }
 
 	showRegisterForm = () => {
 		this.setState({
@@ -90,6 +90,7 @@ class App extends React.Component{
 				});
 			}
 		})
+		setTimeout(this.getConnectedUser(id, token), 2000);
 	}
 
 	getConnectedUser = (id, token) => {
