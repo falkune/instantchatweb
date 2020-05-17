@@ -6,11 +6,12 @@ import Singlemessage from './Singlemessage';
 class User extends React.Component{
 
 	state = {
-		messages : undefined
+		messages : undefined,
+		interlocutor : this.props.user
 	}
 
 	getDiscution = () =>{
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.this.state.interlocutor+'/'+this.props.token;
 
 		fetchData(URL)
 		.then(data => {
