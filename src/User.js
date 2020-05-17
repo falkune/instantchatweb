@@ -48,7 +48,7 @@ class User extends React.Component{
 		})
 	}
 
-	setTimeout('getDiscution',2000); 
+	setTimeout(getDiscution,2000); 
 
 
 	render(){
