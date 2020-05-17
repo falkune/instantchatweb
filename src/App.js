@@ -17,6 +17,19 @@ class App extends React.Component{
     name : undefined
 	}
 
+	reloadUser = () => {
+		const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					connectedUsers : data.data
+				});
+			}
+		})
+		setTimeout(this.reloadUser, 2000);
+	}
+
 	showRegisterForm = () => {
 		this.setState({
 			page : 'register'
