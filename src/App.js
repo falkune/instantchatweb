@@ -27,7 +27,9 @@ class App extends React.Component{
 				});
 			}
 		})
-		// setTimeout(this.reloadUser, 2000);
+		if(this.state.connectedUser !== undefined & this.state.token !== undefined){
+			setTimeout(this.reloadUser, 2000);
+		}
 	}
 
 	showRegisterForm = () => {
