@@ -143,20 +143,20 @@ class App extends React.Component{
 				</div>
 			)
 		}
-		// else if(this.state.page === 'accueil' & this.state.connectedUsers !== undefined){
-		// 	return(
-		// 		<div id="container">
-		// 			<Home 
-		// 				user={this.state.connectedUser}
-		// 				token={this.state.token}
-		// 				name={this.state.name}
-		// 				users={this.state.users}
-		// 				logout={this.getOut}
-		// 				online={this.state.connectedUsers}
-		// 			/>	
-		// 		</div>
-		// 	)
-		// }
+		else if(this.state.page === 'accueil' & this.state.connectedUsers !== undefined){
+			return(
+				<div id="container">
+					<Home 
+						user={this.state.connectedUser}
+						token={this.state.token}
+						name={this.state.name}
+						users={this.state.users}
+						logout={this.getOut}
+						online={this.state.connectedUsers}
+					/>	
+				</div>
+			)
+		}
 		else{
 			return <div className="loader"></div>
 		}
