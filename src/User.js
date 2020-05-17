@@ -9,6 +9,10 @@ class User extends React.Component{
 		messages : undefined
 	}
 
+	componentDidUpdate(){
+		setTimeout(this.getDiscution, 2000);
+	}
+
 	getDiscution = () =>{
 		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
@@ -46,7 +50,6 @@ class User extends React.Component{
 				}
 			}
 		})
-		setTimeout(this.getDiscution, 2000);
 	} 
 
 
