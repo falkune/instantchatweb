@@ -72,7 +72,7 @@ class Home extends React.Component{
 							<div className="d-flex bd-highlight">
 								<div className="user_info">
 									<span id="targetbutton">
-										<i class="fas fa-user"></i>
+										<i className="fas fa-user"></i>
 									</span>
 									<span id="info_user">{this.state.interlocutorName}</span>
 								</div>
