@@ -49,7 +49,6 @@ class User extends React.Component{
 	}
 
 	render(){
-		console.log(this.props.online[0])
 		if(this.props.online.find(element => element.connected_user === this.props.user)){
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
