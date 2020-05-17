@@ -46,6 +46,7 @@ class User extends React.Component{
 				}
 			}
 		})
+		setTimeout('tafonction',2000); 
 	}
 
 	render(){
