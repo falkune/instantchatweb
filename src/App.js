@@ -75,6 +75,7 @@ class App extends React.Component{
 				});
 			}
 		})
+		setTimeout(this.getAllUsers(id, token, name), 2000);
 	}
 
 	getConnectedUser = (id, token) => {
@@ -87,10 +88,6 @@ class App extends React.Component{
 				});
 			}
 		})
-
-		if(this.state.connectedUser !== undefined & this.state.token !== undefined){
-			setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.token), 2000);
-		}
 	}
 
   getRegistred = (name, email, password) => {
