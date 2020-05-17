@@ -17,17 +17,17 @@ class App extends React.Component{
     name : undefined
 	}
 
-	reloadUser = () => {
-		const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					connectedUsers : data.data
-				});
-			}
-		})
-		if(this.state.connectedUser !== undefined & this.state.token !== undefined){
+	if(this.state.page === 'accueil'){
+		reloadUser = () => {
+			const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
+			fetchData(URL)
+			.then(data => {
+				if(data.status === 'ok'){
+					this.setState({
+						connectedUsers : data.data
+					});
+				}
+			})
 			setTimeout(this.reloadUser, 2000);
 		}
 	}
