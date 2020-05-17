@@ -90,7 +90,7 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.getConnectedUser(id, token), 2000);
+		setTimeout(this.getAllUsers, 2000);
 	}
 
 	getConnectedUser = (id, token) => {
