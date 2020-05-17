@@ -51,7 +51,7 @@ class User extends React.Component{
 	render(){
 		if(this.props.online.find(element => element.connected_user === this.props.user)){
 			return(
-				<div id="him" onClick={this.getDiscution}>
+				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<span className="online"/>
 					<span className="name">
 						{this.props.userName}
@@ -61,7 +61,7 @@ class User extends React.Component{
 		}
 		else{
 			return(
-				<div id="him" onClick={this.getDiscution}>
+				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<span className="ofline"/>
 					<span className="name">
 						{this.props.userName}
