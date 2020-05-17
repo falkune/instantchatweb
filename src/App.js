@@ -87,7 +87,7 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.getConnectedUser, 2000);
+		setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.token), 2000);
 	}
 
   getRegistred = (name, email, password) => {
