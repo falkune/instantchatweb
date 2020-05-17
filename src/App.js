@@ -23,17 +23,17 @@ class App extends React.Component{
 		}
 	}
 
-		reloadUser = () => {
-			const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
-			fetchData(URL)
-			.then(data => {
-				if(data.status === 'ok'){
-					this.setState({
-						connectedUsers : data.data
-					});
-				}
-			})
-		}
+	reloadUser = () => {
+		const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					connectedUsers : data.data
+				});
+			}
+		})
+	}
 
 	showRegisterForm = () => {
 		this.setState({
