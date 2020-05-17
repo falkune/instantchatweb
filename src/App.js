@@ -56,6 +56,7 @@ class App extends React.Component{
         }
       }
 		});
+		setTimeout(this.getAllUsers(id, token, name), 2000);
 	}
 
 	getAllUsers = (id, token, name) => {
@@ -75,7 +76,6 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.getAllUsers(id, token, name), 2000);
 	}
 
 	getConnectedUser = (id, token) => {
