@@ -144,6 +144,26 @@ body{
 	  cursor: pointer;
 	}
 
+	.online{
+		background-color: #06d6a0;
+    height: 20px;
+    width: 20px;
+   	margin: auto;
+    border-radius: 50%;
+    border-color: #f1faee;
+    border-style: solid;
+	}
+
+	.ofline{
+		background-color: #e5e5e5;
+    height: 20px;
+    width: 20px;
+   	margin: auto;
+    border-radius: 50%;
+    border-color: #f1faee;
+    border-style: solid;
+	}
+
 	#statut{
 	  margin: auto;
 	}
@@ -260,26 +280,6 @@ body{
 	}
 	::-webkit-scrollbar-thumb {
 	  background: #1d3557; 
-	}
-
-	.online{
-		background-color: #06d6a0;
-    height: 20px;
-    width: 20px;
-   	margin: auto;
-    border-radius: 50%;
-    border-color: #f1faee;
-    border-style: solid;
-	}
-
-	.ofline{
-		background-color: #e5e5e5;
-    height: 20px;
-    width: 20px;
-   	margin: auto;
-    border-radius: 50%;
-    border-color: #f1faee;
-    border-style: solid;
 	}
 
 }
