@@ -53,10 +53,10 @@ class User extends React.Component{
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
-						<div id="online">
-							
+						<div className="onlineBox">
+							<span className="online">
 						</div>
-						<div id="name">
+						<div className="name">
 							{this.props.userName}
 						</div>
 					</div>
@@ -67,10 +67,10 @@ class User extends React.Component{
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
-						<div id="ofline">
-							
+						<div className="oflineBox">
+							<span className="ofline"></span>
 						</div>
-						<div id="name">
+						<div className="name">
 							{this.props.userName}
 						</div>
 					</div>
