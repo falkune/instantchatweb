@@ -120,7 +120,7 @@ body{
 
 	.send_btn{
 		background-color: #f1faee!important;
-    color: #457b9d;
+    color: #457b9d!important;
 	}
 	
 	.send_btn:hover{
