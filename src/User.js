@@ -52,24 +52,20 @@ class User extends React.Component{
 		if(this.props.online.find(element => element.connected_user === this.props.user)){
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
-					<div className="img_cont">
-						<span className="online"/>
-						<span className="name">
-							{this.props.userName}
-						</span>
-					</div>
+					<span className="online"/>
+					<span className="name">
+						{this.props.userName}
+					</span>
 				</div>
 			)
 		}
 		else{
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
-					<div className="img_cont">
-						<span className="ofline"/>
-						<span className="name">
-							{this.props.userName}
-						</span>
-					</div>
+					<span className="ofline"/>
+					<span className="name">
+						{this.props.userName}
+					</span>
 				</div>
 			)
 		}
