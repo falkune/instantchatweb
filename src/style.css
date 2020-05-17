@@ -245,7 +245,8 @@ body{
 	}
 
 	.emojis_btn{
-		
+		background-color: #f1faee;
+    color: #457b9d;
 	}
 
 	.emojis_btn:hover{
