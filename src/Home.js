@@ -35,7 +35,12 @@ class Home extends React.Component{
 				<div className="chat">
 					<div id="card" className="card">
 						<div className="cardHheader">
-							<Input/>
+							<span>
+								<i class="fas fa-home fa-2x"></i>
+							</span>
+							<strong>
+								{this.props.name}
+							</strong>
 						</div>
 
 						<div className="card-body" id="card-body">
@@ -56,12 +61,7 @@ class Home extends React.Component{
 							</div>
 						</div>
 						<div className="cardFooter" id="footer">
-							<span>
-								<i class="fas fa-home fa-2x"></i>
-							</span>
-							<strong>
-								{this.props.name}
-							</strong>
+							<Input/>
 						</div>
 					</div>
 				</div>
