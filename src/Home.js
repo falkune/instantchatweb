@@ -58,10 +58,10 @@ class Home extends React.Component{
 						<div className="cardFooter" id="footer">
 							<span>
 								<i class="fas fa-home fa-2x"></i>
-								<strong>
-									{this.props.name}
-								</strong>
 							</span>
+							<strong>
+								{this.props.name}
+							</strong>
 						</div>
 					</div>
 				</div>
