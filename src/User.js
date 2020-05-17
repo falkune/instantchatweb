@@ -65,12 +65,10 @@ class User extends React.Component{
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
-						<div className="oflineBox">
-							<span className="ofline"/>
-						</div>
-						<div className="name">
+						<span className="ofline"/>
+						<span className="name">
 							{this.props.userName}
-						</div>
+						</span>
 					</div>
 				</div>
 			)
