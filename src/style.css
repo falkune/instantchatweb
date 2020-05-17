@@ -244,6 +244,10 @@ body{
     cursor: pointer;
 	}
 
+	.emojis_btn{
+		
+	}
+
 	.emojis_btn:hover{
 		cursor: pointer;
 	}
