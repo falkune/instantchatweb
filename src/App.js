@@ -17,7 +17,12 @@ class App extends React.Component{
     name : undefined
 	}
 
-	if(this.state.page === 'accueil'){
+	componetDidMount(){
+		if(this.state.page === 'accueil'){
+			setTimeout(this.reloadUser, 2000);
+		}
+	}
+
 		reloadUser = () => {
 			const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
 			fetchData(URL)
@@ -28,9 +33,7 @@ class App extends React.Component{
 					});
 				}
 			})
-			setTimeout(this.reloadUser, 2000);
 		}
-	}
 
 	showRegisterForm = () => {
 		this.setState({
