@@ -119,6 +119,10 @@ class App extends React.Component{
     })
   }
 
+  showLoader = () => {
+  	
+  }
+  
 	render(){
 
 		if(this.state.page === 'login'){
