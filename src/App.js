@@ -17,6 +17,10 @@ class App extends React.Component{
     name : undefined
 	}
 
+	// componentDidUpdate(){
+		setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.this.state.), 2000);
+	// }
+
 	showRegisterForm = () => {
 		this.setState({
 			page : 'register'
@@ -87,7 +91,6 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.getConnectedUser, 2000);
 	}
 
   getRegistred = (name, email, password) => {
