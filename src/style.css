@@ -136,8 +136,6 @@ body{
 
 
 	#him{
-		/*height: 30px;
-    padding-left: 10%;*/
     display: grid!important;
     grid-template-columns: 20% 80%;
 	}
