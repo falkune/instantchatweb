@@ -36,7 +36,7 @@ class Home extends React.Component{
 					<div id="card" className="card">
 						<div className="cardHheader">
 							<span>
-								<i class="fas fa-home fa-2x"></i>
+								<i className="fas fa-home fa-2x"></i>
 							</span>
 							<strong>
 								{this.props.name}
