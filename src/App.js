@@ -17,9 +17,9 @@ class App extends React.Component{
     name : undefined
 	}
 
-	// componentDidUpdate(){
+	componentDidUpdate(){
 		setTimeout(this.getConnectedUser(this.state.connectedUser, this.state.this.state.), 2000);
-	// }
+	}
 
 	showRegisterForm = () => {
 		this.setState({
