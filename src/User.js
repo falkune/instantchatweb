@@ -49,7 +49,7 @@ class User extends React.Component{
 	}
 
 	render(){
-		if(this.props.online.find(e === this.props.connectedUser)){
+		if(this.props.online.find(this.props.connectedUser)){
 			return(
 				<div className="d-flex bd-highlight" id="him" onClick={this.getDiscution}>
 					<div className="img_cont">
