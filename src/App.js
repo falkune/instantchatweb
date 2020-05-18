@@ -9,14 +9,15 @@ import fetchData from './Function'
 class App extends React.Component{
 
 	state = {
-		page : 'login',
-		connectedUser : undefined,
-		connectedUsers : undefined,
-    token : undefined,
-    users : undefined,
+		page : 'login', // control the screen 
+		connectedUser : undefined, // the user who is connected
+		connectedUsers : undefined, // all connected users at this moment
+    token : undefined, // token of connected user
+    users : undefined, // all users of the plateform
     name : undefined
 	}
 
+	// this function get all connected user.
 	reloadUser = () => {
 		const URL = 'http://instantchat.com/Api/connected/'+this.state.connectedUser+'/'+this.state.token;
 		fetchData(URL)
