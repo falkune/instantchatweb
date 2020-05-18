@@ -6,8 +6,7 @@ import Singlemessage from './Singlemessage';
 class User extends React.Component{
 
 	state = {
-		messages : undefined,
-		name : undefined
+		messages : undefined
 	}
 
 	getDiscution = () =>{
@@ -17,8 +16,7 @@ class User extends React.Component{
 		.then(data => {
 			if(data.status === 'ok'){
 				this.setState({
-					messages : data.data,
-					name : this.props.userName
+					messages : data.data
 				});
 				
 				this.props.setIntelocutor(this.props.user, this.props.userName);
