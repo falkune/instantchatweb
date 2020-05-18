@@ -6,7 +6,8 @@ import Singlemessage from './Singlemessage';
 class User extends React.Component{
 
 	state = {
-		messages : undefined
+		messages : undefined,
+		name : this.props.userName
 	}
 
 	getDiscution = () =>{
@@ -19,7 +20,7 @@ class User extends React.Component{
 					messages : data.data
 				});
 				
-				this.props.setIntelocutor(this.props.user, this.props.userName);
+				// this.props.setIntelocutor(this.props.user, this.props.userName);
 
 				if(this.state.messages.length !== 0){
 					ReactDOM.render(
