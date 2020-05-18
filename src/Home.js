@@ -140,7 +140,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{this.loadMessages}
+							{/*seront injecter les messages*/}
 						</div>
 
 						<div className="cardFooter">
