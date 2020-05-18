@@ -10,7 +10,7 @@ class User extends React.Component{
 	}
 
 	getDiscution = () =>{
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.state.interlocutor+'/'+this.props.token;
+		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
 		fetchData(URL)
 		.then(data => {
