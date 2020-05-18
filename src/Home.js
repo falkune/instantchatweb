@@ -2,15 +2,55 @@ import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import User from './User';
+import Singlemessage from './Singlemessage';
+
 
 class Home extends React.Component{
 
 	state = {
 		interlocutorID : undefined,
-		interlocutorName : undefined
+		interlocutorName : undefined,
+		messages : undefined
 	}
 
-	getInterlocutorId =(id, name) => {
+	getInterlocutorId =(id, name, messages) => {
+		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					messages : data.data
+				});
+				
+				this.props.setIntelocutor(this.props.user, this.props.userName);
+
+				if(this.state.messages.length !== 0){
+					ReactDOM.render(
+						<div id="modal-body">
+							{
+								this.state.messages.map(msg =>
+									<Singlemessage
+										key={msg['message_id']}
+										connectedUser={this.props.connectedUser}
+										user={msg['from_user_id']}
+										content={msg['message_body']}
+										editdate={msg['message_edit_at']}
+									/>
+								)
+							}
+						</div>,
+						document.getElementById('fil-discution')
+					);
+				}
+				else{
+					ReactDOM.render(
+						<div/>,document.getElementById('fil-discution')
+					);
+				}
+			}
+		})
+		setTimeout(this.getDiscution, 2000);
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
