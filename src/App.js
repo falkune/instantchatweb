@@ -44,6 +44,7 @@ class App extends React.Component{
 		});
 	}
 
+	// this function get user to connect in the plateform
 	getConnected = (login, password) => {
 		const URL = 'http://instantchat.com/Api/login/'+login+'/'+password;
 		fetchData(URL)
