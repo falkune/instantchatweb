@@ -17,6 +17,10 @@ class Home extends React.Component{
 		this.loadMessages();
 	}
 
+	componentDidUpdate(){
+		this.loadMessages();
+	}
+
 	getInterlocutorId =(id, name) => {
 		this.setState({
 			interlocutorID : id,
