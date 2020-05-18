@@ -74,7 +74,7 @@ class Home extends React.Component{
 									<span id="targetbutton">
 										<i className="fas fa-user"></i>
 									</span>
-									<span id="info_user">{this.state.interlocutorName}</span>
+									<span id="info_user"></span>
 								</div>
 							</div>
 
