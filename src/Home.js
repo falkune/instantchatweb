@@ -7,10 +7,11 @@ class Home extends React.Component{
 
 	state = {
 		interlocutorID : undefined,
-		interlocutorName : undefined
+		interlocutorName : undefined,
+		messages : undefined
 	}
 
-	getInterlocutorId =(id, name) => {
+	getInterlocutorId =(user, id, name, token) => {
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
@@ -27,6 +28,45 @@ class Home extends React.Component{
 				/>
 			)
 		}
+	}
+
+	loadMessages = (connectedUser, interlocutor, token) => {
+		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+
+		fetchData(URL)
+		.then(data => {
+			if(data.status === 'ok'){
+				this.setState({
+					messages : data.data
+				});
+				
+				if(this.state.messages.length !== 0){
+					return(
+						
+							<div id="modal-body">
+								{
+									this.state.messages.map(msg =>
+										<Singlemessage
+											key={msg['message_id']}
+											connectedUser={this.props.connectedUser}
+											user={msg['from_user_id']}
+											content={msg['message_body']}
+											editdate={msg['message_edit_at']}
+										/>
+									)
+								}
+							</div>						
+					)
+				}
+				else{
+					return(
+						
+							<div/>
+					)
+				}
+			}
+		})
+		setTimeout(this.loadMessages, 2000);
 	}
 
 	render(){
