@@ -61,7 +61,7 @@ class Home extends React.Component{
 									this.state.messages.map(msg =>
 										<Singlemessage
 											key={msg['message_id']}
-											connectedUser={this.props.connectedUser}
+											connectedUser={this.props.user}
 											user={msg['from_user_id']}
 											content={msg['message_body']}
 											editdate={msg['message_edit_at']}
