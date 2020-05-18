@@ -54,7 +54,7 @@ class Home extends React.Component{
 				
 				if(this.state.messages.length !== 0){
 					return(
-						
+						ReactDOM.render(
 							<div id="modal-body">
 								{
 									this.state.messages.map(msg =>
@@ -67,13 +67,16 @@ class Home extends React.Component{
 										/>
 									)
 								}
-							</div>						
+							</div>,
+							document.getElementById('fil-discution')
+						)					
 					)
 				}
 				else{
 					return(
-						
-							<div> commencer votre discution </div>
+						ReactDOM.render(
+							<div/>,document.getElementById('fil-discution')
+						)
 					)
 				}
 			}
