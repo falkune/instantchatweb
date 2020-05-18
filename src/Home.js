@@ -134,7 +134,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{this.loadMessages()}
+							{this.loadMessages}
 						</div>
 
 						<div className="cardFooter">
