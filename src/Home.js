@@ -13,12 +13,15 @@ class Home extends React.Component{
 		messages : undefined
 	}
 
+	componentDidMount(){
+		this.loadMessages();
+	}
+
 	getInterlocutorId =(id, name) => {
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
 		});
-		this.loadMessages();
 	}
 
 	postMessage = () => {
