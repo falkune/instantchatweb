@@ -15,16 +15,14 @@ class Home extends React.Component{
 	}
 
 	getInterlocutorId =(id, name, messages) => {
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+		// const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
-		fetchData(URL)
-		.then(data => {
-			if(data.status === 'ok'){
-				this.setState({
-					messages : data.data
-				});
-				
-				this.props.setIntelocutor(this.props.user, this.props.userName);
+		// fetchData(URL)
+		// .then(data => {
+		// 	if(data.status === 'ok'){
+		// 		this.setState({
+		// 			messages : data.data
+		// 		});
 
 				
 					return(
