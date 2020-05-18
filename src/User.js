@@ -37,7 +37,7 @@ class User extends React.Component{
 							</div>,
 							document.getElementById('fil-discution')
 						)
-					);
+					)
 				}
 				else{
 					return(
