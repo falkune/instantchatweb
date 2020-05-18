@@ -21,7 +21,7 @@ class User extends React.Component{
 					name : this.props.userName
 				});
 				
-				// this.props.setIntelocutor(this.props.user, this.props.userName);
+				this.props.setIntelocutor(this.props.user, this.props.userName);
 
 				if(this.state.messages.length !== 0){
 					ReactDOM.render(
