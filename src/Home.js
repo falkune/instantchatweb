@@ -26,7 +26,7 @@ class Home extends React.Component{
 			interlocutorID : id,
 			interlocutorName : name
 		});
-		if(interlocutorID !== undefined)
+		if(this.state.interlocutorID !== undefined)
 			this.loadMessages();
 	}
 
