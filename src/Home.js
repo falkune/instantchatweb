@@ -18,7 +18,7 @@ class Home extends React.Component{
 			interlocutorID : id,
 			interlocutorName : name
 		});
-		this.loadMessages(this.props.user, this.state.interlocutorID, this.props.token);
+		this.loadMessages();
 	}
 
 	postMessage = () => {
@@ -33,8 +33,8 @@ class Home extends React.Component{
 		}
 	}
 
-	loadMessages = (connectedUser, interlocutor, token) => {
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
+	loadMessages = () => {
+		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.state.interlocutorID+'/'+this.props.token;
 
 		fetchData(URL)
 		.then(data => {
