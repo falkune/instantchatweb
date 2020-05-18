@@ -19,9 +19,10 @@ class Home extends React.Component{
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
-		});
-		if(this.state.interlocutorID !== undefined)
+		}, () => {
 			this.loadMessages();
+		})
+		
 	}
 
 	postMessage = () => {
