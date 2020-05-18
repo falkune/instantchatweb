@@ -13,7 +13,7 @@ class Home extends React.Component{
 		messages : undefined
 	}
 
-	getInterlocutorId =(user, id, name, token) => {
+	getInterlocutorId =(id, name) => {
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
