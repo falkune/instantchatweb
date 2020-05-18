@@ -14,7 +14,7 @@ class App extends React.Component{
 		connectedUsers : undefined, // all connected users at this moment
     token : undefined, // token of connected user
     users : undefined, // all users of the plateform
-    name : undefined
+    name : undefined // name of the the user who is connected
 	}
 
 	// this function get all connected user.
