@@ -26,8 +26,8 @@ class Home extends React.Component{
 				
 				this.props.setIntelocutor(this.props.user, this.props.userName);
 
-				if(this.state.messages.length !== 0){
-					ReactDOM.render(
+				
+					return(
 						<div id="modal-body">
 							{
 								this.state.messages.map(msg =>
@@ -40,15 +40,8 @@ class Home extends React.Component{
 									/>
 								)
 							}
-						</div>,
-						document.getElementById('fil-discution')
+						</div>
 					);
-				}
-				else{
-					ReactDOM.render(
-						<div/>,document.getElementById('fil-discution')
-					);
-				}
 			}
 		})
 		setTimeout(this.getDiscution, 2000);
