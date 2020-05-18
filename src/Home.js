@@ -127,7 +127,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{this.loadMessages(this.props.user, this.state.interlocutorID, this.props.token)}
+							{this.loadMessages}
 						</div>
 
 						<div className="cardFooter">
