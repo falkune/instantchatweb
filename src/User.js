@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 // import fetchData from './Function';
 // import Singlemessage from './Singlemessage';
 
 class User extends React.Component{
 
-	state = {
-		messages : undefined
-	}
+	// state = {
+	// 	messages : undefined
+	// }
 
 	// loadMessages = (connectedUser, interlocutor, token) => {
 	// 	const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
