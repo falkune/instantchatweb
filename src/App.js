@@ -74,6 +74,7 @@ class App extends React.Component{
 		});
 	}
 
+	// this function get all user of the plateforme
 	getAllUsers = (id, token, name) => {
 		const URL = 'http://instantchat.com/Api/Users/'+id+'/'+token;
 
