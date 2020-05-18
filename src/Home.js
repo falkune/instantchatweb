@@ -63,7 +63,7 @@ class Home extends React.Component{
 				else{
 					return(
 						
-							<div/>
+							<div> commencer votre discution </div>
 					)
 				}
 			}
