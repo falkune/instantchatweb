@@ -9,7 +9,7 @@ class User extends React.Component{
 		messages : undefined
 	}
 
-	getDiscution = () =>{
+	loadMessages = () => {
 		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
 		fetchData(URL)
@@ -19,8 +19,6 @@ class User extends React.Component{
 					messages : data.data
 				});
 				
-				this.props.setIntelocutor(this.props.user, this.props.userName);
-
 				if(this.state.messages.length !== 0){
 					ReactDOM.render(
 						<div id="modal-body">
@@ -47,6 +45,10 @@ class User extends React.Component{
 			}
 		})
 		setTimeout(this.getDiscution, 2000);
+	}
+
+	getDiscution = () =>{
+		this.props.setIntelocutor(this.props.user, this.props.userName);
 	} 
 
 
