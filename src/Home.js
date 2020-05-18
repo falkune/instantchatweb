@@ -2,6 +2,7 @@ import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import User from './User';
+import fetchData from './Function';
 import Singlemessage from './Singlemessage';
 
 
