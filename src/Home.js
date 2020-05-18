@@ -42,7 +42,7 @@ class Home extends React.Component{
 	}
 
 	loadMessages = () => {
-		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.state.interlocutorID+'/'+this.props.token;
+		const URL = 'http://instantchat.com/api/show/'+this.props.user+'/'+this.state.interlocutorID+'/'+this.props.token;
 
 		fetchData(URL)
 		.then(data => {
