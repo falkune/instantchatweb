@@ -9,7 +9,7 @@ class User extends React.Component{
 		messages : undefined
 	}
 
-	loadMessages = () => {
+	loadMessages = (connectedUser, interlocutor, token) => {
 		const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
 
 		fetchData(URL)
