@@ -40,13 +40,13 @@ class Home extends React.Component{
 							}
 						</div>
 					);
-			}
+			// }
 		})
-		setTimeout(this.getDiscution, 2000);
-		this.setState({
-			interlocutorID : id,
-			interlocutorName : name
-		});
+		// setTimeout(this.getDiscution, 2000);
+		// this.setState({
+		// 	interlocutorID : id,
+		// 	interlocutorName : name
+		// });
 	}
 
 	postMessage = () => {
