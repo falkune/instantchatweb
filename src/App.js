@@ -27,7 +27,8 @@ class App extends React.Component{
 				});
 			}
 		})
-		setTimeout(this.reloadUser, 300000);
+		//mise à jour des utilisateur toute les 5 minutes.
+		setTimeout(this.reloadUser, 300000); 
 	}
 
 	showRegisterForm = () => {
