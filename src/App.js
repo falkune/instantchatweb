@@ -85,7 +85,9 @@ class App extends React.Component{
 					name : name,
 					users : data.data,
 					page : 'accueil'
-				});
+				}, () => {
+					this.reloadUser();
+				})
 			}
 		})
 	}
