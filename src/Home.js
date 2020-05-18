@@ -21,7 +21,7 @@ class Home extends React.Component{
 		// .then(data => {
 		// 	if(data.status === 'ok'){
 				this.setState({
-					messages : messages
+					messages : messages,
 					interlocutorName : name
 				});
 
