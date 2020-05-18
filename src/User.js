@@ -36,14 +36,14 @@ class User extends React.Component{
 								}
 							</div>,
 							document.getElementById('fil-discution')
-						);
-					)
+						)
+					);
 				}
 				else{
 					return(
 						ReactDOM.render(
 							<div/>,document.getElementById('fil-discution')
-						);
+						)
 					)
 				}
 			}
