@@ -22,11 +22,12 @@ class Home extends React.Component{
 	// }
 
 	getInterlocutorId =(id, name) => {
-		this.loadMessages();
 		this.setState({
 			interlocutorID : id,
 			interlocutorName : name
 		});
+		if(interlocutorID !== undefined)
+			this.loadMessages();
 	}
 
 	postMessage = () => {
