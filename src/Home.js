@@ -28,7 +28,7 @@ class Home extends React.Component{
 					return(
 						<div id="modal-body">
 							{
-								this.state.messages.map(msg =>
+								messages.map(msg =>
 									<Singlemessage
 										key={msg['message_id']}
 										connectedUser={this.props.connectedUser}
