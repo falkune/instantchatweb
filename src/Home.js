@@ -20,9 +20,10 @@ class Home extends React.Component{
 		// fetchData(URL)
 		// .then(data => {
 		// 	if(data.status === 'ok'){
-		// 		this.setState({
-		// 			messages : data.data
-		// 		});
+				this.setState({
+					messages : data.data,
+					interlocutorName : name
+				});
 
 				
 					return(
