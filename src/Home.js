@@ -18,7 +18,7 @@ class Home extends React.Component{
 			interlocutorID : id,
 			interlocutorName : name
 		});
-		this.loadMessages(user, id, token);
+		this.loadMessages(this.props.user, this.state.interlocutorID, this.props.token);
 	}
 
 	postMessage = () => {
