@@ -44,7 +44,7 @@ class User extends React.Component{
 				}
 			}
 		})
-		setTimeout(this.getDiscution, 2000);
+		setTimeout(this.loadMessages, 2000);
 	}
 
 	getDiscution = () =>{
