@@ -2,52 +2,19 @@ import React from 'react';
 import Input from './Input';
 import Textarea from './Textarea';
 import User from './User';
-import fetchData from './Function';
-import Singlemessage from './Singlemessage';
-
 
 class Home extends React.Component{
 
 	state = {
 		interlocutorID : undefined,
-		interlocutorName : undefined,
-		messages : undefined
+		interlocutorName : undefined
 	}
 
-	getInterlocutorId =(id, name, messages) => {
-		// const URL = 'http://instantchat.com/api/show/'+this.props.connectedUser+'/'+this.props.user+'/'+this.props.token;
-
-		// fetchData(URL)
-		// .then(data => {
-		// 	if(data.status === 'ok'){
-				this.setState({
-					messages : messages,
-					interlocutorName : name
-				});
-
-				
-					return(
-						<div id="modal-body">
-							{
-								messages.map(msg =>
-									<Singlemessage
-										key={msg['message_id']}
-										connectedUser={this.props.connectedUser}
-										user={msg['from_user_id']}
-										content={msg['message_body']}
-										editdate={msg['message_edit_at']}
-									/>
-								)
-							}
-						</div>
-					);
-			// }
-		// })
-		// setTimeout(this.getDiscution, 2000);
-		// this.setState({
-		// 	interlocutorID : id,
-		// 	interlocutorName : name
-		// });
+	getInterlocutorId =(id, name) => {
+		this.setState({
+			interlocutorID : id,
+			interlocutorName : name
+		});
 	}
 
 	postMessage = () => {
@@ -117,7 +84,7 @@ class Home extends React.Component{
 						</div>
 
 						<div className="card-body" id="fil-discution">
-							{this.getInterlocutorId}
+							{/* ici seront injectés les messages */}
 						</div>
 
 						<div className="cardFooter">
