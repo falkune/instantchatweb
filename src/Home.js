@@ -82,7 +82,7 @@ class Home extends React.Component{
 				}
 			}
 		})
-		setTimeout(this.loadMessages, 2000);
+		setTimeout(this.loadMessages, 5000);
 	}
 
 	render(){
