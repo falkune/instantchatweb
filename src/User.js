@@ -52,7 +52,7 @@ class User extends React.Component{
 	// }
 
 	getDiscution = () =>{
-		this.props.setIntelocutor(this.props.user, this.props.userName);
+		this.props.setIntelocutor(this.props.connectedUser, this.props.user, this.props.userName, this.props.token);
 		// this.loadMessages(this.props.connectedUser, this.props.user, this.props.token);
 	} 
 
