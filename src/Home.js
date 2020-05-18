@@ -5,17 +5,17 @@ import User from './User';
 
 class Home extends React.Component{
 
-	// state = {
-	// 	interlocutorID : undefined,
-	// 	interlocutorName : undefined
-	// }
+	state = {
+		interlocutorID : undefined,
+		interlocutorName : undefined
+	}
 
-	// getInterlocutorId =(id, name) => {
-	// 	this.setState({
-	// 		interlocutorID : id,
-	// 		interlocutorName : name
-	// 	});
-	// }
+	getInterlocutorId =(id, name) => {
+		this.setState({
+			interlocutorID : id,
+			interlocutorName : name
+		});
+	}
 
 	postMessage = () => {
 		if(this.state.interlocutorID === undefined){
@@ -53,7 +53,7 @@ class Home extends React.Component{
 											user={user['user_id']}
 											token={this.props.token}
 											userName={user['user_name']}
-											// setIntelocutor={this.getInterlocutorId}
+											setIntelocutor={this.getInterlocutorId}
 											online={this.props.online}
 										/>
 									)
@@ -74,7 +74,7 @@ class Home extends React.Component{
 									<span id="targetbutton">
 										<i className="fas fa-user"></i>
 									</span>
-									<span id="info_user"></span>
+									<span id="info_user">{this.state.interlocutorName}</span>
 								</div>
 							</div>
 
